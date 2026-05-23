@@ -31,8 +31,8 @@ not paid reviews** — see [detection methods](docs/detection-methods.md).
 
 ## Quick links
 
-- 🔍 **Browse all monitored sites** → <https://tokenscanai.com/sites>
-- 📊 **Live ranking leaderboard** → <https://tokenscanai.com/ranking>
+- 🔍 **Browse all monitored sites** → <https://tokenscanai.com/prices>
+- 📊 **Live ranking leaderboard** → <https://tokenscanai.com/leaderboard>
 - 📡 **API reference** → [docs/api-reference.md](docs/api-reference.md) · <https://tokenscanai.com/api>
 - 🧪 **Detection methodology** → [docs/detection-methods.md](docs/detection-methods.md)
 - 📦 **Python SDK** → [`tokenscanai-cli`](https://github.com/haruki3rd/tokenscanai-cli)
