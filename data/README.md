@@ -12,6 +12,8 @@ are **not** a live mirror of the production database.
 
 ## Release cadence
 
+- **2026-08-24 (first release)**: `relay-catalog.json` — CN relay trust & price catalog
+  snapshot (224 providers, trust level + evidence handle + min price). See below.
 - **Monthly snapshot**: published on the 1st of each month, covering the
   previous calendar month's monitoring data.
 - **Delay**: ~7 days behind the live database (avoids exposing in-flight
@@ -25,6 +27,8 @@ announcement.
 
 ## What snapshots include
 
+- **relay-catalog.json** (2026-08-24): provider trust level (verified/effective),
+  success rate, detection count, evidence handle, min input/output price, active state.
 - Site directory: slug, display name, tier, first-seen date
 - Aggregated probe stats (uptime %, latency p50/p95)
 - Network reachability matrix per site
