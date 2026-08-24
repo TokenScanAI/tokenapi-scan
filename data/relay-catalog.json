@@ -1,0 +1,5611 @@
+{
+ "schema_version": "1.1",
+ "dataset": "tokenapi-cn-relay-trust-catalog",
+ "title": "TokenAPI Scan CN Relay Trust & Price Catalog",
+ "description": "CN AI API relay / 中转站 实时信任(加密验证)+价格目录。可被工具 pull、引用、二次消费。",
+ "generated_at": "2026-08-24T06:28:49.128979+00:00",
+ "license": "MIT",
+ "count": 224,
+ "relays": [
+  {
+   "provider_id": "1xm-ai",
+   "name": "1XM AI",
+   "endpoint": "https://1xm.ai/v1",
+   "homepage": "https://1xm.ai",
+   "category": "国际服务区中转",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "medium",
+    "effective_verified": "medium",
+    "success_rate": 0.8257,
+    "detection_count": 304,
+    "latest_detected_at": "2026-08-13T08:00:44Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2F1xm-ai%2FL1?ts=2026-06-27T06%3A02%3A25Z",
+   "prices": {
+    "model_count": 39,
+    "min_input_usd_per_1m": 0.75,
+    "min_output_usd_per_1m": 2.0,
+    "cheapest_input_model": "gpt-5.4-mini"
+   }
+  },
+  {
+   "provider_id": "timesniper-club",
+   "name": "302 Found",
+   "endpoint": "https://timesniper.club/v1",
+   "homepage": "https://timesniper.club",
+   "category": "候选中转",
+   "region": "unknown",
+   "service_status": "needs_review",
+   "network_status": "unknown",
+   "active": false,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "unavailable",
+    "success_rate": 0.0,
+    "detection_count": 2,
+    "latest_detected_at": "2026-07-11T09:30:00"
+   },
+   "evidence": "evidence://detection/l1_probe%2Ftimesniper-club%2FL1?ts=2026-07-11T09%3A30%3A00",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "aaatoken-cn",
+   "name": "3AToken",
+   "endpoint": null,
+   "homepage": "https://aaatoken.cn",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": null,
+    "effective_verified": null,
+    "success_rate": null,
+    "detection_count": 0,
+    "latest_detected_at": null
+   },
+   "evidence": null,
+   "prices": {
+    "model_count": 20,
+    "min_input_usd_per_1m": 0.5,
+    "min_output_usd_per_1m": 0.5,
+    "cheapest_input_model": "bge-m3"
+   }
+  },
+  {
+   "provider_id": "4sapi",
+   "name": "4sapi",
+   "endpoint": "https://4sapi.com",
+   "homepage": "https://4sapi.com",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "low",
+    "success_rate": 0.6148,
+    "detection_count": 122,
+    "latest_detected_at": "2026-08-13T08:00:46Z"
+   },
+   "evidence": "evidence://detection/health_checks%2F4sapi%2Fhealth?ts=2026-08-13T08%3A00%3A46Z",
+   "prices": {
+    "model_count": 196,
+    "min_input_usd_per_1m": 0.02,
+    "min_output_usd_per_1m": 0.02,
+    "cheapest_input_model": "text-embedding-3-small"
+   }
+  },
+  {
+   "provider_id": "5202030",
+   "name": "5202030",
+   "endpoint": "https://api.5202030.xyz",
+   "homepage": "https://api.5202030.xyz",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "dead",
+   "network_status": "unknown",
+   "active": false,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "unavailable",
+    "success_rate": 0.338,
+    "detection_count": 142,
+    "latest_detected_at": "2026-08-18T08:00:56Z"
+   },
+   "evidence": "evidence://detection/health_checks%2F5202030%2Fhealth?ts=2026-08-18T08%3A00%3A56Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "529961",
+   "name": "529961",
+   "endpoint": "https://529961.com",
+   "homepage": "https://529961.com",
+   "category": "claude-relay",
+   "region": "overseas_only",
+   "service_status": "dead",
+   "network_status": "unknown",
+   "active": false,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "unavailable",
+    "success_rate": 0.1148,
+    "detection_count": 122,
+    "latest_detected_at": "2026-08-13T08:00:26Z"
+   },
+   "evidence": "evidence://detection/health_checks%2F529961%2Fhealth?ts=2026-08-13T08%3A00%3A26Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "88996",
+   "name": "88996",
+   "endpoint": "https://88996.cloud",
+   "homepage": "https://88996.cloud",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "low",
+    "success_rate": 0.0,
+    "detection_count": 14,
+    "latest_detected_at": "2026-07-11T08:00:35Z"
+   },
+   "evidence": "evidence://detection/health_checks%2F88996%2Fhealth?ts=2026-07-11T08%3A00%3A35Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "88code",
+   "name": "88Code",
+   "endpoint": "https://88code.ai",
+   "homepage": "https://88code.ai",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "dead",
+   "network_status": "unknown",
+   "active": false,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "unavailable",
+    "success_rate": 0.9091,
+    "detection_count": 154,
+    "latest_detected_at": "2026-08-24T08:00:17Z"
+   },
+   "evidence": "evidence://detection/health_checks%2F88code%2Fhealth?ts=2026-08-24T08%3A00%3A17Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "91code",
+   "name": "91Code",
+   "endpoint": "https://91code.pro",
+   "homepage": "https://91code.pro",
+   "category": "claude-relay",
+   "region": "overseas_only",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "low",
+    "success_rate": 0.0,
+    "detection_count": 14,
+    "latest_detected_at": "2026-07-11T08:00:41Z"
+   },
+   "evidence": "evidence://detection/health_checks%2F91code%2Fhealth?ts=2026-07-11T08%3A00%3A41Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "9527code-com",
+   "name": "9527code.com",
+   "endpoint": null,
+   "homepage": "https://9527code.com",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": null,
+    "effective_verified": null,
+    "success_rate": null,
+    "detection_count": 0,
+    "latest_detected_at": null
+   },
+   "evidence": null,
+   "prices": {
+    "model_count": 95,
+    "min_input_usd_per_1m": 0.04,
+    "min_output_usd_per_1m": 0.15,
+    "cheapest_input_model": "gpt-oss-120b"
+   }
+  },
+  {
+   "provider_id": "992236",
+   "name": "992236",
+   "endpoint": "https://992236.xyz",
+   "homepage": "https://992236.xyz",
+   "category": "claude-relay",
+   "region": "overseas_only",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "low",
+    "success_rate": 0.6066,
+    "detection_count": 122,
+    "latest_detected_at": "2026-08-13T08:00:56Z"
+   },
+   "evidence": "evidence://detection/health_checks%2F992236%2Fhealth?ts=2026-08-13T08%3A00%3A56Z",
+   "prices": {
+    "model_count": 18,
+    "min_input_usd_per_1m": 0.05,
+    "min_output_usd_per_1m": 0.4,
+    "cheapest_input_model": "gpt-5-nano"
+   }
+  },
+  {
+   "provider_id": "aiproxy",
+   "name": "AI Proxy",
+   "endpoint": "https://api.aiproxy.io/v1",
+   "homepage": "https://aiproxy.io",
+   "category": "中文服务区中转",
+   "region": "cn_friendly",
+   "service_status": "discontinued",
+   "network_status": "unreachable",
+   "active": false,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "unavailable",
+    "success_rate": 0.0,
+    "detection_count": 152,
+    "latest_detected_at": "2026-07-06T08:28:38Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Faiproxy%2FL1?ts=2026-06-18T18%3A00%3A00Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "apixyz",
+   "name": "API.xyz",
+   "endpoint": "https://api.api.xyz/v1",
+   "homepage": "https://api.xyz",
+   "category": "中文服务区中转",
+   "region": "cn_friendly",
+   "service_status": "discontinued",
+   "network_status": "unreachable",
+   "active": false,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "unavailable",
+    "success_rate": 0.3926,
+    "detection_count": 298,
+    "latest_detected_at": "2026-08-24T08:00:05Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fapixyz%2FL1?ts=2026-06-18T18%3A00%3A05Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "api2d",
+   "name": "API2D",
+   "endpoint": "https://openai.api2d.net/v1",
+   "homepage": "https://api2d.com",
+   "category": "中文服务区中转",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9114,
+    "detection_count": 350,
+    "latest_detected_at": "2026-08-24T08:00:06Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fapi2d%2FL1?ts=2026-06-26T06%3A02%3A08Z",
+   "prices": {
+    "model_count": 13,
+    "min_input_usd_per_1m": 0.035,
+    "min_output_usd_per_1m": 0.175,
+    "cheapest_input_model": "claude-3-haiku"
+   }
+  },
+  {
+   "provider_id": "ablai",
+   "name": "Ablai",
+   "endpoint": "https://api.ablai.top",
+   "homepage": "https://api.ablai.top",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "low",
+    "success_rate": 0.0,
+    "detection_count": 14,
+    "latest_detected_at": "2026-07-11T08:00:35Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fablai%2Fhealth?ts=2026-07-11T08%3A00%3A35Z",
+   "prices": {
+    "model_count": 673,
+    "min_input_usd_per_1m": 0.0022,
+    "min_output_usd_per_1m": 0.0022,
+    "cheapest_input_model": "qwen3-reranker-8b"
+   }
+  },
+  {
+   "provider_id": "aiapi-world",
+   "name": "Access 100+ AI Models in One API, Sa",
+   "endpoint": "https://aiapi.world/v1",
+   "homepage": "https://aiapi.world",
+   "category": "候选中转",
+   "region": "unknown",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 1.0,
+    "detection_count": 2,
+    "latest_detected_at": "2026-07-11T09:30:00"
+   },
+   "evidence": "evidence://detection/l1_probe%2Faiapi-world%2FL1?ts=2026-07-11T09%3A30%3A00",
+   "prices": {
+    "model_count": 126,
+    "min_input_usd_per_1m": 0.06,
+    "min_output_usd_per_1m": 0.06,
+    "cheapest_input_model": "bge-reranker-v2-m3"
+   }
+  },
+  {
+   "provider_id": "ai-codeqaq",
+   "name": "Ai Codeqaq",
+   "endpoint": "https://ai.codeqaq.com",
+   "homepage": "https://ai.codeqaq.com",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "dead",
+   "network_status": "unknown",
+   "active": false,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "unavailable",
+    "success_rate": 0.338,
+    "detection_count": 142,
+    "latest_detected_at": "2026-08-18T08:00:56Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fai-codeqaq%2Fhealth?ts=2026-08-18T08%3A00%3A56Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "ai-hybgzs",
+   "name": "Ai Hybgzs",
+   "endpoint": "https://ai.hybgzs.com",
+   "homepage": "https://ai.hybgzs.com",
+   "category": "claude-relay",
+   "region": "overseas_only",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9026,
+    "detection_count": 154,
+    "latest_detected_at": "2026-08-24T08:00:16Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fai-hybgzs%2Fhealth?ts=2026-08-24T08%3A00%3A16Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "aitutu",
+   "name": "AiTuTu",
+   "endpoint": "https://api.aitutuapi.com/v1",
+   "homepage": "https://aitutuapi.com",
+   "category": "中文服务区中转",
+   "region": "cn_friendly",
+   "service_status": "discontinued",
+   "network_status": "unreachable",
+   "active": false,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "unavailable",
+    "success_rate": 0.0,
+    "detection_count": 92,
+    "latest_detected_at": "2026-07-06T08:28:33Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Faitutu%2FL1?ts=2026-06-19T18%3A01%3A02Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "aicanapi",
+   "name": "Aicanapi",
+   "endpoint": "https://aicanapi.com",
+   "homepage": "https://aicanapi.com",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "low",
+    "success_rate": 0.6393,
+    "detection_count": 122,
+    "latest_detected_at": "2026-08-13T08:01:03Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Faicanapi%2Fhealth?ts=2026-08-13T08%3A01%3A03Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "aicodemirror",
+   "name": "Aicodemirror",
+   "endpoint": "https://aicodemirror.com",
+   "homepage": "https://aicodemirror.com",
+   "category": "claude-relay",
+   "region": "overseas_only",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "low",
+    "success_rate": 0.0,
+    "detection_count": 14,
+    "latest_detected_at": "2026-07-11T08:00:41Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Faicodemirror%2Fhealth?ts=2026-07-11T08%3A00%3A41Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "aicoding-sh",
+   "name": "Aicoding Sh",
+   "endpoint": "https://aicoding.sh",
+   "homepage": "https://aicoding.sh",
+   "category": "claude-relay",
+   "region": "overseas_only",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "low",
+    "success_rate": 0.5984,
+    "detection_count": 122,
+    "latest_detected_at": "2026-08-13T08:01:02Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Faicoding-sh%2Fhealth?ts=2026-08-13T08%3A01%3A02Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "aifast",
+   "name": "Aifast",
+   "endpoint": "https://aifast.site",
+   "homepage": "https://aifast.site",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "low",
+    "success_rate": 0.0,
+    "detection_count": 14,
+    "latest_detected_at": "2026-07-11T08:00:35Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Faifast%2Fhealth?ts=2026-07-11T08%3A00%3A35Z",
+   "prices": {
+    "model_count": 178,
+    "min_input_usd_per_1m": 0.015,
+    "min_output_usd_per_1m": 0.06,
+    "cheapest_input_model": "qwen3-coder-480b-a35b-instruct"
+   }
+  },
+  {
+   "provider_id": "aigocode",
+   "name": "Aigocode",
+   "endpoint": "https://aigocode.com",
+   "homepage": "https://aigocode.com",
+   "category": "claude-relay",
+   "region": "overseas_only",
+   "service_status": "dead",
+   "network_status": "unknown",
+   "active": false,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "unavailable",
+    "success_rate": 0.6066,
+    "detection_count": 122,
+    "latest_detected_at": "2026-08-13T08:01:03Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Faigocode%2Fhealth?ts=2026-08-13T08%3A01%3A03Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "aihubmix",
+   "name": "Aihubmix",
+   "endpoint": "https://aihubmix.com/v1",
+   "homepage": "https://aihubmix.com",
+   "category": "中文服务区中转",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "low",
+    "success_rate": 0.6721,
+    "detection_count": 308,
+    "latest_detected_at": "2026-08-13T08:00:25Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Faihubmix%2FL1?ts=2026-06-26T06%3A02%3A03Z",
+   "prices": {
+    "model_count": 8,
+    "min_input_usd_per_1m": 0.034,
+    "min_output_usd_per_1m": 0.069,
+    "cheapest_input_model": "claude-3-haiku-20240307"
+   }
+  },
+  {
+   "provider_id": "anmory",
+   "name": "Anmory",
+   "endpoint": "https://anmory.com",
+   "homepage": "https://anmory.com",
+   "category": "claude-relay",
+   "region": "overseas_only",
+   "service_status": "dead",
+   "network_status": "unknown",
+   "active": false,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "unavailable",
+    "success_rate": 0.0,
+    "detection_count": 20,
+    "latest_detected_at": "2026-07-12T20:00:26Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fanmory%2Fhealth?ts=2026-07-12T20%3A00%3A26Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "anthropic-cn",
+   "name": "Anthropic（亚太区）",
+   "endpoint": "https://api.anthropic.com/v1",
+   "homepage": "https://anthropic.com",
+   "category": "AI 平台与工具",
+   "region": "overseas_only",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9424,
+    "detection_count": 347,
+    "latest_detected_at": "2026-08-24T08:00:06Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fanthropic-cn%2FL1?ts=2026-06-26T06%3A02%3A04Z",
+   "prices": {
+    "model_count": 26,
+    "min_input_usd_per_1m": 0.25,
+    "min_output_usd_per_1m": 1.25,
+    "cheapest_input_model": "claude-3-haiku"
+   }
+  },
+  {
+   "provider_id": "anyrouter",
+   "name": "Anyrouter",
+   "endpoint": "https://anyrouter.top",
+   "homepage": "https://anyrouter.top",
+   "category": "claude-relay",
+   "region": "overseas_only",
+   "service_status": "dead",
+   "network_status": "unknown",
+   "active": false,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "unavailable",
+    "success_rate": 0.6967,
+    "detection_count": 122,
+    "latest_detected_at": "2026-08-13T08:00:45Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fanyrouter%2Fhealth?ts=2026-08-13T08%3A00%3A45Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "anyscale",
+   "name": "Anyscale",
+   "endpoint": "https://api.endpoints.anyscale.com/v1",
+   "homepage": "https://anyscale.com",
+   "category": "开源平台",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9551,
+    "detection_count": 379,
+    "latest_detected_at": "2026-08-24T08:00:09Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fanyscale%2FL1?ts=2026-06-26T06%3A02%3A06Z",
+   "prices": {
+    "model_count": 12,
+    "min_input_usd_per_1m": 0.15,
+    "min_output_usd_per_1m": 0.15,
+    "cheapest_input_model": "HuggingFaceH4/zephyr-7b-beta"
+   }
+  },
+  {
+   "provider_id": "apimart",
+   "name": "Apimart",
+   "endpoint": "https://apimart.ai",
+   "homepage": "https://apimart.ai",
+   "category": "claude-relay",
+   "region": "overseas_only",
+   "service_status": "dead",
+   "network_status": "unknown",
+   "active": false,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "unavailable",
+    "success_rate": 0.5873,
+    "detection_count": 126,
+    "latest_detected_at": "2026-08-13T08:01:23Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fapimart%2Fhealth?ts=2026-08-13T08%3A01%3A23Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "apipro-maynor1024",
+   "name": "Apipro Maynor1024",
+   "endpoint": "https://apipro.maynor1024.live",
+   "homepage": "https://apipro.maynor1024.live",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9051,
+    "detection_count": 158,
+    "latest_detected_at": "2026-08-24T08:00:19Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fapipro-maynor1024%2Fhealth?ts=2026-08-24T08%3A00%3A19Z",
+   "prices": {
+    "model_count": 317,
+    "min_input_usd_per_1m": 0.01,
+    "min_output_usd_per_1m": 0.01,
+    "cheapest_input_model": "BAAI/bge-reranker-v2-m3"
+   }
+  },
+  {
+   "provider_id": "apiyi",
+   "name": "Apiyi",
+   "endpoint": "https://api.apiyi.com/v1",
+   "homepage": "https://api.apiyi.com/",
+   "category": "中文服务区中转",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9646,
+    "detection_count": 339,
+    "latest_detected_at": "2026-08-24T08:00:13Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fapiyi%2FL1?ts=2026-06-27T06%3A02%3A30Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "augmunt",
+   "name": "Augmunt",
+   "endpoint": "https://augmunt.com",
+   "homepage": "https://augmunt.com",
+   "category": "claude-relay",
+   "region": "overseas_only",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "low",
+    "success_rate": 0.2222,
+    "detection_count": 18,
+    "latest_detected_at": "2026-07-30T18:03:47Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Faugmunt%2FL1?ts=2026-07-30T18%3A03%3A47Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "b4u-qzz",
+   "name": "B4u Qzz",
+   "endpoint": "https://b4u.qzz.io",
+   "homepage": "https://b4u.qzz.io",
+   "category": "claude-relay",
+   "region": "overseas_only",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9051,
+    "detection_count": 158,
+    "latest_detected_at": "2026-08-24T08:00:20Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fb4u-qzz%2Fhealth?ts=2026-08-24T08%3A00%3A20Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "beefapi-com",
+   "name": "BeefAPI — based on New API",
+   "endpoint": "https://beefapi.com/v1",
+   "homepage": "https://beefapi.com",
+   "category": "候选中转",
+   "region": "unknown",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 1.0,
+    "detection_count": 2,
+    "latest_detected_at": "2026-07-11T09:30:00"
+   },
+   "evidence": "evidence://detection/l1_probe%2Fbeefapi-com%2FL1?ts=2026-07-11T09%3A30%3A00",
+   "prices": {
+    "model_count": 30,
+    "min_input_usd_per_1m": 0.2,
+    "min_output_usd_per_1m": 1.6,
+    "cheapest_input_model": "gpt-5.6-luna"
+   }
+  },
+  {
+   "provider_id": "bianxie",
+   "name": "Bianxie",
+   "endpoint": "https://api.bianxie.ai",
+   "homepage": "https://api.bianxie.ai",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9221,
+    "detection_count": 154,
+    "latest_detected_at": "2026-08-24T08:00:14Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fbianxie%2Fhealth?ts=2026-08-24T08%3A00%3A14Z",
+   "prices": {
+    "model_count": 342,
+    "min_input_usd_per_1m": 0.02,
+    "min_output_usd_per_1m": 0.02,
+    "cheapest_input_model": "text-embedding-3-small"
+   }
+  },
+  {
+   "provider_id": "bltcy",
+   "name": "Bltcy",
+   "endpoint": "https://api.bltcy.ai",
+   "homepage": "https://api.bltcy.ai",
+   "category": "claude-relay",
+   "region": "overseas_only",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9351,
+    "detection_count": 154,
+    "latest_detected_at": "2026-08-24T08:00:17Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fbltcy%2Fhealth?ts=2026-08-24T08%3A00%3A17Z",
+   "prices": {
+    "model_count": 687,
+    "min_input_usd_per_1m": 0.0022,
+    "min_output_usd_per_1m": 0.0022,
+    "cheapest_input_model": "qwen3-reranker-8b"
+   }
+  },
+  {
+   "provider_id": "chatanywhere",
+   "name": "ChatAnyWhere",
+   "endpoint": "https://api.chatanywhere.com.cn/v1",
+   "homepage": "https://chatanywhere.cn",
+   "category": "中文服务区中转",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "low",
+    "success_rate": 0.6527,
+    "detection_count": 357,
+    "latest_detected_at": "2026-08-24T08:00:20Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fchatanywhere%2FL1?ts=2026-06-26T06%3A02%3A08Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "clauddy",
+   "name": "Clauddy",
+   "endpoint": "https://clauddy.com",
+   "homepage": "https://clauddy.com",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9937,
+    "detection_count": 159,
+    "latest_detected_at": "2026-08-24T08:00:18Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fclauddy%2Fhealth?ts=2026-08-24T08%3A00%3A18Z",
+   "prices": {
+    "model_count": 55,
+    "min_input_usd_per_1m": 0.1,
+    "min_output_usd_per_1m": 0.4,
+    "cheapest_input_model": "gemini-flash-lite-latest"
+   }
+  },
+  {
+   "provider_id": "claude-code-hub",
+   "name": "Claude Code Hub",
+   "endpoint": "https://claude-code-hub.app",
+   "homepage": "https://claude-code-hub.app",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "low",
+    "success_rate": 0.2222,
+    "detection_count": 18,
+    "latest_detected_at": "2026-07-30T18:03:49Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fclaude-code-hub%2FL1?ts=2026-07-30T18%3A03%3A49Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "claude-opus",
+   "name": "Claude Opus",
+   "endpoint": "https://claude-opus.top",
+   "homepage": "https://claude-opus.top",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "low",
+    "success_rate": 0.2222,
+    "detection_count": 18,
+    "latest_detected_at": "2026-07-30T18:03:50Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fclaude-opus%2FL1?ts=2026-07-30T18%3A03%3A50Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "console-claudeapi-com",
+   "name": "ClaudeAPI",
+   "endpoint": "https://console.claudeapi.com/v1",
+   "homepage": "https://console.claudeapi.com",
+   "category": "候选中转",
+   "region": "unknown",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 1.0,
+    "detection_count": 2,
+    "latest_detected_at": "2026-07-11T09:30:00"
+   },
+   "evidence": "evidence://detection/l1_probe%2Fconsole-claudeapi-com%2FL1?ts=2026-07-11T09%3A30%3A00",
+   "prices": {
+    "model_count": 24,
+    "min_input_usd_per_1m": 0.065,
+    "min_output_usd_per_1m": 0.26,
+    "cheapest_input_model": "gemini-2.5-flash-lite"
+   }
+  },
+  {
+   "provider_id": "claudeide",
+   "name": "Claudeide",
+   "endpoint": "https://claudeide.net",
+   "homepage": "https://claudeide.net",
+   "category": "claude-relay",
+   "region": "overseas_only",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "low",
+    "success_rate": 0.25,
+    "detection_count": 20,
+    "latest_detected_at": "2026-07-30T18:03:52Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fclaudeide%2FL1?ts=2026-07-30T18%3A03%3A52Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "claude-china",
+   "name": "Claude中国",
+   "endpoint": "https://api.claude.cn/v1",
+   "homepage": "https://claude.cn",
+   "category": "国际服务区中转",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "medium",
+    "effective_verified": "medium",
+    "success_rate": 0.8223,
+    "detection_count": 332,
+    "latest_detected_at": "2026-08-07T18:05:51Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fclaude-china%2FL1?ts=2026-06-26T06%3A02%3A10Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "co-yes",
+   "name": "Co Yes",
+   "endpoint": "https://co.yes.vg",
+   "homepage": "https://co.yes.vg",
+   "category": "claude-relay",
+   "region": "overseas_only",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9691,
+    "detection_count": 162,
+    "latest_detected_at": "2026-08-24T08:00:20Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fco-yes%2Fhealth?ts=2026-08-24T08%3A00%3A20Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "code-wenwen-ai",
+   "name": "Code Wenwen Ai",
+   "endpoint": "https://code.wenwen-ai.com",
+   "homepage": "https://code.wenwen-ai.com",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9198,
+    "detection_count": 162,
+    "latest_detected_at": "2026-08-24T08:00:18Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fcode-wenwen-ai%2Fhealth?ts=2026-08-24T08%3A00%3A18Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "code-x-aio",
+   "name": "Code X Aio",
+   "endpoint": "https://code.x-aio.com",
+   "homepage": "https://code.x-aio.com",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9938,
+    "detection_count": 162,
+    "latest_detected_at": "2026-08-24T08:00:19Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fcode-x-aio%2Fhealth?ts=2026-08-24T08%3A00%3A19Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "codeilab",
+   "name": "Codeilab",
+   "endpoint": "https://codeilab.com",
+   "homepage": "https://codeilab.com",
+   "category": "claude-relay",
+   "region": "overseas_only",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "low",
+    "success_rate": 0.4167,
+    "detection_count": 24,
+    "latest_detected_at": "2026-07-30T18:03:56Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fcodeilab%2FL1?ts=2026-07-30T18%3A03%3A56Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "cohere",
+   "name": "Cohere",
+   "endpoint": "https://api.cohere.ai/v1",
+   "homepage": "https://cohere.ai",
+   "category": "AI 平台与工具",
+   "region": "dual",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.952,
+    "detection_count": 354,
+    "latest_detected_at": "2026-08-24T08:00:09Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fcohere%2FL1?ts=2026-06-26T06%3A02%3A10Z",
+   "prices": {
+    "model_count": 5,
+    "min_input_usd_per_1m": 0.0375,
+    "min_output_usd_per_1m": 0.0,
+    "cheapest_input_model": "command-r7b-12-2024"
+   }
+  },
+  {
+   "provider_id": "cooper-api-com",
+   "name": "Cooper-API | New API",
+   "endpoint": "https://cooper-api.com/v1",
+   "homepage": "https://cooper-api.com",
+   "category": "候选中转",
+   "region": "unknown",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 1.0,
+    "detection_count": 2,
+    "latest_detected_at": "2026-07-11T09:30:00"
+   },
+   "evidence": "evidence://detection/l1_probe%2Fcooper-api-com%2FL1?ts=2026-07-11T09%3A30%3A00",
+   "prices": {
+    "model_count": 41,
+    "min_input_usd_per_1m": 0.02,
+    "min_output_usd_per_1m": 0.02,
+    "cheapest_input_model": "text-embedding-3-small"
+   }
+  },
+  {
+   "provider_id": "cpass",
+   "name": "Cpass",
+   "endpoint": "https://api.cpass.cc",
+   "homepage": "https://api.cpass.cc",
+   "category": "claude-relay",
+   "region": "overseas_only",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "medium",
+    "effective_verified": "medium",
+    "success_rate": 0.8701,
+    "detection_count": 154,
+    "latest_detected_at": "2026-08-24T08:00:17Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fcpass%2Fhealth?ts=2026-08-24T08%3A00%3A17Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "cubence",
+   "name": "Cubence",
+   "endpoint": "https://cubence.com",
+   "homepage": "https://cubence.com",
+   "category": "claude-relay",
+   "region": "overseas_only",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9455,
+    "detection_count": 165,
+    "latest_detected_at": "2026-08-24T08:00:19Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fcubence%2Fhealth?ts=2026-08-24T08%3A00%3A19Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "ddshub",
+   "name": "DDSHub",
+   "endpoint": "https://www.ddshub.cc/v1",
+   "homepage": "https://www.ddshub.cc",
+   "category": "国际服务区中转",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9645,
+    "detection_count": 338,
+    "latest_detected_at": "2026-08-24T08:00:13Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fddshub%2FL1?ts=2026-06-27T06%3A02%3A27Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "deepkey",
+   "name": "DeepKey",
+   "endpoint": "https://deepkey.top/v1",
+   "homepage": "https://deepkey.top",
+   "category": "国际服务区中转",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.96,
+    "detection_count": 350,
+    "latest_detected_at": "2026-08-24T08:00:11Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fdeepkey%2FL1?ts=2026-06-27T06%3A02%3A24Z",
+   "prices": {
+    "model_count": 228,
+    "min_input_usd_per_1m": 0.02,
+    "min_output_usd_per_1m": 0.01125,
+    "cheapest_input_model": "text-embedding-3-small"
+   }
+  },
+  {
+   "provider_id": "deepseek",
+   "name": "DeepSeek",
+   "endpoint": "https://api.deepseek.com/v1",
+   "homepage": "https://deepseek.com",
+   "category": "AI 平台与工具",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9744,
+    "detection_count": 391,
+    "latest_detected_at": "2026-08-24T08:00:04Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fdeepseek%2FL1?ts=2026-06-26T06%3A02%3A10Z",
+   "prices": {
+    "model_count": 15,
+    "min_input_usd_per_1m": 0.09,
+    "min_output_usd_per_1m": 0.18,
+    "cheapest_input_model": "deepseek-v4-flash-0731"
+   }
+  },
+  {
+   "provider_id": "deeprouter",
+   "name": "Deeprouter",
+   "endpoint": "https://deeprouter.top",
+   "homepage": "https://deeprouter.top",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "low",
+    "success_rate": 0.4815,
+    "detection_count": 27,
+    "latest_detected_at": "2026-08-06T18:15:15Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fdeeprouter%2FL1?ts=2026-08-06T18%3A15%3A15Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "dev88-tech",
+   "name": "Dev88 Tech",
+   "endpoint": "https://api.dev88.tech",
+   "homepage": "https://api.dev88.tech",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "low",
+    "success_rate": 0.6557,
+    "detection_count": 122,
+    "latest_detected_at": "2026-08-13T08:01:15Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fdev88-tech%2Fhealth?ts=2026-08-13T08%3A01%3A15Z",
+   "prices": {
+    "model_count": 5,
+    "min_input_usd_per_1m": 0.28,
+    "min_output_usd_per_1m": 0.42,
+    "cheapest_input_model": "deepseek-3.2"
+   }
+  },
+  {
+   "provider_id": "dhcoder",
+   "name": "Dhcoder",
+   "endpoint": "https://dhcoder.net",
+   "homepage": "https://dhcoder.net",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "low",
+    "success_rate": 0.5,
+    "detection_count": 28,
+    "latest_detected_at": "2026-08-06T18:15:16Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fdhcoder%2FL1?ts=2026-08-06T18%3A15%3A16Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "dify",
+   "name": "Dify API",
+   "endpoint": "https://api.dify.ai/v1",
+   "homepage": "https://dify.ai",
+   "category": "开源平台",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9575,
+    "detection_count": 353,
+    "latest_detected_at": "2026-08-24T08:00:05Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fdify%2FL1?ts=2026-06-26T06%3A02%3A11Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "dimaray",
+   "name": "Dimaray",
+   "endpoint": "https://dimaray.com",
+   "homepage": "https://dimaray.com",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "dead",
+   "network_status": "unknown",
+   "active": false,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "unavailable",
+    "success_rate": 0.0,
+    "detection_count": 34,
+    "latest_detected_at": "2026-08-06T18:15:16Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fdimaray%2FL1?ts=2026-08-06T18%3A15%3A16Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "dmxapi",
+   "name": "Dmxapi",
+   "endpoint": "https://dmxapi.com",
+   "homepage": "https://dmxapi.com",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "low",
+    "success_rate": 0.5,
+    "detection_count": 28,
+    "latest_detected_at": "2026-08-06T18:15:16Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fdmxapi%2FL1?ts=2026-08-06T18%3A15%3A16Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "dreamger",
+   "name": "Dreamger",
+   "endpoint": "https://api.dreamger.com",
+   "homepage": "https://api.dreamger.com",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "dead",
+   "network_status": "unknown",
+   "active": false,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "unavailable",
+    "success_rate": 0.9221,
+    "detection_count": 154,
+    "latest_detected_at": "2026-08-24T08:00:14Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fdreamger%2Fhealth?ts=2026-08-24T08%3A00%3A14Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "duckcoding",
+   "name": "Duckcoding",
+   "endpoint": "https://duckcoding.com",
+   "homepage": "https://duckcoding.com",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "low",
+    "success_rate": 0.0,
+    "detection_count": 27,
+    "latest_detected_at": "2026-08-06T18:15:17Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fduckcoding%2FL1?ts=2026-08-06T18%3A15%3A17Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "expansion-chat",
+   "name": "Expansion Chat",
+   "endpoint": "https://api.expansion.chat",
+   "homepage": "https://api.expansion.chat",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9156,
+    "detection_count": 154,
+    "latest_detected_at": "2026-08-24T08:00:15Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fexpansion-chat%2Fhealth?ts=2026-08-24T08%3A00%3A15Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "fastgpt",
+   "name": "FastGPT API",
+   "endpoint": "https://api.fastgpt.in/v1",
+   "homepage": "https://fastgpt.in",
+   "category": "开源平台",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9632,
+    "detection_count": 353,
+    "latest_detected_at": "2026-08-24T08:00:08Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Ffastgpt%2FL1?ts=2026-06-26T06%3A02%3A12Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "fireworks",
+   "name": "Fireworks AI",
+   "endpoint": "https://api.fireworks.ai/inference/v1",
+   "homepage": "https://fireworks.ai",
+   "category": "开源平台",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9367,
+    "detection_count": 395,
+    "latest_detected_at": "2026-08-24T08:00:07Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Ffireworks%2FL1?ts=2026-06-26T06%3A02%3A12Z",
+   "prices": {
+    "model_count": 268,
+    "min_input_usd_per_1m": 0.00013,
+    "min_output_usd_per_1m": 0.0,
+    "cheapest_input_model": "accounts/fireworks/models/SSD-1B"
+   }
+  },
+  {
+   "provider_id": "fk-hshwk",
+   "name": "Fk Hshwk",
+   "endpoint": "https://fk.hshwk.org",
+   "homepage": "https://fk.hshwk.org",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9286,
+    "detection_count": 168,
+    "latest_detected_at": "2026-08-24T08:00:20Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Ffk-hshwk%2Fhealth?ts=2026-08-24T08%3A00%3A20Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "flapcode",
+   "name": "Flapcode",
+   "endpoint": "https://flapcode.com",
+   "homepage": "https://flapcode.com",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9226,
+    "detection_count": 168,
+    "latest_detected_at": "2026-08-24T08:00:20Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fflapcode%2Fhealth?ts=2026-08-24T08%3A00%3A20Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "flowise",
+   "name": "Flowise",
+   "endpoint": "https://api.flowiseai.com/v1",
+   "homepage": "https://flowiseai.com",
+   "category": "开源平台",
+   "region": "cn_friendly",
+   "service_status": "discontinued",
+   "network_status": "unreachable",
+   "active": false,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "unavailable",
+    "success_rate": 0.4286,
+    "detection_count": 301,
+    "latest_detected_at": "2026-08-24T08:00:04Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fflowise%2FL1?ts=2026-06-18T18%3A00%3A20Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "foxcode-hshwk",
+   "name": "Foxcode Hshwk",
+   "endpoint": "https://foxcode.hshwk.org",
+   "homepage": "https://foxcode.hshwk.org",
+   "category": "claude-relay",
+   "region": "overseas_only",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "medium",
+    "effective_verified": "medium",
+    "success_rate": 0.8988,
+    "detection_count": 168,
+    "latest_detected_at": "2026-08-24T08:00:22Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Ffoxcode-hshwk%2Fhealth?ts=2026-08-24T08%3A00%3A22Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "foxcode-rjj",
+   "name": "Foxcode Rjj",
+   "endpoint": "https://foxcode.rjj.cc",
+   "homepage": "https://foxcode.rjj.cc",
+   "category": "claude-relay",
+   "region": "overseas_only",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "low",
+    "success_rate": 0.5172,
+    "detection_count": 29,
+    "latest_detected_at": "2026-08-06T18:15:20Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Ffoxcode-rjj%2FL1?ts=2026-08-06T18%3A15%3A20Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "fuli-hxi",
+   "name": "Fuli Hxi",
+   "endpoint": "https://fuli.hxi.me",
+   "homepage": "https://fuli.hxi.me",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "medium",
+    "effective_verified": "medium",
+    "success_rate": 0.8941,
+    "detection_count": 170,
+    "latest_detected_at": "2026-08-24T08:00:21Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Ffuli-hxi%2Fhealth?ts=2026-08-24T08%3A00%3A21Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "gptgod",
+   "name": "GPTGod",
+   "endpoint": "https://api.gptgod.online/v1",
+   "homepage": "https://gptgod.online",
+   "category": "中文服务区中转",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9716,
+    "detection_count": 387,
+    "latest_detected_at": "2026-08-24T08:00:07Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fgptgod%2FL1?ts=2026-06-26T06%3A02%3A13Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "gpt-link",
+   "name": "GPTLink",
+   "endpoint": "https://api.gptlink.ai/v1",
+   "homepage": "https://gptlink.ai",
+   "category": "中文服务区中转",
+   "region": "cn_friendly",
+   "service_status": "discontinued",
+   "network_status": "unreachable",
+   "active": false,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "unavailable",
+    "success_rate": 0.2989,
+    "detection_count": 348,
+    "latest_detected_at": "2026-08-24T08:00:06Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fgpt-link%2FL1?ts=2026-06-18T18%3A00%3A31Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "getgoapi",
+   "name": "Getgoapi",
+   "endpoint": "https://getgoapi.com",
+   "homepage": "https://getgoapi.com",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "low",
+    "success_rate": 0.2258,
+    "detection_count": 31,
+    "latest_detected_at": "2026-08-16T18:17:47Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fgetgoapi%2FL1?ts=2026-08-16T18%3A17%3A47Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "google-ai-official",
+   "name": "Google AI Studio 官方",
+   "endpoint": "https://generativelanguage.googleapis.com/v1beta",
+   "homepage": "https://aistudio.google.com",
+   "category": "AI 平台与工具",
+   "region": "overseas_only",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "low",
+    "success_rate": 0.5168,
+    "detection_count": 358,
+    "latest_detected_at": "2026-08-24T08:00:20Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fgoogle-ai-official%2FL1?ts=2026-06-26T06%3A02%3A13Z",
+   "prices": {
+    "model_count": 35,
+    "min_input_usd_per_1m": 0.049999999999999996,
+    "min_output_usd_per_1m": 0.09999999999999999,
+    "cheapest_input_model": "gemini-2.5-flash-lite:batch"
+   }
+  },
+  {
+   "provider_id": "gpt-zhizengzeng",
+   "name": "Gpt Zhizengzeng",
+   "endpoint": "https://gpt.zhizengzeng.com",
+   "homepage": "https://gpt.zhizengzeng.com",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9133,
+    "detection_count": 173,
+    "latest_detected_at": "2026-08-24T08:00:20Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fgpt-zhizengzeng%2Fhealth?ts=2026-08-24T08%3A00%3A20Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "gptkey",
+   "name": "Gptkey",
+   "endpoint": "https://gptkey.eu.org",
+   "homepage": "https://gptkey.eu.org",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "dead",
+   "network_status": "unknown",
+   "active": false,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "unavailable",
+    "success_rate": 0.5086,
+    "detection_count": 175,
+    "latest_detected_at": "2026-08-24T08:00:21Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fgptkey%2Fhealth?ts=2026-08-24T08%3A00%3A21Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "groq",
+   "name": "Groq",
+   "endpoint": "https://api.groq.com/openai/v1",
+   "homepage": "https://groq.com",
+   "category": "推理加速平台",
+   "region": "dual",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9018,
+    "detection_count": 397,
+    "latest_detected_at": "2026-08-24T08:00:08Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fgroq%2FL1?ts=2026-06-26T06%3A02%3A15Z",
+   "prices": {
+    "model_count": 4,
+    "min_input_usd_per_1m": 0.05,
+    "min_output_usd_per_1m": 0.07,
+    "cheapest_input_model": "llama3-8b-8192"
+   }
+  },
+  {
+   "provider_id": "gueai",
+   "name": "Gueai",
+   "endpoint": "https://api.gueai.com",
+   "homepage": "https://api.gueai.com",
+   "category": "claude-relay",
+   "region": "overseas_only",
+   "service_status": "dead",
+   "network_status": "unknown",
+   "active": false,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "unavailable",
+    "success_rate": 0.1393,
+    "detection_count": 122,
+    "latest_detected_at": "2026-08-13T08:00:51Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fgueai%2Fhealth?ts=2026-08-13T08%3A00%3A51Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "henapi",
+   "name": "Henapi",
+   "endpoint": "https://henapi.top",
+   "homepage": "https://henapi.top",
+   "category": "claude-relay",
+   "region": "overseas_only",
+   "service_status": "dead",
+   "network_status": "unknown",
+   "active": false,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "unavailable",
+    "success_rate": 0.1007,
+    "detection_count": 139,
+    "latest_detected_at": "2026-08-16T18:17:48Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fhenapi%2FL1?ts=2026-08-16T18%3A17%3A48Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "holdai",
+   "name": "Holdai",
+   "endpoint": "https://api.holdai.top",
+   "homepage": "https://api.holdai.top",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9156,
+    "detection_count": 154,
+    "latest_detected_at": "2026-08-24T08:00:15Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fholdai%2Fhealth?ts=2026-08-24T08%3A00%3A15Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "hongshan",
+   "name": "Hongshan",
+   "endpoint": "https://hongshan.com",
+   "homepage": "https://hongshan.com",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "low",
+    "success_rate": 0.6111,
+    "detection_count": 36,
+    "latest_detected_at": "2026-08-16T18:17:48Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fhongshan%2FL1?ts=2026-08-16T18%3A17%3A48Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "huggingface",
+   "name": "HuggingFace",
+   "endpoint": "https://huggingface.co/api/inference",
+   "homepage": "https://huggingface.co/",
+   "category": "AI 平台与工具",
+   "region": "overseas_only",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "low",
+    "success_rate": 0.6287,
+    "detection_count": 307,
+    "latest_detected_at": "2026-08-13T08:00:51Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fhuggingface%2FL1?ts=2026-06-27T06%3A02%3A30Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "ikuncode",
+   "name": "Ikuncode",
+   "endpoint": "https://api.ikuncode.cc",
+   "homepage": "https://api.ikuncode.cc",
+   "category": "claude-relay",
+   "region": "overseas_only",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9481,
+    "detection_count": 154,
+    "latest_detected_at": "2026-08-24T08:00:17Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fikuncode%2Fhealth?ts=2026-08-24T08%3A00%3A17Z",
+   "prices": {
+    "model_count": 33,
+    "min_input_usd_per_1m": 0.2,
+    "min_output_usd_per_1m": 1.2,
+    "cheapest_input_model": "gpt-5.6-luna"
+   }
+  },
+  {
+   "provider_id": "instcopilot-api",
+   "name": "Instcopilot Api",
+   "endpoint": "https://instcopilot-api.com",
+   "homepage": "https://instcopilot-api.com",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "low",
+    "success_rate": 0.0,
+    "detection_count": 37,
+    "latest_detected_at": "2026-08-16T18:17:51Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Finstcopilot-api%2FL1?ts=2026-08-16T18%3A17%3A51Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "iwhalecloud",
+   "name": "Iwhalecloud",
+   "endpoint": "https://iwhalecloud.com",
+   "homepage": "https://iwhalecloud.com",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "dead",
+   "network_status": "unknown",
+   "active": false,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "unavailable",
+    "success_rate": 0.0,
+    "detection_count": 41,
+    "latest_detected_at": "2026-08-16T18:18:01Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fiwhalecloud%2FL1?ts=2026-08-16T18%3A18%3A01Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "jbbtoken-cn",
+   "name": "JBBToken - OpenAI / Claude API 中转站，支",
+   "endpoint": "https://jbbtoken.cn/v1",
+   "homepage": "https://jbbtoken.cn",
+   "category": "候选中转",
+   "region": "unknown",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 1.0,
+    "detection_count": 2,
+    "latest_detected_at": "2026-07-11T09:30:00"
+   },
+   "evidence": "evidence://detection/l1_probe%2Fjbbtoken-cn%2FL1?ts=2026-07-11T09%3A30%3A00",
+   "prices": {
+    "model_count": 26,
+    "min_input_usd_per_1m": 2.0,
+    "min_output_usd_per_1m": 12.0,
+    "cheapest_input_model": "gpt-5.4-mini"
+   }
+  },
+  {
+   "provider_id": "jeniya",
+   "name": "Jeniya",
+   "endpoint": "https://jeniya.top",
+   "homepage": "https://jeniya.top",
+   "category": "claude-relay",
+   "region": "overseas_only",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "low",
+    "success_rate": 0.1795,
+    "detection_count": 39,
+    "latest_detected_at": "2026-08-19T18:18:42Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fjeniya%2FL1?ts=2026-08-19T18%3A18%3A42Z",
+   "prices": {
+    "model_count": 317,
+    "min_input_usd_per_1m": 0.01,
+    "min_output_usd_per_1m": 0.01,
+    "cheapest_input_model": "netease-youdao/bce-reranker-base_v1"
+   }
+  },
+  {
+   "provider_id": "jiekou",
+   "name": "Jiekou",
+   "endpoint": "https://jiekou.ai",
+   "homepage": "https://jiekou.ai",
+   "category": "claude-relay",
+   "region": "overseas_only",
+   "service_status": "dead",
+   "network_status": "unknown",
+   "active": false,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "unavailable",
+    "success_rate": 0.5068,
+    "detection_count": 146,
+    "latest_detected_at": "2026-08-19T18:18:53Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fjiekou%2FL1?ts=2026-08-19T18%3A18%3A53Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "kg-api",
+   "name": "Kg Api",
+   "endpoint": "https://kg-api.cloud",
+   "homepage": "https://kg-api.cloud",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9297,
+    "detection_count": 185,
+    "latest_detected_at": "2026-08-24T08:00:21Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fkg-api%2Fhealth?ts=2026-08-24T08%3A00%3A21Z",
+   "prices": {
+    "model_count": 687,
+    "min_input_usd_per_1m": 0.0022,
+    "min_output_usd_per_1m": 0.0022,
+    "cheapest_input_model": "qwen3-reranker-8b"
+   }
+  },
+  {
+   "provider_id": "koozhan-api",
+   "name": "Koozhan API",
+   "endpoint": "https://api.koozhan.com/v1",
+   "homepage": "https://api.koozhan.com",
+   "category": "国际服务区中转",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9347,
+    "detection_count": 337,
+    "latest_detected_at": "2026-08-24T08:00:12Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fkoozhan-api%2FL1?ts=2026-06-27T06%3A02%3A26Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "laozhang-ai",
+   "name": "Laozhang.ai",
+   "endpoint": "https://laozhang.ai/v1",
+   "homepage": "https://laozhang.ai/",
+   "category": "中文服务区中转",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9582,
+    "detection_count": 335,
+    "latest_detected_at": "2026-08-24T08:00:15Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Flaozhang-ai%2FL1?ts=2026-06-27T06%3A02%3A29Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "lconai",
+   "name": "Lconai",
+   "endpoint": "https://api.lconai.com",
+   "homepage": "https://api.lconai.com",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9156,
+    "detection_count": 154,
+    "latest_detected_at": "2026-08-24T08:00:16Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Flconai%2Fhealth?ts=2026-08-24T08%3A00%3A16Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "lemongpt",
+   "name": "Lemongpt",
+   "endpoint": "https://lemongpt.top",
+   "homepage": "https://lemongpt.top",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "low",
+    "success_rate": 0.6818,
+    "detection_count": 44,
+    "latest_detected_at": "2026-08-21T18:18:57Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Flemongpt%2FL1?ts=2026-08-21T18%3A18%3A57Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "lepton",
+   "name": "Lepton AI",
+   "endpoint": "https://api.lepton.run/v1",
+   "homepage": "https://www.lepton.ai/",
+   "category": "推理加速平台",
+   "region": "cn_friendly",
+   "service_status": "discontinued",
+   "network_status": "unreachable",
+   "active": false,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "unavailable",
+    "success_rate": 0.9062,
+    "detection_count": 320,
+    "latest_detected_at": "2026-08-24T08:00:08Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Flepton%2FL1?ts=2026-06-18T18%3A00%3A33Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "linkapi",
+   "name": "Linkapi",
+   "endpoint": "https://api.linkapi.org",
+   "homepage": "https://api.linkapi.org",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "low",
+    "success_rate": 0.0667,
+    "detection_count": 15,
+    "latest_detected_at": "2026-07-21T18:05:27Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Flinkapi%2FL1?ts=2026-07-21T18%3A05%3A27Z",
+   "prices": {
+    "model_count": 673,
+    "min_input_usd_per_1m": 0.0022,
+    "min_output_usd_per_1m": 0.0022,
+    "cheapest_input_model": "qwen3-reranker-8b"
+   }
+  },
+  {
+   "provider_id": "mistral",
+   "name": "Mistral AI",
+   "endpoint": "https://api.mistral.ai/v1",
+   "homepage": "https://mistral.ai",
+   "category": "AI 平台与工具",
+   "region": "overseas_only",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "medium",
+    "effective_verified": "medium",
+    "success_rate": 0.7794,
+    "detection_count": 340,
+    "latest_detected_at": "2026-08-13T08:00:33Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fmistral%2FL1?ts=2026-06-26T06%3A02%3A16Z",
+   "prices": {
+    "model_count": 19,
+    "min_input_usd_per_1m": 0.019000000000000003,
+    "min_output_usd_per_1m": 0.03,
+    "cheapest_input_model": "mistral-nemo"
+   }
+  },
+  {
+   "provider_id": "mkeai",
+   "name": "Mkeai",
+   "endpoint": "https://api.mkeai.com",
+   "homepage": "https://api.mkeai.com",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "low",
+    "success_rate": 0.0667,
+    "detection_count": 15,
+    "latest_detected_at": "2026-07-21T18:05:27Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fmkeai%2FL1?ts=2026-07-21T18%3A05%3A27Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "modelscope",
+   "name": "ModelScope",
+   "endpoint": "https://api-inference.modelscope.cn/v1",
+   "homepage": "https://modelscope.cn",
+   "category": "开源平台",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "low",
+    "success_rate": 0.6171,
+    "detection_count": 444,
+    "latest_detected_at": "2026-08-24T08:00:06Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fmodelscope%2FL1?ts=2026-06-26T06%3A02%3A16Z",
+   "prices": {
+    "model_count": 18,
+    "min_input_usd_per_1m": 0.049999999999999996,
+    "min_output_usd_per_1m": 0.19999999999999998,
+    "cheapest_input_model": "qwen-turbo"
+   }
+  },
+  {
+   "provider_id": "api-muskapi-cc",
+   "name": "MuskAPI",
+   "endpoint": "https://api.muskapi.cc/v1",
+   "homepage": "https://api.muskapi.cc",
+   "category": "relay",
+   "region": "asia",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9431,
+    "detection_count": 281,
+    "latest_detected_at": "2026-08-11T08:00:09Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fmuskapi%2FL1?ts=2026-06-26T06%3A02%3A17Z",
+   "prices": {
+    "model_count": 258,
+    "min_input_usd_per_1m": 0.02,
+    "min_output_usd_per_1m": 0.02,
+    "cheapest_input_model": "text-embedding-3-small"
+   }
+  },
+  {
+   "provider_id": "muskapi",
+   "name": "MuskAPI",
+   "endpoint": "https://api.muskapi.cc/v1",
+   "homepage": "https://api.muskapi.cc",
+   "category": "候选晋升",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 1.0,
+    "detection_count": 40,
+    "latest_detected_at": "2026-08-24T08:00:07Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fmuskapi%2Fhealth?ts=2026-08-24T08%3A00%3A07Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "claudeagent-com-cn",
+   "name": "My Claude Code - Claude Code API 接入平",
+   "endpoint": "https://claudeagent.com.cn/v1",
+   "homepage": "https://claudeagent.com.cn",
+   "category": "候选中转",
+   "region": "unknown",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 1.0,
+    "detection_count": 2,
+    "latest_detected_at": "2026-07-11T09:30:00"
+   },
+   "evidence": "evidence://detection/l1_probe%2Fclaudeagent-com-cn%2FL1?ts=2026-07-11T09%3A30%3A00",
+   "prices": {
+    "model_count": 45,
+    "min_input_usd_per_1m": 0.75,
+    "min_output_usd_per_1m": 4.5,
+    "cheapest_input_model": "gpt-5.4-mini"
+   }
+  },
+  {
+   "provider_id": "n1n",
+   "name": "N1n",
+   "endpoint": "https://n1n.ai",
+   "homepage": "https://n1n.ai",
+   "category": "claude-relay",
+   "region": "overseas_only",
+   "service_status": "dead",
+   "network_status": "unknown",
+   "active": false,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "unavailable",
+    "success_rate": 0.4375,
+    "detection_count": 160,
+    "latest_detected_at": "2026-08-21T18:19:07Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fn1n%2FL1?ts=2026-08-21T18%3A19%3A07Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "nekoapi",
+   "name": "Neko API",
+   "endpoint": "https://api.nekoapi.com/v1",
+   "homepage": "https://nekoapi.com",
+   "category": "中文服务区中转",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9005,
+    "detection_count": 382,
+    "latest_detected_at": "2026-08-24T08:00:09Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fnekoapi%2FL1?ts=2026-06-26T06%3A02%3A21Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "az-zlapi-vip",
+   "name": "New API",
+   "endpoint": "https://az.zlapi.vip/v1",
+   "homepage": "https://az.zlapi.vip",
+   "category": "候选中转",
+   "region": "unknown",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 1.0,
+    "detection_count": 2,
+    "latest_detected_at": "2026-07-11T09:30:00"
+   },
+   "evidence": "evidence://detection/l1_probe%2Faz-zlapi-vip%2FL1?ts=2026-07-11T09%3A30%3A00",
+   "prices": {
+    "model_count": 24,
+    "min_input_usd_per_1m": 0.3,
+    "min_output_usd_per_1m": 0.54,
+    "cheapest_input_model": "[米]按量/gpt-5.4"
+   }
+  },
+  {
+   "provider_id": "chat-ekti-cc",
+   "name": "New API",
+   "endpoint": "https://chat.ekti.cc/v1",
+   "homepage": "https://chat.ekti.cc",
+   "category": "候选中转",
+   "region": "unknown",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 1.0,
+    "detection_count": 2,
+    "latest_detected_at": "2026-07-11T09:30:00"
+   },
+   "evidence": "evidence://detection/l1_probe%2Fchat-ekti-cc%2FL1?ts=2026-07-11T09%3A30%3A00",
+   "prices": {
+    "model_count": 32,
+    "min_input_usd_per_1m": 0.1,
+    "min_output_usd_per_1m": 0.3,
+    "cheapest_input_model": "grok-4.20-0309-non-reasoning"
+   }
+  },
+  {
+   "provider_id": "chunxueapi-com",
+   "name": "New API",
+   "endpoint": "https://chunxueapi.com/v1",
+   "homepage": "https://chunxueapi.com",
+   "category": "候选中转",
+   "region": "unknown",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 1.0,
+    "detection_count": 2,
+    "latest_detected_at": "2026-07-11T09:30:00"
+   },
+   "evidence": "evidence://detection/l1_probe%2Fchunxueapi-com%2FL1?ts=2026-07-11T09%3A30%3A00",
+   "prices": {
+    "model_count": 30,
+    "min_input_usd_per_1m": 0.5,
+    "min_output_usd_per_1m": 2.0,
+    "cheapest_input_model": "glm-5.2"
+   }
+  },
+  {
+   "provider_id": "cialloapi-cn",
+   "name": "New API",
+   "endpoint": "https://cialloapi.cn/v1",
+   "homepage": "https://cialloapi.cn",
+   "category": "候选中转",
+   "region": "unknown",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 1.0,
+    "detection_count": 2,
+    "latest_detected_at": "2026-07-11T09:30:00"
+   },
+   "evidence": "evidence://detection/l1_probe%2Fcialloapi-cn%2FL1?ts=2026-07-11T09%3A30%3A00",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "codefwd-top",
+   "name": "New API",
+   "endpoint": "https://codefwd.top/v1",
+   "homepage": "https://codefwd.top",
+   "category": "候选中转",
+   "region": "unknown",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 1.0,
+    "detection_count": 2,
+    "latest_detected_at": "2026-07-11T09:30:00"
+   },
+   "evidence": "evidence://detection/l1_probe%2Fcodefwd-top%2FL1?ts=2026-07-11T09%3A30%3A00",
+   "prices": {
+    "model_count": 125,
+    "min_input_usd_per_1m": 0.02,
+    "min_output_usd_per_1m": 0.02,
+    "cheapest_input_model": "text-embedding-3-small"
+   }
+  },
+  {
+   "provider_id": "gpt-agent-cc",
+   "name": "New API",
+   "endpoint": "https://gpt-agent.cc/v1",
+   "homepage": "https://gpt-agent.cc",
+   "category": "候选中转",
+   "region": "unknown",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 1.0,
+    "detection_count": 2,
+    "latest_detected_at": "2026-07-11T09:30:00"
+   },
+   "evidence": "evidence://detection/l1_probe%2Fgpt-agent-cc%2FL1?ts=2026-07-11T09%3A30%3A00",
+   "prices": {
+    "model_count": 72,
+    "min_input_usd_per_1m": 0.6,
+    "min_output_usd_per_1m": 3.0,
+    "cheapest_input_model": "claude-sonnet-4-6"
+   }
+  },
+  {
+   "provider_id": "gua-guagua-uk",
+   "name": "New API",
+   "endpoint": "https://gua.guagua.uk/v1",
+   "homepage": "https://gua.guagua.uk",
+   "category": "候选中转",
+   "region": "unknown",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 1.0,
+    "detection_count": 2,
+    "latest_detected_at": "2026-07-11T09:30:00"
+   },
+   "evidence": "evidence://detection/l1_probe%2Fgua-guagua-uk%2FL1?ts=2026-07-11T09%3A30%3A00",
+   "prices": {
+    "model_count": 27,
+    "min_input_usd_per_1m": 0.5,
+    "min_output_usd_per_1m": 2.5,
+    "cheapest_input_model": "gemini-3-flash-preview"
+   }
+  },
+  {
+   "provider_id": "hemaapi-cc",
+   "name": "New API",
+   "endpoint": "https://hemaapi.cc/v1",
+   "homepage": "https://hemaapi.cc",
+   "category": "候选中转",
+   "region": "unknown",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 1.0,
+    "detection_count": 2,
+    "latest_detected_at": "2026-07-11T09:30:00"
+   },
+   "evidence": "evidence://detection/l1_probe%2Fhemaapi-cc%2FL1?ts=2026-07-11T09%3A30%3A00",
+   "prices": {
+    "model_count": 30,
+    "min_input_usd_per_1m": 0.75,
+    "min_output_usd_per_1m": 4.5,
+    "cheapest_input_model": "gpt-5.4-mini"
+   }
+  },
+  {
+   "provider_id": "hiapi-store",
+   "name": "New API",
+   "endpoint": "https://hiapi.store/v1",
+   "homepage": "https://hiapi.store",
+   "category": "候选中转",
+   "region": "unknown",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 1.0,
+    "detection_count": 2,
+    "latest_detected_at": "2026-07-11T09:30:00"
+   },
+   "evidence": "evidence://detection/l1_probe%2Fhiapi-store%2FL1?ts=2026-07-11T09%3A30%3A00",
+   "prices": {
+    "model_count": 11,
+    "min_input_usd_per_1m": 12.0,
+    "min_output_usd_per_1m": 16.0,
+    "cheapest_input_model": "gpt-5.6-terra"
+   }
+  },
+  {
+   "provider_id": "kelaiapi-cc",
+   "name": "New API",
+   "endpoint": "https://kelaiapi.cc/v1",
+   "homepage": "https://kelaiapi.cc",
+   "category": "候选中转",
+   "region": "unknown",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 1.0,
+    "detection_count": 2,
+    "latest_detected_at": "2026-07-11T09:30:00"
+   },
+   "evidence": "evidence://detection/l1_probe%2Fkelaiapi-cc%2FL1?ts=2026-07-11T09%3A30%3A00",
+   "prices": {
+    "model_count": 145,
+    "min_input_usd_per_1m": 0.1,
+    "min_output_usd_per_1m": 0.3,
+    "cheapest_input_model": "grok-4.20-0309-reasoning-super"
+   }
+  },
+  {
+   "provider_id": "manbouapi-com",
+   "name": "New API",
+   "endpoint": "https://manbouapi.com/v1",
+   "homepage": "https://manbouapi.com",
+   "category": "候选中转",
+   "region": "unknown",
+   "service_status": "needs_review",
+   "network_status": "unknown",
+   "active": false,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "unavailable",
+    "success_rate": 0.0,
+    "detection_count": 2,
+    "latest_detected_at": "2026-07-11T09:30:00"
+   },
+   "evidence": "evidence://detection/l1_probe%2Fmanbouapi-com%2FL1?ts=2026-07-11T09%3A30%3A00",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "nbapi-cc",
+   "name": "New API",
+   "endpoint": "https://nbapi.cc/v1",
+   "homepage": "https://nbapi.cc",
+   "category": "候选中转",
+   "region": "unknown",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 1.0,
+    "detection_count": 2,
+    "latest_detected_at": "2026-07-11T09:30:00"
+   },
+   "evidence": "evidence://detection/l1_probe%2Fnbapi-cc%2FL1?ts=2026-07-11T09%3A30%3A00",
+   "prices": {
+    "model_count": 67,
+    "min_input_usd_per_1m": 0.09,
+    "min_output_usd_per_1m": 0.36,
+    "cheapest_input_model": "gemini-2.5-flash-lite"
+   }
+  },
+  {
+   "provider_id": "officesai-top",
+   "name": "New API",
+   "endpoint": "https://officesai.top/v1",
+   "homepage": "https://officesai.top",
+   "category": "候选中转",
+   "region": "unknown",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 1.0,
+    "detection_count": 2,
+    "latest_detected_at": "2026-07-11T09:30:00"
+   },
+   "evidence": "evidence://detection/l1_probe%2Fofficesai-top%2FL1?ts=2026-07-11T09%3A30%3A00",
+   "prices": {
+    "model_count": 101,
+    "min_input_usd_per_1m": 0.1,
+    "min_output_usd_per_1m": 0.1,
+    "cheapest_input_model": "meta/llama-3.2-1b-instruct"
+   }
+  },
+  {
+   "provider_id": "superapi-buzz",
+   "name": "New API",
+   "endpoint": "https://superapi.buzz/v1",
+   "homepage": "https://superapi.buzz",
+   "category": "候选中转",
+   "region": "unknown",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 1.0,
+    "detection_count": 2,
+    "latest_detected_at": "2026-07-11T09:30:00"
+   },
+   "evidence": "evidence://detection/l1_probe%2Fsuperapi-buzz%2FL1?ts=2026-07-11T09%3A30%3A00",
+   "prices": {
+    "model_count": 190,
+    "min_input_usd_per_1m": 0.01,
+    "min_output_usd_per_1m": 0.01,
+    "cheapest_input_model": "qwen3guard"
+   }
+  },
+  {
+   "provider_id": "us-ai-easyart-cc",
+   "name": "New API",
+   "endpoint": "https://us.ai.easyart.cc/v1",
+   "homepage": "https://us.ai.easyart.cc",
+   "category": "候选中转",
+   "region": "unknown",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 1.0,
+    "detection_count": 2,
+    "latest_detected_at": "2026-07-11T09:30:00"
+   },
+   "evidence": "evidence://detection/l1_probe%2Fus-ai-easyart-cc%2FL1?ts=2026-07-11T09%3A30%3A00",
+   "prices": {
+    "model_count": 134,
+    "min_input_usd_per_1m": 0.03,
+    "min_output_usd_per_1m": 0.24,
+    "cheapest_input_model": "gpt-5-nano-2025-08-07"
+   }
+  },
+  {
+   "provider_id": "yjapi-manqiaotechnology-com",
+   "name": "New API",
+   "endpoint": "https://yjapi.manqiaotechnology.com/v1",
+   "homepage": "https://yjapi.manqiaotechnology.com",
+   "category": "候选中转",
+   "region": "unknown",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 1.0,
+    "detection_count": 2,
+    "latest_detected_at": "2026-07-11T09:30:00"
+   },
+   "evidence": "evidence://detection/l1_probe%2Fyjapi-manqiaotechnology-com%2FL1?ts=2026-07-11T09%3A30%3A00",
+   "prices": {
+    "model_count": 77,
+    "min_input_usd_per_1m": 0.01,
+    "min_output_usd_per_1m": 0.06,
+    "cheapest_input_model": "gpt-5.5-openai-compact"
+   }
+  },
+  {
+   "provider_id": "zerocode-sbs",
+   "name": "New API",
+   "endpoint": "https://zerocode.sbs/v1",
+   "homepage": "https://zerocode.sbs",
+   "category": "候选中转",
+   "region": "unknown",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 1.0,
+    "detection_count": 2,
+    "latest_detected_at": "2026-07-11T09:30:00"
+   },
+   "evidence": "evidence://detection/l1_probe%2Fzerocode-sbs%2FL1?ts=2026-07-11T09%3A30%3A00",
+   "prices": {
+    "model_count": 15,
+    "min_input_usd_per_1m": 1.0,
+    "min_output_usd_per_1m": 5.0,
+    "cheapest_input_model": "gpt-5.6-luna"
+   }
+  },
+  {
+   "provider_id": "zhangyuapi-com",
+   "name": "New API",
+   "endpoint": "https://zhangyuapi.com/v1",
+   "homepage": "https://zhangyuapi.com",
+   "category": "候选中转",
+   "region": "unknown",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": null,
+    "effective_verified": null,
+    "success_rate": null,
+    "detection_count": 0,
+    "latest_detected_at": null
+   },
+   "evidence": null,
+   "prices": {
+    "model_count": 53,
+    "min_input_usd_per_1m": 0.07,
+    "min_output_usd_per_1m": 0.34,
+    "cheapest_input_model": "gemma-4-26b-a4b-it"
+   }
+  },
+  {
+   "provider_id": "new-api-u4vr",
+   "name": "New Api U4vr",
+   "endpoint": "https://new-api.u4vr.com",
+   "homepage": "https://new-api.u4vr.com",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9337,
+    "detection_count": 196,
+    "latest_detected_at": "2026-08-24T08:00:20Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fnew-api-u4vr%2Fhealth?ts=2026-08-24T08%3A00%3A20Z",
+   "prices": {
+    "model_count": 19,
+    "min_input_usd_per_1m": 0.3,
+    "min_output_usd_per_1m": 1.5,
+    "cheapest_input_model": "claude-sonnet-4-6"
+   }
+  },
+  {
+   "provider_id": "new-xychatai",
+   "name": "New Xychatai",
+   "endpoint": "https://new.xychatai.com",
+   "homepage": "https://new.xychatai.com",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9343,
+    "detection_count": 198,
+    "latest_detected_at": "2026-08-24T08:00:21Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fnew-xychatai%2Fhealth?ts=2026-08-24T08%3A00%3A21Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "novita",
+   "name": "Novita AI",
+   "endpoint": "https://api.novita.ai/v1",
+   "homepage": "https://novita.ai",
+   "category": "推理加速平台",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9095,
+    "detection_count": 420,
+    "latest_detected_at": "2026-08-24T08:00:12Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fnovita%2FL1?ts=2026-06-26T06%3A02%3A22Z",
+   "prices": {
+    "model_count": 85,
+    "min_input_usd_per_1m": 0.01,
+    "min_output_usd_per_1m": 0.0,
+    "cheapest_input_model": "baai/bge-m3"
+   }
+  },
+  {
+   "provider_id": "okapi",
+   "name": "OK API",
+   "endpoint": "https://api.okapi.live/v1",
+   "homepage": "https://okapi.live",
+   "category": "中文服务区中转",
+   "region": "cn_friendly",
+   "service_status": "discontinued",
+   "network_status": "unreachable",
+   "active": false,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "unavailable",
+    "success_rate": 0.3388,
+    "detection_count": 304,
+    "latest_detected_at": "2026-08-24T08:00:10Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fokapi%2FL1?ts=2026-06-18T18%3A00%3A37Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "oaipro",
+   "name": "Oaipro",
+   "endpoint": "https://api.oaipro.com",
+   "homepage": "https://api.oaipro.com",
+   "category": "claude-relay",
+   "region": "overseas_only",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9161,
+    "detection_count": 155,
+    "latest_detected_at": "2026-08-24T08:00:18Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Foaipro%2Fhealth?ts=2026-08-24T08%3A00%3A18Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "oneapi",
+   "name": "One API",
+   "endpoint": "https://api.one-api.top/v1",
+   "homepage": "https://one-api.top",
+   "category": "开源平台",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "low",
+    "success_rate": 0.5691,
+    "detection_count": 376,
+    "latest_detected_at": "2026-08-15T08:00:29Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Foneapi%2FL1?ts=2026-06-26T18%3A02%3A19Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "one-api-bltcy",
+   "name": "One Api Bltcy",
+   "endpoint": "https://one-api.bltcy.top",
+   "homepage": "https://one-api.bltcy.top",
+   "category": "claude-relay",
+   "region": "overseas_only",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9272,
+    "detection_count": 206,
+    "latest_detected_at": "2026-08-24T08:00:23Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fone-api-bltcy%2Fhealth?ts=2026-08-24T08%3A00%3A23Z",
+   "prices": {
+    "model_count": 687,
+    "min_input_usd_per_1m": 0.0022,
+    "min_output_usd_per_1m": 0.0022,
+    "cheapest_input_model": "qwen3-reranker-8b"
+   }
+  },
+  {
+   "provider_id": "one-ocoolai",
+   "name": "One Ocoolai",
+   "endpoint": "https://one.ocoolai.com",
+   "homepage": "https://one.ocoolai.com",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9289,
+    "detection_count": 211,
+    "latest_detected_at": "2026-08-24T08:00:23Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fone-ocoolai%2Fhealth?ts=2026-08-24T08%3A00%3A23Z",
+   "prices": {
+    "model_count": 601,
+    "min_input_usd_per_1m": 0.00071,
+    "min_output_usd_per_1m": 0.001,
+    "cheapest_input_model": "step-1-8k"
+   }
+  },
+  {
+   "provider_id": "oneapi-paintbot",
+   "name": "Oneapi Paintbot",
+   "endpoint": "https://oneapi.paintbot.top",
+   "homepage": "https://oneapi.paintbot.top",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "low",
+    "success_rate": 0.2143,
+    "detection_count": 112,
+    "latest_detected_at": "2026-08-21T18:19:10Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Foneapi-paintbot%2FL1?ts=2026-08-21T18%3A19%3A10Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "open-xiaojingai",
+   "name": "Open Xiaojingai",
+   "endpoint": "https://open.xiaojingai.com",
+   "homepage": "https://open.xiaojingai.com",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9074,
+    "detection_count": 216,
+    "latest_detected_at": "2026-08-24T08:00:26Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fopen-xiaojingai%2Fhealth?ts=2026-08-24T08%3A00%3A26Z",
+   "prices": {
+    "model_count": 526,
+    "min_input_usd_per_1m": 0.02,
+    "min_output_usd_per_1m": 0.0012,
+    "cheapest_input_model": "glm-4.5-flash"
+   }
+  },
+  {
+   "provider_id": "openai-official",
+   "name": "OpenAI 官方",
+   "endpoint": "https://api.openai.com/v1",
+   "homepage": "https://platform.openai.com",
+   "category": "AI 平台与工具",
+   "region": "overseas_only",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "medium",
+    "effective_verified": "medium",
+    "success_rate": 0.8096,
+    "detection_count": 394,
+    "latest_detected_at": "2026-08-24T08:00:25Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fopenai-official%2FL1?ts=2026-06-26T18%3A02%3A30Z",
+   "prices": {
+    "model_count": 82,
+    "min_input_usd_per_1m": 0.024999999999999998,
+    "min_output_usd_per_1m": 0.13,
+    "cheapest_input_model": "gpt-5-nano:batch"
+   }
+  },
+  {
+   "provider_id": "openai-hk",
+   "name": "OpenAI 香港",
+   "endpoint": "https://api.openai-hk.com/v1",
+   "homepage": "https://openai-hk.com",
+   "category": "国际服务区中转",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "low",
+    "success_rate": 0.5991,
+    "detection_count": 454,
+    "latest_detected_at": "2026-08-24T08:00:12Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fopenai-hk%2FL1?ts=2026-06-26T18%3A02%3A29Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "openrouter",
+   "name": "OpenRouter",
+   "endpoint": "https://openrouter.ai/api/v1",
+   "homepage": "https://openrouter.ai",
+   "category": "国际服务区中转",
+   "region": "dual",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9054,
+    "detection_count": 423,
+    "latest_detected_at": "2026-08-24T08:00:10Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fopenrouter%2FL1?ts=2026-06-26T18%3A02%3A31Z",
+   "prices": {
+    "model_count": 395,
+    "min_input_usd_per_1m": 0.01,
+    "min_output_usd_per_1m": 0.03,
+    "cheapest_input_model": "ling-2.6-flash"
+   }
+  },
+  {
+   "provider_id": "openclaude",
+   "name": "Openclaude",
+   "endpoint": "https://openclaude.me",
+   "homepage": "https://openclaude.me",
+   "category": "claude-relay",
+   "region": "overseas_only",
+   "service_status": "dead",
+   "network_status": "unknown",
+   "active": false,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "unavailable",
+    "success_rate": 0.4706,
+    "detection_count": 85,
+    "latest_detected_at": "2026-08-21T18:19:22Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fopenclaude%2FL1?ts=2026-08-21T18%3A19%3A22Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "packyapi",
+   "name": "PackyAPI",
+   "endpoint": "https://www.packyapi.com/v1",
+   "homepage": "https://www.packyapi.com/",
+   "category": "国际服务区中转",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "medium",
+    "effective_verified": "medium",
+    "success_rate": 0.83,
+    "detection_count": 300,
+    "latest_detected_at": "2026-08-13T08:00:49Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fpackyapi%2FL1?ts=2026-06-27T06%3A02%3A28Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "perplexity",
+   "name": "Perplexity AI",
+   "endpoint": "https://api.perplexity.ai",
+   "homepage": "https://www.perplexity.ai/",
+   "category": "AI 平台与工具",
+   "region": "overseas_only",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "medium",
+    "effective_verified": "medium",
+    "success_rate": 0.7613,
+    "detection_count": 377,
+    "latest_detected_at": "2026-08-13T08:00:41Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fperplexity%2FL1?ts=2026-06-26T18%3A02%3A32Z",
+   "prices": {
+    "model_count": 23,
+    "min_input_usd_per_1m": 0.0,
+    "min_output_usd_per_1m": 0.0,
+    "cheapest_input_model": "pplx-70b-online"
+   }
+  },
+  {
+   "provider_id": "poloapi",
+   "name": "PoloAPI",
+   "endpoint": "https://poloapi.com/v1",
+   "homepage": "https://poloapi.com/",
+   "category": "国际服务区中转",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9401,
+    "detection_count": 334,
+    "latest_detected_at": "2026-08-24T08:00:13Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fpoloapi%2FL1?ts=2026-06-27T06%3A02%3A29Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "poloai",
+   "name": "Poloai",
+   "endpoint": "https://poloai.top",
+   "homepage": "https://poloai.top",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9414,
+    "detection_count": 222,
+    "latest_detected_at": "2026-08-24T08:00:22Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fpoloai%2Fhealth?ts=2026-08-24T08%3A00%3A22Z",
+   "prices": {
+    "model_count": 416,
+    "min_input_usd_per_1m": 0.02,
+    "min_output_usd_per_1m": 0.02,
+    "cheapest_input_model": "text-embedding-3-small"
+   }
+  },
+  {
+   "provider_id": "privnode",
+   "name": "Privnode",
+   "endpoint": "https://privnode.com",
+   "homepage": "https://privnode.com",
+   "category": "claude-relay",
+   "region": "overseas_only",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9193,
+    "detection_count": 223,
+    "latest_detected_at": "2026-08-24T08:00:24Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fprivnode%2Fhealth?ts=2026-08-24T08%3A00%3A24Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "proxyai",
+   "name": "Proxyai",
+   "endpoint": "https://proxyai.com",
+   "homepage": "https://proxyai.com",
+   "category": "claude-relay",
+   "region": "overseas_only",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9207,
+    "detection_count": 227,
+    "latest_detected_at": "2026-08-24T08:00:24Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fproxyai%2Fhealth?ts=2026-08-24T08%3A00%3A24Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "qinzhiai",
+   "name": "Qinzhiai",
+   "endpoint": "https://qinzhiai.com",
+   "homepage": "https://qinzhiai.com",
+   "category": "claude-relay",
+   "region": "overseas_only",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9274,
+    "detection_count": 234,
+    "latest_detected_at": "2026-08-24T08:00:23Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fqinzhiai%2Fhealth?ts=2026-08-24T08%3A00%3A23Z",
+   "prices": {
+    "model_count": 620,
+    "min_input_usd_per_1m": 0.005,
+    "min_output_usd_per_1m": 0.005,
+    "cheapest_input_model": "intfloat/e5-base-v2"
+   }
+  },
+  {
+   "provider_id": "rootflowai-hk",
+   "name": "RootFlow AI HK",
+   "endpoint": "https://hk.rootflowai.com/v1",
+   "homepage": "https://hk.rootflowai.com",
+   "category": "国际服务区中转",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "medium",
+    "effective_verified": "medium",
+    "success_rate": 0.8324,
+    "detection_count": 346,
+    "latest_detected_at": "2026-08-24T08:00:12Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Frootflowai-hk%2FL1?ts=2026-06-27T06%3A02%3A23Z",
+   "prices": {
+    "model_count": 39,
+    "min_input_usd_per_1m": 0.25,
+    "min_output_usd_per_1m": 0.43,
+    "cheapest_input_model": "gemini-3.1-flash-lite-preview"
+   }
+  },
+  {
+   "provider_id": "runapi-co",
+   "name": "RunAPI:高质量API中转平台",
+   "endpoint": "https://runapi.co/v1",
+   "homepage": "https://runapi.co",
+   "category": "候选中转",
+   "region": "unknown",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 1.0,
+    "detection_count": 2,
+    "latest_detected_at": "2026-07-11T09:30:00"
+   },
+   "evidence": "evidence://detection/l1_probe%2Frunapi-co%2FL1?ts=2026-07-11T09%3A30%3A00",
+   "prices": {
+    "model_count": 165,
+    "min_input_usd_per_1m": 0.008,
+    "min_output_usd_per_1m": 0.008,
+    "cheapest_input_model": "text-embedding-3-small"
+   }
+  },
+  {
+   "provider_id": "runanytime-hxi",
+   "name": "Runanytime Hxi",
+   "endpoint": "https://runanytime.hxi.me",
+   "homepage": "https://runanytime.hxi.me",
+   "category": "claude-relay",
+   "region": "overseas_only",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "medium",
+    "effective_verified": "medium",
+    "success_rate": 0.8984,
+    "detection_count": 246,
+    "latest_detected_at": "2026-08-24T08:00:23Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Frunanytime-hxi%2Fhealth?ts=2026-08-24T08%3A00%3A23Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "ssopen",
+   "name": "Ssopen",
+   "endpoint": "https://api.ssopen.top",
+   "homepage": "https://api.ssopen.top",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9295,
+    "detection_count": 156,
+    "latest_detected_at": "2026-08-24T08:00:17Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fssopen%2Fhealth?ts=2026-08-24T08%3A00%3A17Z",
+   "prices": {
+    "model_count": 317,
+    "min_input_usd_per_1m": 0.01,
+    "min_output_usd_per_1m": 0.01,
+    "cheapest_input_model": "BAAI/bge-reranker-v2-m3"
+   }
+  },
+  {
+   "provider_id": "sssaicode",
+   "name": "Sssaicode",
+   "endpoint": "https://sssaicode.com",
+   "homepage": "https://sssaicode.com",
+   "category": "claude-relay",
+   "region": "overseas_only",
+   "service_status": "dead",
+   "network_status": "unknown",
+   "active": false,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "unavailable",
+    "success_rate": 0.2788,
+    "detection_count": 226,
+    "latest_detected_at": "2026-08-22T00:22:00Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fsssaicode%2FL1?ts=2026-08-22T00%3A22%3A00Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "store-zzyus",
+   "name": "Store Zzyus",
+   "endpoint": "https://store.zzyus.top",
+   "homepage": "https://store.zzyus.top",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "medium",
+    "effective_verified": "medium",
+    "success_rate": 0.8841,
+    "detection_count": 276,
+    "latest_detected_at": "2026-08-24T08:00:43Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fstore-zzyus%2Fhealth?ts=2026-08-24T08%3A00%3A43Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "timicc",
+   "name": "TIMICC",
+   "endpoint": "https://timicc.com/v1",
+   "homepage": "https://timicc.com",
+   "category": "国际服务区中转",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9497,
+    "detection_count": 338,
+    "latest_detected_at": "2026-08-24T08:00:11Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Ftimicc%2FL1?ts=2026-06-27T06%3A02%3A27Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "tiantianai",
+   "name": "Tiantianai",
+   "endpoint": "https://tiantianai.pro",
+   "homepage": "https://tiantianai.pro",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9537,
+    "detection_count": 281,
+    "latest_detected_at": "2026-08-24T08:00:23Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Ftiantianai%2Fhealth?ts=2026-08-24T08%3A00%3A23Z",
+   "prices": {
+    "model_count": 75,
+    "min_input_usd_per_1m": 0.2,
+    "min_output_usd_per_1m": 0.4,
+    "cheapest_input_model": "gpt-5.6-luna"
+   }
+  },
+  {
+   "provider_id": "together",
+   "name": "Together AI",
+   "endpoint": "https://api.together.xyz/v1",
+   "homepage": "https://together.ai",
+   "category": "开源平台",
+   "region": "dual",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "medium",
+    "effective_verified": "medium",
+    "success_rate": 0.8866,
+    "detection_count": 432,
+    "latest_detected_at": "2026-08-24T08:00:13Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Ftogether%2FL1?ts=2026-06-26T18%3A02%3A35Z",
+   "prices": {
+    "model_count": 27,
+    "min_input_usd_per_1m": 0.008,
+    "min_output_usd_per_1m": 0.0,
+    "cheapest_input_model": "baai/bge-base-en-v1.5"
+   }
+  },
+  {
+   "provider_id": "tu-zi",
+   "name": "Tu Zi",
+   "endpoint": "https://api.tu-zi.com",
+   "homepage": "https://api.tu-zi.com",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9167,
+    "detection_count": 156,
+    "latest_detected_at": "2026-08-24T08:00:17Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Ftu-zi%2Fhealth?ts=2026-08-24T08%3A00%3A17Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "uuapi-net",
+   "name": "UU API - AI API Gateway",
+   "endpoint": "https://uuapi.net/v1",
+   "homepage": "https://uuapi.net",
+   "category": "候选中转",
+   "region": "unknown",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 1.0,
+    "detection_count": 2,
+    "latest_detected_at": "2026-07-11T09:30:00"
+   },
+   "evidence": "evidence://detection/l1_probe%2Fuuapi-net%2FL1?ts=2026-07-11T09%3A30%3A00",
+   "prices": {
+    "model_count": 39,
+    "min_input_usd_per_1m": 0.0,
+    "min_output_usd_per_1m": 0.0,
+    "cheapest_input_model": "claude-haiku-4.5"
+   }
+  },
+  {
+   "provider_id": "uglycat",
+   "name": "Uglycat",
+   "endpoint": "https://api.uglycat.cc",
+   "homepage": "https://api.uglycat.cc",
+   "category": "claude-relay",
+   "region": "overseas_only",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9487,
+    "detection_count": 156,
+    "latest_detected_at": "2026-08-24T08:00:18Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fuglycat%2Fhealth?ts=2026-08-24T08%3A00%3A18Z",
+   "prices": {
+    "model_count": 1,
+    "min_input_usd_per_1m": 75.0,
+    "min_output_usd_per_1m": 75.0,
+    "cheapest_input_model": "zai-glm-4.7"
+   }
+  },
+  {
+   "provider_id": "uiuiapi",
+   "name": "Uiuiapi",
+   "endpoint": "https://uiuiapi.com",
+   "homepage": "https://uiuiapi.com",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9549,
+    "detection_count": 288,
+    "latest_detected_at": "2026-08-24T08:00:23Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fuiuiapi%2Fhealth?ts=2026-08-24T08%3A00%3A23Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "uniapi",
+   "name": "Uniapi",
+   "endpoint": "https://uniapi.ai",
+   "homepage": "https://uniapi.ai",
+   "category": "claude-relay",
+   "region": "overseas_only",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9439,
+    "detection_count": 303,
+    "latest_detected_at": "2026-08-24T08:00:25Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Funiapi%2Fhealth?ts=2026-08-24T08%3A00%3A25Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "v3-cm",
+   "name": "V3 Cm",
+   "endpoint": "https://api.v3.cm",
+   "homepage": "https://api.v3.cm",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "low",
+    "success_rate": 0.608,
+    "detection_count": 125,
+    "latest_detected_at": "2026-08-13T08:01:25Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fv3-cm%2Fhealth?ts=2026-08-13T08%3A01%3A25Z",
+   "prices": {
+    "model_count": 330,
+    "min_input_usd_per_1m": 0.02,
+    "min_output_usd_per_1m": 0.02,
+    "cheapest_input_model": "glm-4.5-flash"
+   }
+  },
+  {
+   "provider_id": "api-vectorengine-ai",
+   "name": "VectorEngine AI",
+   "endpoint": "https://api.vectorengine.ai",
+   "homepage": "https://api.vectorengine.ai/v1",
+   "category": "relay",
+   "region": "asia",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "medium",
+    "effective_verified": "medium",
+    "success_rate": 0.8454,
+    "detection_count": 304,
+    "latest_detected_at": "2026-08-11T08:00:44Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fvectorengine%2FL1?ts=2026-06-26T18%3A02%3A35Z",
+   "prices": {
+    "model_count": 413,
+    "min_input_usd_per_1m": 0.01,
+    "min_output_usd_per_1m": 0.01,
+    "cheapest_input_model": "netease-youdao/bce-reranker-base_v1"
+   }
+  },
+  {
+   "provider_id": "vectorengine",
+   "name": "VectorEngine AI",
+   "endpoint": "https://api.vectorengine.ai/v1",
+   "homepage": "https://api.vectorengine.ai",
+   "category": "候选晋升",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "low",
+    "success_rate": 0.0,
+    "detection_count": 8,
+    "latest_detected_at": "2026-08-13T08:00:43Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fvectorengine%2Fhealth?ts=2026-08-13T08%3A00%3A43Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "vip-undyingapi",
+   "name": "Vip Undyingapi",
+   "endpoint": "https://vip.undyingapi.com",
+   "homepage": "https://vip.undyingapi.com",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9065,
+    "detection_count": 310,
+    "latest_detected_at": "2026-08-24T08:00:26Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fvip-undyingapi%2Fhealth?ts=2026-08-24T08%3A00%3A26Z",
+   "prices": {
+    "model_count": 76,
+    "min_input_usd_per_1m": 0.07,
+    "min_output_usd_per_1m": 0.4,
+    "cheapest_input_model": "gemini-3-flash-preview"
+   }
+  },
+  {
+   "provider_id": "wolfai",
+   "name": "Wolfai",
+   "endpoint": "https://wolfai.top",
+   "homepage": "https://wolfai.top",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.953,
+    "detection_count": 319,
+    "latest_detected_at": "2026-08-24T08:00:23Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fwolfai%2Fhealth?ts=2026-08-24T08%3A00%3A23Z",
+   "prices": {
+    "model_count": 118,
+    "min_input_usd_per_1m": 0.02,
+    "min_output_usd_per_1m": 0.02,
+    "cheapest_input_model": "text-embedding-3-small"
+   }
+  },
+  {
+   "provider_id": "wzw-de5",
+   "name": "Wzw De5",
+   "endpoint": "https://wzw.de5.net",
+   "homepage": "https://wzw.de5.net",
+   "category": "claude-relay",
+   "region": "overseas_only",
+   "service_status": "dead",
+   "network_status": "unknown",
+   "active": false,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "unavailable",
+    "success_rate": 0.0448,
+    "detection_count": 290,
+    "latest_detected_at": "2026-08-22T00:22:04Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fwzw-de5%2FL1?ts=2026-08-22T00%3A22%3A04Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "wzw-pp-ua",
+   "name": "Wzw Pp Ua",
+   "endpoint": "https://wzw.pp.ua",
+   "homepage": "https://wzw.pp.ua",
+   "category": "claude-relay",
+   "region": "overseas_only",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9524,
+    "detection_count": 336,
+    "latest_detected_at": "2026-08-24T08:00:25Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fwzw-pp-ua%2Fhealth?ts=2026-08-24T08%3A00%3A25Z",
+   "prices": {
+    "model_count": 50,
+    "min_input_usd_per_1m": 0.04,
+    "min_output_usd_per_1m": 0.15,
+    "cheapest_input_model": "openai/gpt-oss-20b"
+   }
+  },
+  {
+   "provider_id": "xairouter",
+   "name": "Xairouter",
+   "endpoint": "https://xairouter.com",
+   "homepage": "https://xairouter.com",
+   "category": "claude-relay",
+   "region": "overseas_only",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9477,
+    "detection_count": 344,
+    "latest_detected_at": "2026-08-24T08:00:25Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fxairouter%2Fhealth?ts=2026-08-24T08%3A00%3A25Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "xaixapi",
+   "name": "Xaixapi",
+   "endpoint": "https://xaixapi.com",
+   "homepage": "https://xaixapi.com",
+   "category": "claude-relay",
+   "region": "overseas_only",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9513,
+    "detection_count": 349,
+    "latest_detected_at": "2026-08-24T08:00:25Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fxaixapi%2Fhealth?ts=2026-08-24T08%3A00%3A25Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "xiaohuapi",
+   "name": "Xiaohuapi",
+   "endpoint": "https://xiaohuapi.site",
+   "homepage": "https://xiaohuapi.site",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9605,
+    "detection_count": 354,
+    "latest_detected_at": "2026-08-24T08:00:47Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fxiaohuapi%2Fhealth?ts=2026-08-24T08%3A00%3A47Z",
+   "prices": {
+    "model_count": 273,
+    "min_input_usd_per_1m": 0.02,
+    "min_output_usd_per_1m": 0.02,
+    "cheapest_input_model": "text-embedding-3-small"
+   }
+  },
+  {
+   "provider_id": "xiaohumini",
+   "name": "Xiaohumini",
+   "endpoint": "https://xiaohumini.site",
+   "homepage": "https://xiaohumini.site",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9586,
+    "detection_count": 362,
+    "latest_detected_at": "2026-08-24T08:00:25Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fxiaohumini%2Fhealth?ts=2026-08-24T08%3A00%3A25Z",
+   "prices": {
+    "model_count": 317,
+    "min_input_usd_per_1m": 0.01,
+    "min_output_usd_per_1m": 0.01,
+    "cheapest_input_model": "BAAI/bge-reranker-v2-m3"
+   }
+  },
+  {
+   "provider_id": "xty",
+   "name": "Xty",
+   "endpoint": "https://api.xty.app",
+   "homepage": "https://api.xty.app",
+   "category": "claude-relay",
+   "region": "overseas_only",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9618,
+    "detection_count": 157,
+    "latest_detected_at": "2026-08-24T08:00:18Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fxty%2Fhealth?ts=2026-08-24T08%3A00%3A18Z",
+   "prices": {
+    "model_count": 371,
+    "min_input_usd_per_1m": 0.1,
+    "min_output_usd_per_1m": 0.2,
+    "cheapest_input_model": "gemini-2.5-flash-lite"
+   }
+  },
+  {
+   "provider_id": "yunwu-ai",
+   "name": "YUNWU.AI (云雾 API) - 高速、稳定的 AI API 中转",
+   "endpoint": "https://yunwu.ai/v1",
+   "homepage": "https://yunwu.ai",
+   "category": "候选中转",
+   "region": "unknown",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "low",
+    "success_rate": 0.6655,
+    "detection_count": 284,
+    "latest_detected_at": "2026-08-11T08:01:30Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fyunwu-ai%2Fhealth?ts=2026-08-11T08%3A01%3A30Z",
+   "prices": {
+    "model_count": 329,
+    "min_input_usd_per_1m": 0.01,
+    "min_output_usd_per_1m": 0.01,
+    "cheapest_input_model": "BAAI/bge-reranker-v2-m3"
+   }
+  },
+  {
+   "provider_id": "yansd666",
+   "name": "Yansd666",
+   "endpoint": "https://yansd666.com",
+   "homepage": "https://yansd666.com",
+   "category": "claude-relay",
+   "region": "overseas_only",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9598,
+    "detection_count": 373,
+    "latest_detected_at": "2026-08-24T08:00:27Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fyansd666%2Fhealth?ts=2026-08-24T08%3A00%3A27Z",
+   "prices": {
+    "model_count": 317,
+    "min_input_usd_per_1m": 0.01,
+    "min_output_usd_per_1m": 0.01,
+    "cheapest_input_model": "BAAI/bge-reranker-v2-m3"
+   }
+  },
+  {
+   "provider_id": "yuegle",
+   "name": "Yuegle",
+   "endpoint": "https://api.yuegle.com",
+   "homepage": "https://api.yuegle.com",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9172,
+    "detection_count": 157,
+    "latest_detected_at": "2026-08-24T08:00:22Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fyuegle%2Fhealth?ts=2026-08-24T08%3A00%3A22Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "yunwu",
+   "name": "Yunwu",
+   "endpoint": "https://yunwu.ai",
+   "homepage": "https://yunwu.ai",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "low",
+    "success_rate": 0.0,
+    "detection_count": 60,
+    "latest_detected_at": "2026-08-23T18:20:47Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fyunwu%2FL1?ts=2026-08-23T18%3A20%3A47Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "yunwu-zeabur",
+   "name": "Yunwu Zeabur",
+   "endpoint": "https://yunwu.zeabur.app",
+   "homepage": "https://yunwu.zeabur.app",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9615,
+    "detection_count": 416,
+    "latest_detected_at": "2026-08-24T08:00:26Z"
+   },
+   "evidence": "evidence://detection/health_checks%2Fyunwu-zeabur%2Fhealth?ts=2026-08-24T08%3A00%3A26Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "zenmux",
+   "name": "Zenmux",
+   "endpoint": "https://zenmux.ai",
+   "homepage": "https://zenmux.ai",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "low",
+    "success_rate": 0.5786,
+    "detection_count": 401,
+    "latest_detected_at": "2026-08-24T06:20:47Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fzenmux%2FL1?ts=2026-08-24T06%3A20%3A47Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "aiapify-com",
+   "name": "aiapify.com",
+   "endpoint": null,
+   "homepage": "https://aiapify.com",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": null,
+    "effective_verified": null,
+    "success_rate": null,
+    "detection_count": 0,
+    "latest_detected_at": null
+   },
+   "evidence": null,
+   "prices": {
+    "model_count": 8,
+    "min_input_usd_per_1m": 0.75,
+    "min_output_usd_per_1m": 4.5,
+    "cheapest_input_model": "gpt-5.4-mini"
+   }
+  },
+  {
+   "provider_id": "aiberm-com",
+   "name": "aiberm.com",
+   "endpoint": null,
+   "homepage": "https://aiberm.com",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": null,
+    "effective_verified": null,
+    "success_rate": null,
+    "detection_count": 0,
+    "latest_detected_at": null
+   },
+   "evidence": null,
+   "prices": {
+    "model_count": 115,
+    "min_input_usd_per_1m": 0.02,
+    "min_output_usd_per_1m": 0.02,
+    "cheapest_input_model": "openai/text-embedding-3-small"
+   }
+  },
+  {
+   "provider_id": "bobdong-cn",
+   "name": "bobdong.cn",
+   "endpoint": null,
+   "homepage": "https://bobdong.cn",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": null,
+    "effective_verified": null,
+    "success_rate": null,
+    "detection_count": 0,
+    "latest_detected_at": null
+   },
+   "evidence": null,
+   "prices": {
+    "model_count": 51,
+    "min_input_usd_per_1m": 0.02,
+    "min_output_usd_per_1m": 0.02,
+    "cheapest_input_model": "text-embedding-3-small"
+   }
+  },
+  {
+   "provider_id": "buzzai-cc",
+   "name": "buzzai.cc",
+   "endpoint": null,
+   "homepage": "https://buzzai.cc",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": null,
+    "effective_verified": null,
+    "success_rate": null,
+    "detection_count": 0,
+    "latest_detected_at": null
+   },
+   "evidence": null,
+   "prices": {
+    "model_count": 73,
+    "min_input_usd_per_1m": 0.05,
+    "min_output_usd_per_1m": 0.4,
+    "cheapest_input_model": "gpt-5-nano"
+   }
+  },
+  {
+   "provider_id": "callxyq-xyz",
+   "name": "callxyq.xyz",
+   "endpoint": null,
+   "homepage": "https://callxyq.xyz",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": null,
+    "effective_verified": null,
+    "success_rate": null,
+    "detection_count": 0,
+    "latest_detected_at": null
+   },
+   "evidence": null,
+   "prices": {
+    "model_count": 78,
+    "min_input_usd_per_1m": 0.25,
+    "min_output_usd_per_1m": 0.25,
+    "cheapest_input_model": "gemini-3.1-flash-lite-preview"
+   }
+  },
+  {
+   "provider_id": "ccmax20-cc",
+   "name": "ccmax20.cc",
+   "endpoint": null,
+   "homepage": "https://ccmax20.cc",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": null,
+    "effective_verified": null,
+    "success_rate": null,
+    "detection_count": 0,
+    "latest_detected_at": null
+   },
+   "evidence": null,
+   "prices": {
+    "model_count": 10,
+    "min_input_usd_per_1m": 1.0,
+    "min_output_usd_per_1m": 5.0,
+    "cheapest_input_model": "claude-haiku-4-5-20251001"
+   }
+  },
+  {
+   "provider_id": "chintao-cn",
+   "name": "chintao",
+   "endpoint": null,
+   "homepage": "https://chintao.cn",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": null,
+    "effective_verified": null,
+    "success_rate": null,
+    "detection_count": 0,
+    "latest_detected_at": null
+   },
+   "evidence": null,
+   "prices": {
+    "model_count": 47,
+    "min_input_usd_per_1m": 0.3,
+    "min_output_usd_per_1m": 2.5,
+    "cheapest_input_model": "gemini-2.5-flash"
+   }
+  },
+  {
+   "provider_id": "claudecn-top",
+   "name": "claudecn.top",
+   "endpoint": null,
+   "homepage": "https://claudecn.top",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": null,
+    "effective_verified": null,
+    "success_rate": null,
+    "detection_count": 0,
+    "latest_detected_at": null
+   },
+   "evidence": null,
+   "prices": {
+    "model_count": 394,
+    "min_input_usd_per_1m": 0.015,
+    "min_output_usd_per_1m": 0.04,
+    "cheapest_input_model": "qwen3-coder-480b-a35b-instruct"
+   }
+  },
+  {
+   "provider_id": "coderelay-cn",
+   "name": "coderelay.cn",
+   "endpoint": null,
+   "homepage": "https://coderelay.cn",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": null,
+    "effective_verified": null,
+    "success_rate": null,
+    "detection_count": 0,
+    "latest_detected_at": null
+   },
+   "evidence": null,
+   "prices": {
+    "model_count": 89,
+    "min_input_usd_per_1m": 0.08,
+    "min_output_usd_per_1m": 0.252,
+    "cheapest_input_model": "deepseek-v4-flash-0731"
+   }
+  },
+  {
+   "provider_id": "codexopenai-cloud",
+   "name": "codexopenai.cloud",
+   "endpoint": null,
+   "homepage": "https://codexopenai.cloud",
+   "category": "claude-relay",
+   "region": "overseas_only",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": null,
+    "effective_verified": null,
+    "success_rate": null,
+    "detection_count": 0,
+    "latest_detected_at": null
+   },
+   "evidence": null,
+   "prices": {
+    "model_count": 52,
+    "min_input_usd_per_1m": 0.05,
+    "min_output_usd_per_1m": 0.2,
+    "cheapest_input_model": "gemini-3.1-pro-low"
+   }
+  },
+  {
+   "provider_id": "dawclaudecode-com",
+   "name": "dawclaudecode.com",
+   "endpoint": null,
+   "homepage": "https://dawclaudecode.com",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": null,
+    "effective_verified": null,
+    "success_rate": null,
+    "detection_count": 0,
+    "latest_detected_at": null
+   },
+   "evidence": null,
+   "prices": {
+    "model_count": 48,
+    "min_input_usd_per_1m": 0.1,
+    "min_output_usd_per_1m": 0.28,
+    "cheapest_input_model": "gemma-4-31b-it"
+   }
+  },
+  {
+   "provider_id": "easyrouter-io",
+   "name": "easyrouter-io",
+   "endpoint": "https://easyrouter.io/v1",
+   "homepage": "https://easyrouter.io",
+   "category": "候选中转",
+   "region": "unknown",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 1.0,
+    "detection_count": 2,
+    "latest_detected_at": "2026-07-11T09:30:00"
+   },
+   "evidence": "evidence://detection/l1_probe%2Feasyrouter-io%2FL1?ts=2026-07-11T09%3A30%3A00",
+   "prices": {
+    "model_count": 99,
+    "min_input_usd_per_1m": 0.002,
+    "min_output_usd_per_1m": 0.002,
+    "cheapest_input_model": "text-embedding-004"
+   }
+  },
+  {
+   "provider_id": "fishxcode-com",
+   "name": "fishxcode.com",
+   "endpoint": null,
+   "homepage": "https://fishxcode.com",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": null,
+    "effective_verified": null,
+    "success_rate": null,
+    "detection_count": 0,
+    "latest_detected_at": null
+   },
+   "evidence": null,
+   "prices": {
+    "model_count": 271,
+    "min_input_usd_per_1m": 0.03,
+    "min_output_usd_per_1m": 0.06,
+    "cheapest_input_model": "agnes-2.0-flash"
+   }
+  },
+  {
+   "provider_id": "funnyskill-com",
+   "name": "funnyskill.com",
+   "endpoint": null,
+   "homepage": "https://funnyskill.com",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": null,
+    "effective_verified": null,
+    "success_rate": null,
+    "detection_count": 0,
+    "latest_detected_at": null
+   },
+   "evidence": null,
+   "prices": {
+    "model_count": 329,
+    "min_input_usd_per_1m": 0.01,
+    "min_output_usd_per_1m": 0.01,
+    "cheapest_input_model": "BAAI/bge-reranker-v2-m3"
+   }
+  },
+  {
+   "provider_id": "infai-cc",
+   "name": "infai.cc",
+   "endpoint": null,
+   "homepage": "https://infai.cc",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": null,
+    "effective_verified": null,
+    "success_rate": null,
+    "detection_count": 0,
+    "latest_detected_at": null
+   },
+   "evidence": null,
+   "prices": {
+    "model_count": 329,
+    "min_input_usd_per_1m": 0.01,
+    "min_output_usd_per_1m": 0.01,
+    "cheapest_input_model": "BAAI/bge-reranker-v2-m3"
+   }
+  },
+  {
+   "provider_id": "juxingai-top",
+   "name": "juxingai.top",
+   "endpoint": null,
+   "homepage": "https://juxingai.top",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": null,
+    "effective_verified": null,
+    "success_rate": null,
+    "detection_count": 0,
+    "latest_detected_at": null
+   },
+   "evidence": null,
+   "prices": {
+    "model_count": 36,
+    "min_input_usd_per_1m": 0.3,
+    "min_output_usd_per_1m": 2.5,
+    "cheapest_input_model": "gemini-2.5-flash"
+   }
+  },
+  {
+   "provider_id": "linkapi-ai",
+   "name": "linkapi-ai",
+   "endpoint": "https://linkapi.ai/v1",
+   "homepage": "https://linkapi.ai",
+   "category": "候选中转",
+   "region": "unknown",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 1.0,
+    "detection_count": 2,
+    "latest_detected_at": "2026-07-11T09:30:00"
+   },
+   "evidence": "evidence://detection/l1_probe%2Flinkapi-ai%2FL1?ts=2026-07-11T09%3A30%3A00",
+   "prices": {
+    "model_count": 96,
+    "min_input_usd_per_1m": 0.02,
+    "min_output_usd_per_1m": 0.02,
+    "cheapest_input_model": "text-embedding-3-small"
+   }
+  },
+  {
+   "provider_id": "llm-all-pro",
+   "name": "llm-all.pro",
+   "endpoint": null,
+   "homepage": "https://llm-all.pro",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": null,
+    "effective_verified": null,
+    "success_rate": null,
+    "detection_count": 0,
+    "latest_detected_at": null
+   },
+   "evidence": null,
+   "prices": {
+    "model_count": 94,
+    "min_input_usd_per_1m": 0.09,
+    "min_output_usd_per_1m": 0.36,
+    "cheapest_input_model": "gemini-2.5-flash"
+   }
+  },
+  {
+   "provider_id": "minitoken-top",
+   "name": "minitoken.top",
+   "endpoint": null,
+   "homepage": "https://minitoken.top",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": null,
+    "effective_verified": null,
+    "success_rate": null,
+    "detection_count": 0,
+    "latest_detected_at": null
+   },
+   "evidence": null,
+   "prices": {
+    "model_count": 329,
+    "min_input_usd_per_1m": 0.01,
+    "min_output_usd_per_1m": 0.01,
+    "cheapest_input_model": "BAAI/bge-reranker-v2-m3"
+   }
+  },
+  {
+   "provider_id": "mytokenpi-com",
+   "name": "mytokenpi.com",
+   "endpoint": null,
+   "homepage": "https://mytokenpi.com",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": null,
+    "effective_verified": null,
+    "success_rate": null,
+    "detection_count": 0,
+    "latest_detected_at": null
+   },
+   "evidence": null,
+   "prices": {
+    "model_count": 24,
+    "min_input_usd_per_1m": 3.0,
+    "min_output_usd_per_1m": 14.0,
+    "cheapest_input_model": "claude-sonnet-4-5-20250929"
+   }
+  },
+  {
+   "provider_id": "new-050602-xyz",
+   "name": "new.050602.xyz",
+   "endpoint": null,
+   "homepage": "https://new.050602.xyz",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": null,
+    "effective_verified": null,
+    "success_rate": null,
+    "detection_count": 0,
+    "latest_detected_at": null
+   },
+   "evidence": null,
+   "prices": {
+    "model_count": 18,
+    "min_input_usd_per_1m": 0.2,
+    "min_output_usd_per_1m": 1.6,
+    "cheapest_input_model": "gpt-5.6-luna"
+   }
+  },
+  {
+   "provider_id": "nexaxis-ai",
+   "name": "nexaxis.ai",
+   "endpoint": null,
+   "homepage": "https://nexaxis.ai",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": null,
+    "effective_verified": null,
+    "success_rate": null,
+    "detection_count": 0,
+    "latest_detected_at": null
+   },
+   "evidence": null,
+   "prices": {
+    "model_count": 248,
+    "min_input_usd_per_1m": 0.02,
+    "min_output_usd_per_1m": 0.02,
+    "cheapest_input_model": "text-embedding-3-small"
+   }
+  },
+  {
+   "provider_id": "ogog-ai",
+   "name": "ogog.ai",
+   "endpoint": null,
+   "homepage": "https://ogog.ai",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": null,
+    "effective_verified": null,
+    "success_rate": null,
+    "detection_count": 0,
+    "latest_detected_at": null
+   },
+   "evidence": null,
+   "prices": {
+    "model_count": 49,
+    "min_input_usd_per_1m": 0.1,
+    "min_output_usd_per_1m": 0.4,
+    "cheapest_input_model": "gemini-2.5-flash-lite"
+   }
+  },
+  {
+   "provider_id": "qiuqiutoken-com",
+   "name": "qiuqiutoken.com",
+   "endpoint": null,
+   "homepage": "https://qiuqiutoken.com",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": null,
+    "effective_verified": null,
+    "success_rate": null,
+    "detection_count": 0,
+    "latest_detected_at": null
+   },
+   "evidence": null,
+   "prices": {
+    "model_count": 91,
+    "min_input_usd_per_1m": 0.07,
+    "min_output_usd_per_1m": 0.15,
+    "cheapest_input_model": "gemini-3-flash-preview"
+   }
+  },
+  {
+   "provider_id": "right-codes",
+   "name": "right.codes",
+   "endpoint": null,
+   "homepage": "https://www.right.codes",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "low",
+    "success_rate": 0.519,
+    "detection_count": 316,
+    "latest_detected_at": "2026-08-21T18:19:37Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fright-codes%2FL1?ts=2026-08-21T18%3A19%3A37Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "sparkcode-top",
+   "name": "sparkcode.top",
+   "endpoint": null,
+   "homepage": "https://sparkcode.top",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": null,
+    "effective_verified": null,
+    "success_rate": null,
+    "detection_count": 0,
+    "latest_detected_at": null
+   },
+   "evidence": null,
+   "prices": {
+    "model_count": 46,
+    "min_input_usd_per_1m": 0.2,
+    "min_output_usd_per_1m": 0.5,
+    "cheapest_input_model": "gpt-5.6-luna"
+   }
+  },
+  {
+   "provider_id": "subrouter-ai",
+   "name": "subrouter.ai",
+   "endpoint": null,
+   "homepage": "https://subrouter.ai",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": null,
+    "effective_verified": null,
+    "success_rate": null,
+    "detection_count": 0,
+    "latest_detected_at": null
+   },
+   "evidence": null,
+   "prices": {
+    "model_count": 906,
+    "min_input_usd_per_1m": 5.9e-05,
+    "min_output_usd_per_1m": 0.000236,
+    "cheapest_input_model": "Qwen/Qwen3.5-0.8B"
+   }
+  },
+  {
+   "provider_id": "sudobug-top",
+   "name": "sudobug.top",
+   "endpoint": null,
+   "homepage": "https://sudobug.top",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": null,
+    "effective_verified": null,
+    "success_rate": null,
+    "detection_count": 0,
+    "latest_detected_at": null
+   },
+   "evidence": null,
+   "prices": {
+    "model_count": 15,
+    "min_input_usd_per_1m": 0.8,
+    "min_output_usd_per_1m": 5.0,
+    "cheapest_input_model": "gemini-3.1-pro-preview"
+   }
+  },
+  {
+   "provider_id": "sudocode-chat",
+   "name": "sudocode.chat",
+   "endpoint": null,
+   "homepage": "https://sudocode.chat",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": null,
+    "effective_verified": null,
+    "success_rate": null,
+    "detection_count": 0,
+    "latest_detected_at": null
+   },
+   "evidence": null,
+   "prices": {
+    "model_count": 18,
+    "min_input_usd_per_1m": 0.04,
+    "min_output_usd_per_1m": 0.24,
+    "cheapest_input_model": "gpt-5.6-luna"
+   }
+  },
+  {
+   "provider_id": "tokeness-cn",
+   "name": "tokeness.cn",
+   "endpoint": null,
+   "homepage": "https://tokeness.cn",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": null,
+    "effective_verified": null,
+    "success_rate": null,
+    "detection_count": 0,
+    "latest_detected_at": null
+   },
+   "evidence": null,
+   "prices": {
+    "model_count": 11,
+    "min_input_usd_per_1m": 0.12,
+    "min_output_usd_per_1m": 0.21,
+    "cheapest_input_model": "deepseek-v4-flash"
+   }
+  },
+  {
+   "provider_id": "us1-tonbirds-com",
+   "name": "tonbirds",
+   "endpoint": "https://us1.tonbirds.com/v1",
+   "homepage": "https://us1.tonbirds.com",
+   "category": "候选中转",
+   "region": "unknown",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 1.0,
+    "detection_count": 2,
+    "latest_detected_at": "2026-07-11T09:30:00"
+   },
+   "evidence": "evidence://detection/l1_probe%2Fus1-tonbirds-com%2FL1?ts=2026-07-11T09%3A30%3A00",
+   "prices": {
+    "model_count": 36,
+    "min_input_usd_per_1m": 1.0,
+    "min_output_usd_per_1m": 5.0,
+    "cheapest_input_model": "gpt-5.6-luna"
+   }
+  },
+  {
+   "provider_id": "traxnode-com",
+   "name": "traxnode.com",
+   "endpoint": null,
+   "homepage": "https://traxnode.com",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": null,
+    "effective_verified": null,
+    "success_rate": null,
+    "detection_count": 0,
+    "latest_detected_at": null
+   },
+   "evidence": null,
+   "prices": {
+    "model_count": 59,
+    "min_input_usd_per_1m": 0.1,
+    "min_output_usd_per_1m": 0.4,
+    "cheapest_input_model": "gemini-2.5-flash-lite"
+   }
+  },
+  {
+   "provider_id": "uocode-com",
+   "name": "uocode.com",
+   "endpoint": null,
+   "homepage": "https://uocode.com",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": null,
+    "effective_verified": null,
+    "success_rate": null,
+    "detection_count": 0,
+    "latest_detected_at": null
+   },
+   "evidence": null,
+   "prices": {
+    "model_count": 31,
+    "min_input_usd_per_1m": 0.15,
+    "min_output_usd_per_1m": 0.6,
+    "cheapest_input_model": "gemini-2.5-flash"
+   }
+  },
+  {
+   "provider_id": "user-tocodex-com",
+   "name": "user.tocodex.com",
+   "endpoint": null,
+   "homepage": "https://user.tocodex.com",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": null,
+    "effective_verified": null,
+    "success_rate": null,
+    "detection_count": 0,
+    "latest_detected_at": null
+   },
+   "evidence": null,
+   "prices": {
+    "model_count": 166,
+    "min_input_usd_per_1m": 0.02,
+    "min_output_usd_per_1m": 0.02,
+    "cheapest_input_model": "text-embedding-3-small"
+   }
+  },
+  {
+   "provider_id": "xai-official",
+   "name": "xAI 官方 (Grok)",
+   "endpoint": "https://api.x.ai/v1",
+   "homepage": "https://x.ai",
+   "category": "AI 平台与工具",
+   "region": "overseas_only",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "low",
+    "effective_verified": "low",
+    "success_rate": 0.4344,
+    "detection_count": 366,
+    "latest_detected_at": "2026-08-13T08:00:40Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fxai-official%2FL1?ts=2026-06-27T06%3A02%3A23Z",
+   "prices": {
+    "model_count": 5,
+    "min_input_usd_per_1m": 1.0,
+    "min_output_usd_per_1m": 2.0,
+    "cheapest_input_model": "grok-build-0.1"
+   }
+  },
+  {
+   "provider_id": "xyc-ai",
+   "name": "xyc.ai",
+   "endpoint": null,
+   "homepage": "https://xyc.ai",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": null,
+    "effective_verified": null,
+    "success_rate": null,
+    "detection_count": 0,
+    "latest_detected_at": null
+   },
+   "evidence": null,
+   "prices": {
+    "model_count": 228,
+    "min_input_usd_per_1m": 0.000146,
+    "min_output_usd_per_1m": 0.000146,
+    "cheapest_input_model": "glm-3-turbo"
+   }
+  },
+  {
+   "provider_id": "zxai-work",
+   "name": "zxai.work",
+   "endpoint": null,
+   "homepage": "https://zxai.work",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": null,
+    "effective_verified": null,
+    "success_rate": null,
+    "detection_count": 0,
+    "latest_detected_at": null
+   },
+   "evidence": null,
+   "prices": {
+    "model_count": 144,
+    "min_input_usd_per_1m": 0.1,
+    "min_output_usd_per_1m": 0.1125,
+    "cheapest_input_model": "gpt-4.1-nano"
+   }
+  },
+  {
+   "provider_id": "zz-aigm99-cn",
+   "name": "zz.aigm99.cn",
+   "endpoint": null,
+   "homepage": "https://zz.aigm99.cn",
+   "category": "claude-relay",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": null,
+    "effective_verified": null,
+    "success_rate": null,
+    "detection_count": 0,
+    "latest_detected_at": null
+   },
+   "evidence": null,
+   "prices": {
+    "model_count": 10,
+    "min_input_usd_per_1m": 1.0,
+    "min_output_usd_per_1m": 5.0,
+    "cheapest_input_model": "claude-haiku-4-5-20251001"
+   }
+  },
+  {
+   "provider_id": "huiyun-asia",
+   "name": "中转站",
+   "endpoint": "https://huiyun.asia/v1",
+   "homepage": "https://huiyun.asia",
+   "category": "候选中转",
+   "region": "unknown",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 1.0,
+    "detection_count": 2,
+    "latest_detected_at": "2026-07-11T09:30:00"
+   },
+   "evidence": "evidence://detection/l1_probe%2Fhuiyun-asia%2FL1?ts=2026-07-11T09%3A30%3A00",
+   "prices": {
+    "model_count": 18,
+    "min_input_usd_per_1m": 0.225,
+    "min_output_usd_per_1m": 0.563,
+    "cheapest_input_model": "grok-4-fast-non-reasoning"
+   }
+  },
+  {
+   "provider_id": "ergouapi-com",
+   "name": "二狗API - AI API 中转与模型管理平台",
+   "endpoint": "https://ergouapi.com/v1",
+   "homepage": "https://ergouapi.com",
+   "category": "候选中转",
+   "region": "unknown",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 1.0,
+    "detection_count": 2,
+    "latest_detected_at": "2026-07-11T09:30:00"
+   },
+   "evidence": "evidence://detection/l1_probe%2Fergouapi-com%2FL1?ts=2026-07-11T09%3A30%3A00",
+   "prices": {
+    "model_count": 16,
+    "min_input_usd_per_1m": 0.525,
+    "min_output_usd_per_1m": 3.15,
+    "cheapest_input_model": "gpt-5.4-mini"
+   }
+  },
+  {
+   "provider_id": "zhizengzeng",
+   "name": "智增增",
+   "endpoint": "https://api.zhizengzeng.com/v1",
+   "homepage": "https://zhizengzeng.com",
+   "category": "中文服务区中转",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9664,
+    "detection_count": 417,
+    "latest_detected_at": "2026-08-24T08:00:10Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fzhizengzeng%2FL1?ts=2026-06-27T06%3A02%3A23Z",
+   "prices": {
+    "model_count": 8,
+    "min_input_usd_per_1m": 0.034,
+    "min_output_usd_per_1m": 0.138,
+    "cheapest_input_model": "claude-3-haiku-20240307"
+   }
+  },
+  {
+   "provider_id": "zhipu",
+   "name": "智谱 AI",
+   "endpoint": "https://open.bigmodel.cn/api/paas/v4",
+   "homepage": "https://bigmodel.cn",
+   "category": "AI 平台与工具",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9844,
+    "detection_count": 449,
+    "latest_detected_at": "2026-08-24T08:00:09Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fzhipu%2FL1?ts=2026-06-27T06%3A02%3A23Z",
+   "prices": {
+    "model_count": 12,
+    "min_input_usd_per_1m": 0.06,
+    "min_output_usd_per_1m": 0.39999999999999997,
+    "cheapest_input_model": "glm-4.7-flash"
+   }
+  },
+  {
+   "provider_id": "lingmou-ai",
+   "name": "灵眸AI",
+   "endpoint": "https://clawapi.fulitimes.com/v1",
+   "homepage": "https://clawapi.fulitimes.com/",
+   "category": "中文服务区中转",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.964,
+    "detection_count": 333,
+    "latest_detected_at": "2026-08-24T08:00:11Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Flingmou-ai%2FL1?ts=2026-06-27T06%3A02%3A27Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "taocode-one",
+   "name": "知豆AI",
+   "endpoint": "https://taocode.one/v1",
+   "homepage": "https://taocode.one",
+   "category": "候选中转",
+   "region": "unknown",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 1.0,
+    "detection_count": 2,
+    "latest_detected_at": "2026-07-11T09:30:00"
+   },
+   "evidence": "evidence://detection/l1_probe%2Ftaocode-one%2FL1?ts=2026-07-11T09%3A30%3A00",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "siliconflow",
+   "name": "硅基流动 SiliconFlow",
+   "endpoint": "https://api.siliconflow.cn/v1",
+   "homepage": "https://siliconflow.cn",
+   "category": "开源平台",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9926,
+    "detection_count": 408,
+    "latest_detected_at": "2026-08-24T08:00:09Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fsiliconflow%2FL1?ts=2026-06-26T18%3A02%3A32Z",
+   "prices": {
+    "model_count": 7,
+    "min_input_usd_per_1m": 0.07,
+    "min_output_usd_per_1m": 0.07,
+    "cheapest_input_model": "qwen-7b-chat"
+   }
+  },
+  {
+   "provider_id": "shenma-zhongzhuan",
+   "name": "神马中转API",
+   "endpoint": "https://api.whatai.cc/v1",
+   "homepage": "https://api.whatai.cc/",
+   "category": "国际服务区中转",
+   "region": "cn_friendly",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9102,
+    "detection_count": 334,
+    "latest_detected_at": "2026-08-24T08:00:13Z"
+   },
+   "evidence": "evidence://detection/lightspeed%2Fshenma-zhongzhuan%2FL1?ts=2026-06-27T06%3A02%3A28Z",
+   "prices": {
+    "model_count": 0,
+    "min_input_usd_per_1m": null,
+    "min_output_usd_per_1m": null,
+    "cheapest_input_model": null
+   }
+  },
+  {
+   "provider_id": "junlanai-com",
+   "name": "钧澜｜聚合大模型服务平台",
+   "endpoint": "https://junlanai.com/v1",
+   "homepage": "https://junlanai.com",
+   "category": "候选中转",
+   "region": "unknown",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 1.0,
+    "detection_count": 2,
+    "latest_detected_at": "2026-07-11T09:30:00"
+   },
+   "evidence": "evidence://detection/l1_probe%2Fjunlanai-com%2FL1?ts=2026-07-11T09%3A30%3A00",
+   "prices": {
+    "model_count": 17,
+    "min_input_usd_per_1m": 0.3,
+    "min_output_usd_per_1m": 2.21,
+    "cheapest_input_model": "codex-auto-review"
+   }
+  },
+  {
+   "provider_id": "linoapi-com",
+   "name": "首页 - Lino API - 企业级统一大模型接口网关 | 支持 De",
+   "endpoint": "https://linoapi.com/v1",
+   "homepage": "https://linoapi.com",
+   "category": "候选中转",
+   "region": "unknown",
+   "service_status": "active",
+   "network_status": "unknown",
+   "active": true,
+   "trust": {
+    "verified": null,
+    "effective_verified": null,
+    "success_rate": null,
+    "detection_count": 0,
+    "latest_detected_at": null
+   },
+   "evidence": null,
+   "prices": {
+    "model_count": 329,
+    "min_input_usd_per_1m": 0.01,
+    "min_output_usd_per_1m": 0.01,
+    "cheapest_input_model": "BAAI/bge-reranker-v2-m3"
+   }
+  }
+ ]
+}
