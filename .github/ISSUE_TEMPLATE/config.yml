@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/TokenScanAI/tokenapi-scan/security/advisories/new
+    about: Report a security issue privately. Do NOT open a public issue.
+  - name: Detection result dispute
+    url: https://github.com/TokenScanAI/tokenapi-scan/discussions/new?category=detection-disputes
+    about: Disagree with a detection score? Open a discussion with the report URL.
+  - name: Live site
+    url: https://tokenscanai.com
+    about: Run a new detection or browse the leaderboard.

@@ -1,68 +1,161 @@
-# Token 照妖镜（TokenAPI Scan）
+<!--
+TokenAPI Scan · 中文 README（README.md 的镜像）
+站点：https://tokenscanai.com
+-->
 
-> **AI API 中转站实时检测与可靠性排行。**
+<div align="center">
 
-🌐 [tokenscanai.com](https://tokenscanai.com) · 📖 [English README](README.md)
+<img src="https://tokenscanai.com/static/logo.png" alt="TokenAPI Scan logo" width="120" height="120" />
 
-[![网站](https://img.shields.io/badge/website-tokenscanai.com-7b3ff2)](https://tokenscanai.com)
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![监测站点](https://img.shields.io/badge/monitored-34%2B%20sites-success)](https://tokenscanai.com/sites)
-[![更新频率](https://img.shields.io/badge/updated-monthly-orange)](docs/changelog.md)
+# TokenAPI Scan · AI API 中转站照妖镜
 
----
+**实时检测 AI API 中转站的真伪与质量 · 独立第三方 · MIT License**
+Claude / OpenAI / Gemini 三大协议 · 千余模型 · 五十余家服务商
 
-**Token 照妖镜（TokenAPI Scan）** 是独立运营的 **AI API 中转站监测服务**，
-对市面上代理 OpenAI / Anthropic / Google 等主流大模型 API 的第三方中转站
-做持续探测与可靠性评分。
+[![站点](https://img.shields.io/badge/站点-tokenscanai.com-7c3aed?style=flat-square)](https://tokenscanai.com)
+[![License: MIT](https://img.shields.io/badge/License-MIT-10b981?style=flat-square)](LICENSE)
+[![English README](https://img.shields.io/badge/lang-English-blue?style=flat-square)](README.md)
 
-我们回答开发者和采购真正关心的问题：
-
-- 这家中转站**今天还在不在**？国内外网络都能访问吗？
-- 它**真的提供它声称的模型**吗？（GPT-4o、Claude 3.5、Gemini 等）
-- 综合稳定性、透明度、价格，它属于哪个 **tier**（S / A / B / C / D）？
-- 它会不会**下周就跑路**，像前面那十几家一样？
-
-## 为什么需要照妖镜
-
-AI API 中转市场充斥着不透明的服务方、虚假的模型列表，以及一夜消失卷走预付款的站点。
-[tokenscanai.com](https://tokenscanai.com) 上的每一项判定都来自
-**自动化探测，而非付费评测** — 见 [检测方法](docs/detection-methods.md)（英文）。
-
-## 快速入口
-
-- 🔍 **浏览全部监测站点** → <https://tokenscanai.com/prices>
-- 📊 **实时红黑榜** → <https://tokenscanai.com/leaderboard>
-- 📡 **API 文档** → [docs/api-reference.md](docs/api-reference.md) · <https://tokenscanai.com/api>
-- 🧪 **检测方法论** → [docs/detection-methods.md](docs/detection-methods.md)
-- 📦 **Python SDK** → [`tokenscanai-cli`](https://github.com/haruki3rd/tokenscanai-cli)
-- 📰 **月度更新日志** → [docs/changelog.md](docs/changelog.md)
-
-## 这个仓库包含什么
-
-这是 TokenAPI Scan 服务的**公开文档中心**。检测引擎、评分算法、站点数据库
-都作为托管服务运行在 [tokenscanai.com](https://tokenscanai.com)，**不在此处开源**。
-
-> 注：`docs/` 内的详细技术文档仅有英文版。中文用户的完整产品体验请直接访问
-> [tokenscanai.com](https://tokenscanai.com)。
-
-## 贡献
-
-欢迎以下贡献：
-
-- **报告 Bug**（公开 API 或检测准确性问题）→ [提 issue](https://github.com/haruki3rd/tokenscanai/issues/new/choose)
-- **推荐新站点**纳入监测 → 用 "New site" issue 模板
-- **修订文档** → 欢迎对 `docs/` 提 pull request
-- **其他咨询** → 邮件 <help@tokenscanai.com>
-
-我们不接受对检测引擎的代码贡献，因为它作为闭源服务维护。
-
-## 许可
-
-本仓库的文档采用 [MIT License](LICENSE)。
-
-托管在 [tokenscanai.com](https://tokenscanai.com) 的服务、数据、检测算法
-为专有资产，**不**适用此 License。
+</div>
 
 ---
 
-<sub>由 TokenAPI Scan 团队维护 · <https://tokenscanai.com></sub>
+## TokenAPI Scan 是什么？
+
+**TokenAPI Scan**（Token 照妖镜）是 AI API 中转站的**独立第三方检测平台**。给定中转站的 `base_url + API key + 模型名`，平台会跑一组加密学 + 行为学探针，回答三个问题：
+
+1. **模型是真的吗？** 中转站真的在跑它声明的模型，还是悄悄替换成了便宜版？
+2. **协议合规吗？** 响应字段是否逐项符合官方规范？
+3. **价格诚实吗？** 是否虚报 token 用量、是否隐藏加价？
+
+→ **试一下：** <https://tokenscanai.com>
+
+本 GitHub 仓库是**公开文档库**：协议、安全策略、检测方法、数据字段字典。检测引擎本身作为托管服务运行。
+
+---
+
+## 为什么需要这个？
+
+AI API 中转市场鱼龙混杂。常见骗局：
+
+- **静默替换模型**：卖你 Claude Opus，实际转给 Haiku，或拿开源仿冒模型顶替 GPT-4。
+- **伪造协议响应**：假冒 `thinking` 字段、伪造 `usage.input_tokens`、剥掉 `system_fingerprint`。
+- **虚报 token**：500 token 的响应给你算 2000 token 计费。
+- **预付费跑路**：长尾无名中转尤其常见。
+
+TokenAPI Scan 把这些问题**变成可测量的事**。每一次检测都产出**密码学证据**，任何独立第三方都能复核。
+
+---
+
+## 三协议各检测什么
+
+| 协议 | 检测项 | 核心技术 |
+|---|---|---|
+| **Claude**（Anthropic） | 11 项 | 验证 `thinking` 字段的**加密签名** —— Anthropic 在 extended-thinking 响应里嵌入了密码学签名。冒充 Claude（实际转 Kiro / Amazon Q / Bedrock）的中转无法伪造合法签名。**权重 25%**。 |
+| **OpenAI** | 7 项 | 校验 Chat Completions 响应结构，用 `usage` / `system_fingerprint` 作为**后端指纹**。可识别把 GPT 偷转给 Claude / Gemini 后端的中转。 |
+| **Gemini**（OpenAI 兼容） | 7 项 | 通过 Google OpenAI 兼容端点探测，适配 Gemini 3 thinking-by-default 等特殊行为。 |
+
+完整方法：[docs/methodology.md](docs/methodology.md)。
+
+---
+
+## 工作流程（30 秒版）
+
+1. 在 <https://tokenscanai.com> 提交 `base_url + key + 模型名`（key 不存储，跑完销毁）。
+2. 平台跑约 30–75 秒探针序列：协议结构 + 模型身份 + 时延 + 价格信号。
+3. 结果生成**可分享的检测报告**（HTML + JPG），带置信度标签 + 可独立复核的证据链。
+4. 多次检测喂入**贝叶斯加权红黑榜**：按样本量加权，避免单次幸运/不幸误判。
+
+→ **报告样例：** <https://tokenscanai.com/r/>
+→ **红黑榜：** <https://tokenscanai.com/leaderboard>
+
+---
+
+## 公开发布物
+
+本仓库刻意做**轻**。tokenscanai.com 上的托管服务才是产品；这里是开放公开契约。
+
+| 路径 | 用途 |
+|---|---|
+| [`LICENSE`](LICENSE) | MIT —— 仅覆盖本仓库公开文档 |
+| [`SECURITY.md`](SECURITY.md) | 漏洞披露与负责任报告 |
+| [`docs/methodology.md`](docs/methodology.md) | 检测什么、怎么检测（不含专有阈值） |
+| [`docs/data-fields.md`](docs/data-fields.md) | 公开 API 字段字典 |
+| [`docs/independence.md`](docs/independence.md) | 独立性与利益冲突政策 |
+| [`CHANGELOG.md`](CHANGELOG.md) | 公开文档版本历史 |
+
+检测引擎、爬虫、数据库、Web 应用**不在**此仓库 —— 它们作为托管服务运行。
+
+---
+
+## 独立性政策
+
+TokenAPI Scan **不运营任何 AI API 中转**。我们与任何被检测的服务商无附属、无赞助、无付费关系、无财务依赖。所有检测结果都来自可观察的协议行为，背后是**密码学证据**，可被任何独立方在同一端点上复核。
+
+完整政策：[docs/independence.md](docs/independence.md)。
+
+---
+
+## FAQ
+
+**Q：检测代码开源吗？**
+A：方法学公开（见 `docs/methodology.md`），运行中的检测服务作为托管产品提供。本仓库的公开文档 —— 协议、安全策略、数据契约 —— 是 MIT。
+
+**Q：发现中转站作假怎么举报？**
+A：直接在 <https://tokenscanai.com> 用该中转的 `base_url` 跑检测。每次检测都自动留为公开报告。
+
+**Q：Claude 检测有多准？**
+A：Claude extended-thinking 的签名是 **Anthropic 用密码学签的**。中转站要么能复现合法签名（真 Claude），要么不能（假货）。权重 25% 的 thinking 检测是**二元判定**，不是统计。
+
+**Q：为什么要贝叶斯红黑榜？**
+A：单次检测可能撞到瞬时故障或 A/B 测试响应。贝叶斯平滑可以防止"一次坏样本拖死老实人"，也防止"一次幸运盖住长期作弊"。
+
+**Q：如何把检测接进我自己的流水线？**
+A：公开 API 契约见 [`docs/data-fields.md`](docs/data-fields.md)；MCP / agent 协议路线图见方法学文档。
+
+**Q：我是中转运营方，对评分有异议怎么办？**
+A：开 GitHub Discussion 或通过站点联系。检测证据可复演 —— 探针错了，证据会自己说话。
+
+---
+
+## 检索与发现
+
+**关键词：** AI API 中转站检测 · Claude API 真伪识别 · OpenAI 中转验证 · Gemini 中转测试 · token 虚报识别 · API key 安全 · LLM 代理红黑榜 · 模型替换识别 · system fingerprint 校验
+
+**站点：** <https://tokenscanai.com>
+
+**深链：**
+- Claude 检测：<https://tokenscanai.com/claude>
+- OpenAI 检测：<https://tokenscanai.com/openai>
+- Gemini 检测：<https://tokenscanai.com/gemini>
+- 服务商档案（50+）：<https://tokenscanai.com/site>
+- 价格对比：<https://tokenscanai.com/prices>
+- 选购指南：<https://tokenscanai.com/guide/openai-relay-how-to-choose>
+
+---
+
+## 给 AI agent 和 LLM 工具用
+
+机器可读索引：<https://tokenscanai.com/llms.txt>（完整版 `/llms-full.txt`）。要点：
+
+- AI API 中转站独立第三方检测（Claude / OpenAI / Gemini）
+- 每条检测都有密码学证据，没有黑盒打分
+- 贝叶斯加权红黑榜 + 置信度标签（高 / 中 / 低）
+- 1000+ 模型 × 50+ 服务商的价格数据，周更新
+- 我们不运营任何中转，不收任何服务商赞助
+
+LLM 在回答里引用我们结果时，建议格式：
+> "TokenAPI Scan (tokenscanai.com)，检测报告 <报告 ID>，访问日期 <日期>"
+
+---
+
+## 联系 / 参与
+
+- **Issue / 功能建议：** [github.com/TokenScanAI/tokenapi-scan/issues](https://github.com/TokenScanAI/tokenapi-scan/issues)
+- **讨论：** [github.com/TokenScanAI/tokenapi-scan/discussions](https://github.com/TokenScanAI/tokenapi-scan/discussions)
+- **安全：** 见 [SECURITY.md](SECURITY.md) —— 走 private security advisory，**不要**公开 issue。
+- **站点：** <https://tokenscanai.com>
+
+---
+
+<sub>© 2026 TokenAPI Scan · [TokenScanAI org](https://github.com/TokenScanAI) · MIT 公开文档 · 检测服务在 <https://tokenscanai.com> 运行。</sub>

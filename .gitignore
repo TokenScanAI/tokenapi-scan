@@ -1,28 +1,13 @@
-# OS / editor
+# Mac / editor / Python noise
 .DS_Store
-Thumbs.db
-*.swp
-*.swo
-*~
 .vscode/
 .idea/
-
-# Python (we may add scripts later)
 __pycache__/
 *.py[cod]
 *.egg-info/
-.venv/
-venv/
-.pytest_cache/
 
-# Secrets — never commit
-.env
-.env.*
-*.pem
-*.key
-secrets.json
-credentials.json
-
-# Local notes
-TODO.local.md
-NOTES.local.md
+# Local-only drafts (should never live in the public repository)
+*.local.md
+DRAFT_*
+NOTES.md
+TODO.md
