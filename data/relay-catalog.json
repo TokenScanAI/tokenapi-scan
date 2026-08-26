@@ -3,7 +3,7 @@
  "dataset": "tokenapi-cn-relay-trust-catalog",
  "title": "TokenAPI Scan CN Relay Trust & Price Catalog",
  "description": "CN AI API relay / 中转站 实时信任(加密验证)+价格目录。可被工具 pull、引用、二次消费。",
- "generated_at": "2026-08-24T06:28:49.128979+00:00",
+ "generated_at": "2026-08-26T00:46:00.089178+00:00",
  "license": "MIT",
  "count": 224,
  "relays": [
@@ -195,11 +195,11 @@
    "trust": {
     "verified": "high",
     "effective_verified": "unavailable",
-    "success_rate": 0.9091,
-    "detection_count": 154,
-    "latest_detected_at": "2026-08-24T08:00:17Z"
+    "success_rate": 0.9136,
+    "detection_count": 162,
+    "latest_detected_at": "2026-08-26T08:00:18Z"
    },
-   "evidence": "evidence://detection/health_checks%2F88code%2Fhealth?ts=2026-08-24T08%3A00%3A17Z",
+   "evidence": "evidence://detection/health_checks%2F88code%2Fhealth?ts=2026-08-26T08%3A00%3A18Z",
    "prices": {
     "model_count": 0,
     "min_input_usd_per_1m": null,
@@ -320,9 +320,9 @@
    "trust": {
     "verified": "low",
     "effective_verified": "unavailable",
-    "success_rate": 0.3926,
-    "detection_count": 298,
-    "latest_detected_at": "2026-08-24T08:00:05Z"
+    "success_rate": 0.3954,
+    "detection_count": 306,
+    "latest_detected_at": "2026-08-26T08:00:07Z"
    },
    "evidence": "evidence://detection/lightspeed%2Fapixyz%2FL1?ts=2026-06-18T18%3A00%3A05Z",
    "prices": {
@@ -345,9 +345,9 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9114,
-    "detection_count": 350,
-    "latest_detected_at": "2026-08-24T08:00:06Z"
+    "success_rate": 0.9134,
+    "detection_count": 358,
+    "latest_detected_at": "2026-08-26T08:00:07Z"
    },
    "evidence": "evidence://detection/lightspeed%2Fapi2d%2FL1?ts=2026-06-26T06%3A02%3A08Z",
    "prices": {
@@ -445,11 +445,11 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9026,
-    "detection_count": 154,
-    "latest_detected_at": "2026-08-24T08:00:16Z"
+    "success_rate": 0.9074,
+    "detection_count": 162,
+    "latest_detected_at": "2026-08-26T08:00:16Z"
    },
-   "evidence": "evidence://detection/health_checks%2Fai-hybgzs%2Fhealth?ts=2026-08-24T08%3A00%3A16Z",
+   "evidence": "evidence://detection/health_checks%2Fai-hybgzs%2Fhealth?ts=2026-08-26T08%3A00%3A16Z",
    "prices": {
     "model_count": 0,
     "min_input_usd_per_1m": null,
@@ -670,13 +670,13 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9424,
-    "detection_count": 347,
-    "latest_detected_at": "2026-08-24T08:00:06Z"
+    "success_rate": 0.9437,
+    "detection_count": 355,
+    "latest_detected_at": "2026-08-26T08:00:06Z"
    },
    "evidence": "evidence://detection/lightspeed%2Fanthropic-cn%2FL1?ts=2026-06-26T06%3A02%3A04Z",
    "prices": {
-    "model_count": 26,
+    "model_count": 28,
     "min_input_usd_per_1m": 0.25,
     "min_output_usd_per_1m": 1.25,
     "cheapest_input_model": "claude-3-haiku"
@@ -720,9 +720,9 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9551,
-    "detection_count": 379,
-    "latest_detected_at": "2026-08-24T08:00:09Z"
+    "success_rate": 0.9561,
+    "detection_count": 387,
+    "latest_detected_at": "2026-08-26T08:00:10Z"
    },
    "evidence": "evidence://detection/lightspeed%2Fanyscale%2FL1?ts=2026-06-26T06%3A02%3A06Z",
    "prices": {
@@ -770,11 +770,11 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9051,
-    "detection_count": 158,
-    "latest_detected_at": "2026-08-24T08:00:19Z"
+    "success_rate": 0.9096,
+    "detection_count": 166,
+    "latest_detected_at": "2026-08-26T08:00:19Z"
    },
-   "evidence": "evidence://detection/health_checks%2Fapipro-maynor1024%2Fhealth?ts=2026-08-24T08%3A00%3A19Z",
+   "evidence": "evidence://detection/health_checks%2Fapipro-maynor1024%2Fhealth?ts=2026-08-26T08%3A00%3A19Z",
    "prices": {
     "model_count": 317,
     "min_input_usd_per_1m": 0.01,
@@ -795,9 +795,9 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9646,
-    "detection_count": 339,
-    "latest_detected_at": "2026-08-24T08:00:13Z"
+    "success_rate": 0.9654,
+    "detection_count": 347,
+    "latest_detected_at": "2026-08-26T08:00:13Z"
    },
    "evidence": "evidence://detection/lightspeed%2Fapiyi%2FL1?ts=2026-06-27T06%3A02%3A30Z",
    "prices": {
@@ -845,11 +845,11 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9051,
-    "detection_count": 158,
-    "latest_detected_at": "2026-08-24T08:00:20Z"
+    "success_rate": 0.9096,
+    "detection_count": 166,
+    "latest_detected_at": "2026-08-26T08:00:21Z"
    },
-   "evidence": "evidence://detection/health_checks%2Fb4u-qzz%2Fhealth?ts=2026-08-24T08%3A00%3A20Z",
+   "evidence": "evidence://detection/health_checks%2Fb4u-qzz%2Fhealth?ts=2026-08-26T08%3A00%3A21Z",
    "prices": {
     "model_count": 0,
     "min_input_usd_per_1m": null,
@@ -895,11 +895,11 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9221,
-    "detection_count": 154,
-    "latest_detected_at": "2026-08-24T08:00:14Z"
+    "success_rate": 0.9259,
+    "detection_count": 162,
+    "latest_detected_at": "2026-08-26T08:00:14Z"
    },
-   "evidence": "evidence://detection/health_checks%2Fbianxie%2Fhealth?ts=2026-08-24T08%3A00%3A14Z",
+   "evidence": "evidence://detection/health_checks%2Fbianxie%2Fhealth?ts=2026-08-26T08%3A00%3A14Z",
    "prices": {
     "model_count": 342,
     "min_input_usd_per_1m": 0.02,
@@ -920,11 +920,11 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9351,
-    "detection_count": 154,
-    "latest_detected_at": "2026-08-24T08:00:17Z"
+    "success_rate": 0.9383,
+    "detection_count": 162,
+    "latest_detected_at": "2026-08-26T08:00:17Z"
    },
-   "evidence": "evidence://detection/health_checks%2Fbltcy%2Fhealth?ts=2026-08-24T08%3A00%3A17Z",
+   "evidence": "evidence://detection/health_checks%2Fbltcy%2Fhealth?ts=2026-08-26T08%3A00%3A17Z",
    "prices": {
     "model_count": 687,
     "min_input_usd_per_1m": 0.0022,
@@ -945,9 +945,9 @@
    "trust": {
     "verified": "low",
     "effective_verified": "low",
-    "success_rate": 0.6527,
-    "detection_count": 357,
-    "latest_detected_at": "2026-08-24T08:00:20Z"
+    "success_rate": 0.6493,
+    "detection_count": 365,
+    "latest_detected_at": "2026-08-26T08:00:21Z"
    },
    "evidence": "evidence://detection/lightspeed%2Fchatanywhere%2FL1?ts=2026-06-26T06%3A02%3A08Z",
    "prices": {
@@ -970,11 +970,11 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9937,
-    "detection_count": 159,
-    "latest_detected_at": "2026-08-24T08:00:18Z"
+    "success_rate": 0.994,
+    "detection_count": 167,
+    "latest_detected_at": "2026-08-26T08:00:19Z"
    },
-   "evidence": "evidence://detection/health_checks%2Fclauddy%2Fhealth?ts=2026-08-24T08%3A00%3A18Z",
+   "evidence": "evidence://detection/health_checks%2Fclauddy%2Fhealth?ts=2026-08-26T08%3A00%3A19Z",
    "prices": {
     "model_count": 55,
     "min_input_usd_per_1m": 0.1,
@@ -1120,11 +1120,11 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9691,
-    "detection_count": 162,
-    "latest_detected_at": "2026-08-24T08:00:20Z"
+    "success_rate": 0.9706,
+    "detection_count": 170,
+    "latest_detected_at": "2026-08-26T08:00:20Z"
    },
-   "evidence": "evidence://detection/health_checks%2Fco-yes%2Fhealth?ts=2026-08-24T08%3A00%3A20Z",
+   "evidence": "evidence://detection/health_checks%2Fco-yes%2Fhealth?ts=2026-08-26T08%3A00%3A20Z",
    "prices": {
     "model_count": 0,
     "min_input_usd_per_1m": null,
@@ -1145,11 +1145,11 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9198,
-    "detection_count": 162,
-    "latest_detected_at": "2026-08-24T08:00:18Z"
+    "success_rate": 0.9235,
+    "detection_count": 170,
+    "latest_detected_at": "2026-08-26T08:00:19Z"
    },
-   "evidence": "evidence://detection/health_checks%2Fcode-wenwen-ai%2Fhealth?ts=2026-08-24T08%3A00%3A18Z",
+   "evidence": "evidence://detection/health_checks%2Fcode-wenwen-ai%2Fhealth?ts=2026-08-26T08%3A00%3A19Z",
    "prices": {
     "model_count": 0,
     "min_input_usd_per_1m": null,
@@ -1170,11 +1170,11 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9938,
-    "detection_count": 162,
-    "latest_detected_at": "2026-08-24T08:00:19Z"
+    "success_rate": 0.9941,
+    "detection_count": 170,
+    "latest_detected_at": "2026-08-26T08:00:19Z"
    },
-   "evidence": "evidence://detection/health_checks%2Fcode-x-aio%2Fhealth?ts=2026-08-24T08%3A00%3A19Z",
+   "evidence": "evidence://detection/health_checks%2Fcode-x-aio%2Fhealth?ts=2026-08-26T08%3A00%3A19Z",
    "prices": {
     "model_count": 0,
     "min_input_usd_per_1m": null,
@@ -1220,9 +1220,9 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.952,
-    "detection_count": 354,
-    "latest_detected_at": "2026-08-24T08:00:09Z"
+    "success_rate": 0.953,
+    "detection_count": 362,
+    "latest_detected_at": "2026-08-26T08:00:09Z"
    },
    "evidence": "evidence://detection/lightspeed%2Fcohere%2FL1?ts=2026-06-26T06%3A02%3A10Z",
    "prices": {
@@ -1270,11 +1270,11 @@
    "trust": {
     "verified": "medium",
     "effective_verified": "medium",
-    "success_rate": 0.8701,
-    "detection_count": 154,
-    "latest_detected_at": "2026-08-24T08:00:17Z"
+    "success_rate": 0.858,
+    "detection_count": 162,
+    "latest_detected_at": "2026-08-26T08:00:18Z"
    },
-   "evidence": "evidence://detection/health_checks%2Fcpass%2Fhealth?ts=2026-08-24T08%3A00%3A17Z",
+   "evidence": "evidence://detection/health_checks%2Fcpass%2Fhealth?ts=2026-08-26T08%3A00%3A18Z",
    "prices": {
     "model_count": 0,
     "min_input_usd_per_1m": null,
@@ -1295,11 +1295,11 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9455,
-    "detection_count": 165,
-    "latest_detected_at": "2026-08-24T08:00:19Z"
+    "success_rate": 0.948,
+    "detection_count": 173,
+    "latest_detected_at": "2026-08-26T08:00:20Z"
    },
-   "evidence": "evidence://detection/health_checks%2Fcubence%2Fhealth?ts=2026-08-24T08%3A00%3A19Z",
+   "evidence": "evidence://detection/health_checks%2Fcubence%2Fhealth?ts=2026-08-26T08%3A00%3A20Z",
    "prices": {
     "model_count": 0,
     "min_input_usd_per_1m": null,
@@ -1320,9 +1320,9 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9645,
-    "detection_count": 338,
-    "latest_detected_at": "2026-08-24T08:00:13Z"
+    "success_rate": 0.9653,
+    "detection_count": 346,
+    "latest_detected_at": "2026-08-26T08:00:13Z"
    },
    "evidence": "evidence://detection/lightspeed%2Fddshub%2FL1?ts=2026-06-27T06%3A02%3A27Z",
    "prices": {
@@ -1345,9 +1345,9 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.96,
-    "detection_count": 350,
-    "latest_detected_at": "2026-08-24T08:00:11Z"
+    "success_rate": 0.9609,
+    "detection_count": 358,
+    "latest_detected_at": "2026-08-26T08:00:11Z"
    },
    "evidence": "evidence://detection/lightspeed%2Fdeepkey%2FL1?ts=2026-06-27T06%3A02%3A24Z",
    "prices": {
@@ -1370,15 +1370,15 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9744,
-    "detection_count": 391,
-    "latest_detected_at": "2026-08-24T08:00:04Z"
+    "success_rate": 0.9749,
+    "detection_count": 399,
+    "latest_detected_at": "2026-08-26T08:00:04Z"
    },
    "evidence": "evidence://detection/lightspeed%2Fdeepseek%2FL1?ts=2026-06-26T06%3A02%3A10Z",
    "prices": {
-    "model_count": 15,
-    "min_input_usd_per_1m": 0.09,
-    "min_output_usd_per_1m": 0.18,
+    "model_count": 17,
+    "min_input_usd_per_1m": 0.04,
+    "min_output_usd_per_1m": 0.08,
     "cheapest_input_model": "deepseek-v4-flash-0731"
    }
   },
@@ -1470,9 +1470,9 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9575,
-    "detection_count": 353,
-    "latest_detected_at": "2026-08-24T08:00:05Z"
+    "success_rate": 0.9584,
+    "detection_count": 361,
+    "latest_detected_at": "2026-08-26T08:00:06Z"
    },
    "evidence": "evidence://detection/lightspeed%2Fdify%2FL1?ts=2026-06-26T06%3A02%3A11Z",
    "prices": {
@@ -1545,11 +1545,11 @@
    "trust": {
     "verified": "high",
     "effective_verified": "unavailable",
-    "success_rate": 0.9221,
-    "detection_count": 154,
-    "latest_detected_at": "2026-08-24T08:00:14Z"
+    "success_rate": 0.9259,
+    "detection_count": 162,
+    "latest_detected_at": "2026-08-26T08:00:15Z"
    },
-   "evidence": "evidence://detection/health_checks%2Fdreamger%2Fhealth?ts=2026-08-24T08%3A00%3A14Z",
+   "evidence": "evidence://detection/health_checks%2Fdreamger%2Fhealth?ts=2026-08-26T08%3A00%3A15Z",
    "prices": {
     "model_count": 0,
     "min_input_usd_per_1m": null,
@@ -1595,11 +1595,11 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9156,
-    "detection_count": 154,
-    "latest_detected_at": "2026-08-24T08:00:15Z"
+    "success_rate": 0.9198,
+    "detection_count": 162,
+    "latest_detected_at": "2026-08-26T08:00:16Z"
    },
-   "evidence": "evidence://detection/health_checks%2Fexpansion-chat%2Fhealth?ts=2026-08-24T08%3A00%3A15Z",
+   "evidence": "evidence://detection/health_checks%2Fexpansion-chat%2Fhealth?ts=2026-08-26T08%3A00%3A16Z",
    "prices": {
     "model_count": 0,
     "min_input_usd_per_1m": null,
@@ -1620,9 +1620,9 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9632,
-    "detection_count": 353,
-    "latest_detected_at": "2026-08-24T08:00:08Z"
+    "success_rate": 0.964,
+    "detection_count": 361,
+    "latest_detected_at": "2026-08-26T08:00:07Z"
    },
    "evidence": "evidence://detection/lightspeed%2Ffastgpt%2FL1?ts=2026-06-26T06%3A02%3A12Z",
    "prices": {
@@ -1645,13 +1645,13 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9367,
-    "detection_count": 395,
-    "latest_detected_at": "2026-08-24T08:00:07Z"
+    "success_rate": 0.938,
+    "detection_count": 403,
+    "latest_detected_at": "2026-08-26T08:00:07Z"
    },
    "evidence": "evidence://detection/lightspeed%2Ffireworks%2FL1?ts=2026-06-26T06%3A02%3A12Z",
    "prices": {
-    "model_count": 268,
+    "model_count": 278,
     "min_input_usd_per_1m": 0.00013,
     "min_output_usd_per_1m": 0.0,
     "cheapest_input_model": "accounts/fireworks/models/SSD-1B"
@@ -1670,11 +1670,11 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9286,
-    "detection_count": 168,
-    "latest_detected_at": "2026-08-24T08:00:20Z"
+    "success_rate": 0.9318,
+    "detection_count": 176,
+    "latest_detected_at": "2026-08-26T08:00:21Z"
    },
-   "evidence": "evidence://detection/health_checks%2Ffk-hshwk%2Fhealth?ts=2026-08-24T08%3A00%3A20Z",
+   "evidence": "evidence://detection/health_checks%2Ffk-hshwk%2Fhealth?ts=2026-08-26T08%3A00%3A21Z",
    "prices": {
     "model_count": 0,
     "min_input_usd_per_1m": null,
@@ -1695,11 +1695,11 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9226,
-    "detection_count": 168,
-    "latest_detected_at": "2026-08-24T08:00:20Z"
+    "success_rate": 0.9261,
+    "detection_count": 176,
+    "latest_detected_at": "2026-08-26T08:00:21Z"
    },
-   "evidence": "evidence://detection/health_checks%2Fflapcode%2Fhealth?ts=2026-08-24T08%3A00%3A20Z",
+   "evidence": "evidence://detection/health_checks%2Fflapcode%2Fhealth?ts=2026-08-26T08%3A00%3A21Z",
    "prices": {
     "model_count": 0,
     "min_input_usd_per_1m": null,
@@ -1720,9 +1720,9 @@
    "trust": {
     "verified": "low",
     "effective_verified": "unavailable",
-    "success_rate": 0.4286,
-    "detection_count": 301,
-    "latest_detected_at": "2026-08-24T08:00:04Z"
+    "success_rate": 0.4304,
+    "detection_count": 309,
+    "latest_detected_at": "2026-08-26T08:00:05Z"
    },
    "evidence": "evidence://detection/lightspeed%2Fflowise%2FL1?ts=2026-06-18T18%3A00%3A20Z",
    "prices": {
@@ -1743,13 +1743,13 @@
    "network_status": "unknown",
    "active": true,
    "trust": {
-    "verified": "medium",
-    "effective_verified": "medium",
-    "success_rate": 0.8988,
-    "detection_count": 168,
-    "latest_detected_at": "2026-08-24T08:00:22Z"
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9034,
+    "detection_count": 176,
+    "latest_detected_at": "2026-08-26T08:00:23Z"
    },
-   "evidence": "evidence://detection/health_checks%2Ffoxcode-hshwk%2Fhealth?ts=2026-08-24T08%3A00%3A22Z",
+   "evidence": "evidence://detection/health_checks%2Ffoxcode-hshwk%2Fhealth?ts=2026-08-26T08%3A00%3A23Z",
    "prices": {
     "model_count": 0,
     "min_input_usd_per_1m": null,
@@ -1795,11 +1795,11 @@
    "trust": {
     "verified": "medium",
     "effective_verified": "medium",
-    "success_rate": 0.8941,
-    "detection_count": 170,
-    "latest_detected_at": "2026-08-24T08:00:21Z"
+    "success_rate": 0.8989,
+    "detection_count": 178,
+    "latest_detected_at": "2026-08-26T08:00:22Z"
    },
-   "evidence": "evidence://detection/health_checks%2Ffuli-hxi%2Fhealth?ts=2026-08-24T08%3A00%3A21Z",
+   "evidence": "evidence://detection/health_checks%2Ffuli-hxi%2Fhealth?ts=2026-08-26T08%3A00%3A22Z",
    "prices": {
     "model_count": 0,
     "min_input_usd_per_1m": null,
@@ -1820,9 +1820,9 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9716,
-    "detection_count": 387,
-    "latest_detected_at": "2026-08-24T08:00:07Z"
+    "success_rate": 0.9722,
+    "detection_count": 395,
+    "latest_detected_at": "2026-08-26T08:00:08Z"
    },
    "evidence": "evidence://detection/lightspeed%2Fgptgod%2FL1?ts=2026-06-26T06%3A02%3A13Z",
    "prices": {
@@ -1845,9 +1845,9 @@
    "trust": {
     "verified": "low",
     "effective_verified": "unavailable",
-    "success_rate": 0.2989,
-    "detection_count": 348,
-    "latest_detected_at": "2026-08-24T08:00:06Z"
+    "success_rate": 0.3034,
+    "detection_count": 356,
+    "latest_detected_at": "2026-08-26T08:00:07Z"
    },
    "evidence": "evidence://detection/lightspeed%2Fgpt-link%2FL1?ts=2026-06-18T18%3A00%3A31Z",
    "prices": {
@@ -1895,13 +1895,13 @@
    "trust": {
     "verified": "low",
     "effective_verified": "low",
-    "success_rate": 0.5168,
-    "detection_count": 358,
-    "latest_detected_at": "2026-08-24T08:00:20Z"
+    "success_rate": 0.5246,
+    "detection_count": 366,
+    "latest_detected_at": "2026-08-26T08:00:21Z"
    },
    "evidence": "evidence://detection/lightspeed%2Fgoogle-ai-official%2FL1?ts=2026-06-26T06%3A02%3A13Z",
    "prices": {
-    "model_count": 35,
+    "model_count": 37,
     "min_input_usd_per_1m": 0.049999999999999996,
     "min_output_usd_per_1m": 0.09999999999999999,
     "cheapest_input_model": "gemini-2.5-flash-lite:batch"
@@ -1920,11 +1920,11 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9133,
-    "detection_count": 173,
-    "latest_detected_at": "2026-08-24T08:00:20Z"
+    "success_rate": 0.9171,
+    "detection_count": 181,
+    "latest_detected_at": "2026-08-26T08:00:20Z"
    },
-   "evidence": "evidence://detection/health_checks%2Fgpt-zhizengzeng%2Fhealth?ts=2026-08-24T08%3A00%3A20Z",
+   "evidence": "evidence://detection/health_checks%2Fgpt-zhizengzeng%2Fhealth?ts=2026-08-26T08%3A00%3A20Z",
    "prices": {
     "model_count": 0,
     "min_input_usd_per_1m": null,
@@ -1945,11 +1945,11 @@
    "trust": {
     "verified": "low",
     "effective_verified": "unavailable",
-    "success_rate": 0.5086,
-    "detection_count": 175,
-    "latest_detected_at": "2026-08-24T08:00:21Z"
+    "success_rate": 0.5082,
+    "detection_count": 183,
+    "latest_detected_at": "2026-08-26T08:00:26Z"
    },
-   "evidence": "evidence://detection/health_checks%2Fgptkey%2Fhealth?ts=2026-08-24T08%3A00%3A21Z",
+   "evidence": "evidence://detection/health_checks%2Fgptkey%2Fhealth?ts=2026-08-26T08%3A00%3A26Z",
    "prices": {
     "model_count": 0,
     "min_input_usd_per_1m": null,
@@ -1970,9 +1970,9 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9018,
-    "detection_count": 397,
-    "latest_detected_at": "2026-08-24T08:00:08Z"
+    "success_rate": 0.9037,
+    "detection_count": 405,
+    "latest_detected_at": "2026-08-26T08:00:09Z"
    },
    "evidence": "evidence://detection/lightspeed%2Fgroq%2FL1?ts=2026-06-26T06%3A02%3A15Z",
    "prices": {
@@ -2045,11 +2045,11 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9156,
-    "detection_count": 154,
-    "latest_detected_at": "2026-08-24T08:00:15Z"
+    "success_rate": 0.9198,
+    "detection_count": 162,
+    "latest_detected_at": "2026-08-26T08:00:16Z"
    },
-   "evidence": "evidence://detection/health_checks%2Fholdai%2Fhealth?ts=2026-08-24T08%3A00%3A15Z",
+   "evidence": "evidence://detection/health_checks%2Fholdai%2Fhealth?ts=2026-08-26T08%3A00%3A16Z",
    "prices": {
     "model_count": 0,
     "min_input_usd_per_1m": null,
@@ -2120,13 +2120,13 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9481,
-    "detection_count": 154,
-    "latest_detected_at": "2026-08-24T08:00:17Z"
+    "success_rate": 0.9506,
+    "detection_count": 162,
+    "latest_detected_at": "2026-08-26T08:00:17Z"
    },
-   "evidence": "evidence://detection/health_checks%2Fikuncode%2Fhealth?ts=2026-08-24T08%3A00%3A17Z",
+   "evidence": "evidence://detection/health_checks%2Fikuncode%2Fhealth?ts=2026-08-26T08%3A00%3A17Z",
    "prices": {
-    "model_count": 33,
+    "model_count": 34,
     "min_input_usd_per_1m": 0.2,
     "min_output_usd_per_1m": 1.2,
     "cheapest_input_model": "gpt-5.6-luna"
@@ -2270,11 +2270,11 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9297,
-    "detection_count": 185,
-    "latest_detected_at": "2026-08-24T08:00:21Z"
+    "success_rate": 0.9326,
+    "detection_count": 193,
+    "latest_detected_at": "2026-08-26T08:00:22Z"
    },
-   "evidence": "evidence://detection/health_checks%2Fkg-api%2Fhealth?ts=2026-08-24T08%3A00%3A21Z",
+   "evidence": "evidence://detection/health_checks%2Fkg-api%2Fhealth?ts=2026-08-26T08%3A00%3A22Z",
    "prices": {
     "model_count": 687,
     "min_input_usd_per_1m": 0.0022,
@@ -2295,9 +2295,9 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9347,
-    "detection_count": 337,
-    "latest_detected_at": "2026-08-24T08:00:12Z"
+    "success_rate": 0.9362,
+    "detection_count": 345,
+    "latest_detected_at": "2026-08-26T08:00:14Z"
    },
    "evidence": "evidence://detection/lightspeed%2Fkoozhan-api%2FL1?ts=2026-06-27T06%3A02%3A26Z",
    "prices": {
@@ -2320,9 +2320,9 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9582,
-    "detection_count": 335,
-    "latest_detected_at": "2026-08-24T08:00:15Z"
+    "success_rate": 0.9592,
+    "detection_count": 343,
+    "latest_detected_at": "2026-08-26T08:00:15Z"
    },
    "evidence": "evidence://detection/lightspeed%2Flaozhang-ai%2FL1?ts=2026-06-27T06%3A02%3A29Z",
    "prices": {
@@ -2345,11 +2345,11 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9156,
-    "detection_count": 154,
-    "latest_detected_at": "2026-08-24T08:00:16Z"
+    "success_rate": 0.9198,
+    "detection_count": 162,
+    "latest_detected_at": "2026-08-26T08:00:17Z"
    },
-   "evidence": "evidence://detection/health_checks%2Flconai%2Fhealth?ts=2026-08-24T08%3A00%3A16Z",
+   "evidence": "evidence://detection/health_checks%2Flconai%2Fhealth?ts=2026-08-26T08%3A00%3A17Z",
    "prices": {
     "model_count": 0,
     "min_input_usd_per_1m": null,
@@ -2395,9 +2395,9 @@
    "trust": {
     "verified": "high",
     "effective_verified": "unavailable",
-    "success_rate": 0.9062,
-    "detection_count": 320,
-    "latest_detected_at": "2026-08-24T08:00:08Z"
+    "success_rate": 0.9085,
+    "detection_count": 328,
+    "latest_detected_at": "2026-08-26T08:00:09Z"
    },
    "evidence": "evidence://detection/lightspeed%2Flepton%2FL1?ts=2026-06-18T18%3A00%3A33Z",
    "prices": {
@@ -2451,7 +2451,7 @@
    },
    "evidence": "evidence://detection/lightspeed%2Fmistral%2FL1?ts=2026-06-26T06%3A02%3A16Z",
    "prices": {
-    "model_count": 19,
+    "model_count": 20,
     "min_input_usd_per_1m": 0.019000000000000003,
     "min_output_usd_per_1m": 0.03,
     "cheapest_input_model": "mistral-nemo"
@@ -2495,13 +2495,13 @@
    "trust": {
     "verified": "low",
     "effective_verified": "low",
-    "success_rate": 0.6171,
-    "detection_count": 444,
-    "latest_detected_at": "2026-08-24T08:00:06Z"
+    "success_rate": 0.6239,
+    "detection_count": 452,
+    "latest_detected_at": "2026-08-26T08:00:07Z"
    },
    "evidence": "evidence://detection/lightspeed%2Fmodelscope%2FL1?ts=2026-06-26T06%3A02%3A16Z",
    "prices": {
-    "model_count": 18,
+    "model_count": 25,
     "min_input_usd_per_1m": 0.049999999999999996,
     "min_output_usd_per_1m": 0.19999999999999998,
     "cheapest_input_model": "qwen-turbo"
@@ -2546,10 +2546,10 @@
     "verified": "high",
     "effective_verified": "high",
     "success_rate": 1.0,
-    "detection_count": 40,
-    "latest_detected_at": "2026-08-24T08:00:07Z"
+    "detection_count": 48,
+    "latest_detected_at": "2026-08-26T08:00:08Z"
    },
-   "evidence": "evidence://detection/health_checks%2Fmuskapi%2Fhealth?ts=2026-08-24T08%3A00%3A07Z",
+   "evidence": "evidence://detection/health_checks%2Fmuskapi%2Fhealth?ts=2026-08-26T08%3A00%3A08Z",
    "prices": {
     "model_count": 0,
     "min_input_usd_per_1m": null,
@@ -2620,9 +2620,9 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9005,
-    "detection_count": 382,
-    "latest_detected_at": "2026-08-24T08:00:09Z"
+    "success_rate": 0.9026,
+    "detection_count": 390,
+    "latest_detected_at": "2026-08-26T08:00:09Z"
    },
    "evidence": "evidence://detection/lightspeed%2Fnekoapi%2FL1?ts=2026-06-26T06%3A02%3A21Z",
    "prices": {
@@ -2777,9 +2777,9 @@
    "evidence": "evidence://detection/l1_probe%2Fgpt-agent-cc%2FL1?ts=2026-07-11T09%3A30%3A00",
    "prices": {
     "model_count": 72,
-    "min_input_usd_per_1m": 0.6,
-    "min_output_usd_per_1m": 3.0,
-    "cheapest_input_model": "claude-sonnet-4-6"
+    "min_input_usd_per_1m": 1.0,
+    "min_output_usd_per_1m": 0.6,
+    "cheapest_input_model": "MiniMax-M2.7"
    }
   },
   {
@@ -2826,7 +2826,7 @@
    },
    "evidence": "evidence://detection/l1_probe%2Fhemaapi-cc%2FL1?ts=2026-07-11T09%3A30%3A00",
    "prices": {
-    "model_count": 30,
+    "model_count": 31,
     "min_input_usd_per_1m": 0.75,
     "min_output_usd_per_1m": 4.5,
     "cheapest_input_model": "gpt-5.4-mini"
@@ -2976,7 +2976,7 @@
    },
    "evidence": "evidence://detection/l1_probe%2Fsuperapi-buzz%2FL1?ts=2026-07-11T09%3A30%3A00",
    "prices": {
-    "model_count": 190,
+    "model_count": 193,
     "min_input_usd_per_1m": 0.01,
     "min_output_usd_per_1m": 0.01,
     "cheapest_input_model": "qwen3guard"
@@ -3004,7 +3004,7 @@
     "model_count": 134,
     "min_input_usd_per_1m": 0.03,
     "min_output_usd_per_1m": 0.24,
-    "cheapest_input_model": "gpt-5-nano-2025-08-07"
+    "cheapest_input_model": "gpt-5-nano"
    }
   },
   {
@@ -3076,7 +3076,7 @@
    },
    "evidence": null,
    "prices": {
-    "model_count": 53,
+    "model_count": 55,
     "min_input_usd_per_1m": 0.07,
     "min_output_usd_per_1m": 0.34,
     "cheapest_input_model": "gemma-4-26b-a4b-it"
@@ -3095,11 +3095,11 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9337,
-    "detection_count": 196,
-    "latest_detected_at": "2026-08-24T08:00:20Z"
+    "success_rate": 0.9363,
+    "detection_count": 204,
+    "latest_detected_at": "2026-08-26T08:00:21Z"
    },
-   "evidence": "evidence://detection/health_checks%2Fnew-api-u4vr%2Fhealth?ts=2026-08-24T08%3A00%3A20Z",
+   "evidence": "evidence://detection/health_checks%2Fnew-api-u4vr%2Fhealth?ts=2026-08-26T08%3A00%3A21Z",
    "prices": {
     "model_count": 19,
     "min_input_usd_per_1m": 0.3,
@@ -3120,11 +3120,11 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9343,
-    "detection_count": 198,
-    "latest_detected_at": "2026-08-24T08:00:21Z"
+    "success_rate": 0.9369,
+    "detection_count": 206,
+    "latest_detected_at": "2026-08-26T08:00:22Z"
    },
-   "evidence": "evidence://detection/health_checks%2Fnew-xychatai%2Fhealth?ts=2026-08-24T08%3A00%3A21Z",
+   "evidence": "evidence://detection/health_checks%2Fnew-xychatai%2Fhealth?ts=2026-08-26T08%3A00%3A22Z",
    "prices": {
     "model_count": 0,
     "min_input_usd_per_1m": null,
@@ -3145,9 +3145,9 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9095,
-    "detection_count": 420,
-    "latest_detected_at": "2026-08-24T08:00:12Z"
+    "success_rate": 0.9112,
+    "detection_count": 428,
+    "latest_detected_at": "2026-08-26T08:00:11Z"
    },
    "evidence": "evidence://detection/lightspeed%2Fnovita%2FL1?ts=2026-06-26T06%3A02%3A22Z",
    "prices": {
@@ -3170,9 +3170,9 @@
    "trust": {
     "verified": "low",
     "effective_verified": "unavailable",
-    "success_rate": 0.3388,
-    "detection_count": 304,
-    "latest_detected_at": "2026-08-24T08:00:10Z"
+    "success_rate": 0.3429,
+    "detection_count": 312,
+    "latest_detected_at": "2026-08-26T08:00:10Z"
    },
    "evidence": "evidence://detection/lightspeed%2Fokapi%2FL1?ts=2026-06-18T18%3A00%3A37Z",
    "prices": {
@@ -3195,11 +3195,11 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9161,
-    "detection_count": 155,
-    "latest_detected_at": "2026-08-24T08:00:18Z"
+    "success_rate": 0.9202,
+    "detection_count": 163,
+    "latest_detected_at": "2026-08-26T08:00:20Z"
    },
-   "evidence": "evidence://detection/health_checks%2Foaipro%2Fhealth?ts=2026-08-24T08%3A00%3A18Z",
+   "evidence": "evidence://detection/health_checks%2Foaipro%2Fhealth?ts=2026-08-26T08%3A00%3A20Z",
    "prices": {
     "model_count": 0,
     "min_input_usd_per_1m": null,
@@ -3245,11 +3245,11 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9272,
-    "detection_count": 206,
-    "latest_detected_at": "2026-08-24T08:00:23Z"
+    "success_rate": 0.9299,
+    "detection_count": 214,
+    "latest_detected_at": "2026-08-26T08:00:24Z"
    },
-   "evidence": "evidence://detection/health_checks%2Fone-api-bltcy%2Fhealth?ts=2026-08-24T08%3A00%3A23Z",
+   "evidence": "evidence://detection/health_checks%2Fone-api-bltcy%2Fhealth?ts=2026-08-26T08%3A00%3A24Z",
    "prices": {
     "model_count": 687,
     "min_input_usd_per_1m": 0.0022,
@@ -3270,11 +3270,11 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9289,
-    "detection_count": 211,
-    "latest_detected_at": "2026-08-24T08:00:23Z"
+    "success_rate": 0.9315,
+    "detection_count": 219,
+    "latest_detected_at": "2026-08-26T08:00:23Z"
    },
-   "evidence": "evidence://detection/health_checks%2Fone-ocoolai%2Fhealth?ts=2026-08-24T08%3A00%3A23Z",
+   "evidence": "evidence://detection/health_checks%2Fone-ocoolai%2Fhealth?ts=2026-08-26T08%3A00%3A23Z",
    "prices": {
     "model_count": 601,
     "min_input_usd_per_1m": 0.00071,
@@ -3320,16 +3320,16 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9074,
-    "detection_count": 216,
-    "latest_detected_at": "2026-08-24T08:00:26Z"
+    "success_rate": 0.9107,
+    "detection_count": 224,
+    "latest_detected_at": "2026-08-26T08:00:30Z"
    },
-   "evidence": "evidence://detection/health_checks%2Fopen-xiaojingai%2Fhealth?ts=2026-08-24T08%3A00%3A26Z",
+   "evidence": "evidence://detection/health_checks%2Fopen-xiaojingai%2Fhealth?ts=2026-08-26T08%3A00%3A30Z",
    "prices": {
     "model_count": 526,
     "min_input_usd_per_1m": 0.02,
     "min_output_usd_per_1m": 0.0012,
-    "cheapest_input_model": "glm-4.5-flash"
+    "cheapest_input_model": "text-embedding-3-small"
    }
   },
   {
@@ -3345,13 +3345,13 @@
    "trust": {
     "verified": "medium",
     "effective_verified": "medium",
-    "success_rate": 0.8096,
-    "detection_count": 394,
-    "latest_detected_at": "2026-08-24T08:00:25Z"
+    "success_rate": 0.8035,
+    "detection_count": 402,
+    "latest_detected_at": "2026-08-26T08:00:25Z"
    },
    "evidence": "evidence://detection/lightspeed%2Fopenai-official%2FL1?ts=2026-06-26T18%3A02%3A30Z",
    "prices": {
-    "model_count": 82,
+    "model_count": 98,
     "min_input_usd_per_1m": 0.024999999999999998,
     "min_output_usd_per_1m": 0.13,
     "cheapest_input_model": "gpt-5-nano:batch"
@@ -3370,9 +3370,9 @@
    "trust": {
     "verified": "low",
     "effective_verified": "low",
-    "success_rate": 0.5991,
-    "detection_count": 454,
-    "latest_detected_at": "2026-08-24T08:00:12Z"
+    "success_rate": 0.6061,
+    "detection_count": 462,
+    "latest_detected_at": "2026-08-26T08:00:12Z"
    },
    "evidence": "evidence://detection/lightspeed%2Fopenai-hk%2FL1?ts=2026-06-26T18%3A02%3A29Z",
    "prices": {
@@ -3395,13 +3395,13 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9054,
-    "detection_count": 423,
-    "latest_detected_at": "2026-08-24T08:00:10Z"
+    "success_rate": 0.9072,
+    "detection_count": 431,
+    "latest_detected_at": "2026-08-26T08:00:11Z"
    },
    "evidence": "evidence://detection/lightspeed%2Fopenrouter%2FL1?ts=2026-06-26T18%3A02%3A31Z",
    "prices": {
-    "model_count": 395,
+    "model_count": 396,
     "min_input_usd_per_1m": 0.01,
     "min_output_usd_per_1m": 0.03,
     "cheapest_input_model": "ling-2.6-flash"
@@ -3420,11 +3420,11 @@
    "trust": {
     "verified": "low",
     "effective_verified": "unavailable",
-    "success_rate": 0.4706,
-    "detection_count": 85,
-    "latest_detected_at": "2026-08-21T18:19:22Z"
+    "success_rate": 0.4494,
+    "detection_count": 89,
+    "latest_detected_at": "2026-08-26T06:19:24Z"
    },
-   "evidence": "evidence://detection/lightspeed%2Fopenclaude%2FL1?ts=2026-08-21T18%3A19%3A22Z",
+   "evidence": "evidence://detection/lightspeed%2Fopenclaude%2FL1?ts=2026-08-26T06%3A19%3A24Z",
    "prices": {
     "model_count": 0,
     "min_input_usd_per_1m": null,
@@ -3476,10 +3476,10 @@
    },
    "evidence": "evidence://detection/lightspeed%2Fperplexity%2FL1?ts=2026-06-26T18%3A02%3A32Z",
    "prices": {
-    "model_count": 23,
-    "min_input_usd_per_1m": 0.0,
+    "model_count": 29,
+    "min_input_usd_per_1m": 0.004,
     "min_output_usd_per_1m": 0.0,
-    "cheapest_input_model": "pplx-70b-online"
+    "cheapest_input_model": "pplx-embed-v1-0.6b"
    }
   },
   {
@@ -3495,9 +3495,9 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9401,
-    "detection_count": 334,
-    "latest_detected_at": "2026-08-24T08:00:13Z"
+    "success_rate": 0.9415,
+    "detection_count": 342,
+    "latest_detected_at": "2026-08-26T08:00:13Z"
    },
    "evidence": "evidence://detection/lightspeed%2Fpoloapi%2FL1?ts=2026-06-27T06%3A02%3A29Z",
    "prices": {
@@ -3520,11 +3520,11 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9414,
-    "detection_count": 222,
-    "latest_detected_at": "2026-08-24T08:00:22Z"
+    "success_rate": 0.9447,
+    "detection_count": 235,
+    "latest_detected_at": "2026-08-26T08:00:22Z"
    },
-   "evidence": "evidence://detection/health_checks%2Fpoloai%2Fhealth?ts=2026-08-24T08%3A00%3A22Z",
+   "evidence": "evidence://detection/health_checks%2Fpoloai%2Fhealth?ts=2026-08-26T08%3A00%3A22Z",
    "prices": {
     "model_count": 416,
     "min_input_usd_per_1m": 0.02,
@@ -3545,11 +3545,11 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9193,
-    "detection_count": 223,
-    "latest_detected_at": "2026-08-24T08:00:24Z"
+    "success_rate": 0.9247,
+    "detection_count": 239,
+    "latest_detected_at": "2026-08-26T08:00:25Z"
    },
-   "evidence": "evidence://detection/health_checks%2Fprivnode%2Fhealth?ts=2026-08-24T08%3A00%3A24Z",
+   "evidence": "evidence://detection/health_checks%2Fprivnode%2Fhealth?ts=2026-08-26T08%3A00%3A25Z",
    "prices": {
     "model_count": 0,
     "min_input_usd_per_1m": null,
@@ -3570,11 +3570,11 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9207,
-    "detection_count": 227,
-    "latest_detected_at": "2026-08-24T08:00:24Z"
+    "success_rate": 0.9259,
+    "detection_count": 243,
+    "latest_detected_at": "2026-08-26T08:00:24Z"
    },
-   "evidence": "evidence://detection/health_checks%2Fproxyai%2Fhealth?ts=2026-08-24T08%3A00%3A24Z",
+   "evidence": "evidence://detection/health_checks%2Fproxyai%2Fhealth?ts=2026-08-26T08%3A00%3A24Z",
    "prices": {
     "model_count": 0,
     "min_input_usd_per_1m": null,
@@ -3595,11 +3595,11 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9274,
-    "detection_count": 234,
-    "latest_detected_at": "2026-08-24T08:00:23Z"
+    "success_rate": 0.932,
+    "detection_count": 250,
+    "latest_detected_at": "2026-08-26T08:00:24Z"
    },
-   "evidence": "evidence://detection/health_checks%2Fqinzhiai%2Fhealth?ts=2026-08-24T08%3A00%3A23Z",
+   "evidence": "evidence://detection/health_checks%2Fqinzhiai%2Fhealth?ts=2026-08-26T08%3A00%3A24Z",
    "prices": {
     "model_count": 620,
     "min_input_usd_per_1m": 0.005,
@@ -3620,9 +3620,9 @@
    "trust": {
     "verified": "medium",
     "effective_verified": "medium",
-    "success_rate": 0.8324,
-    "detection_count": 346,
-    "latest_detected_at": "2026-08-24T08:00:12Z"
+    "success_rate": 0.8333,
+    "detection_count": 354,
+    "latest_detected_at": "2026-08-26T08:00:12Z"
    },
    "evidence": "evidence://detection/lightspeed%2Frootflowai-hk%2FL1?ts=2026-06-27T06%3A02%3A23Z",
    "prices": {
@@ -3668,13 +3668,13 @@
    "network_status": "unknown",
    "active": true,
    "trust": {
-    "verified": "medium",
-    "effective_verified": "medium",
-    "success_rate": 0.8984,
-    "detection_count": 246,
-    "latest_detected_at": "2026-08-24T08:00:23Z"
+    "verified": "high",
+    "effective_verified": "high",
+    "success_rate": 0.9046,
+    "detection_count": 262,
+    "latest_detected_at": "2026-08-26T08:00:24Z"
    },
-   "evidence": "evidence://detection/health_checks%2Frunanytime-hxi%2Fhealth?ts=2026-08-24T08%3A00%3A23Z",
+   "evidence": "evidence://detection/health_checks%2Frunanytime-hxi%2Fhealth?ts=2026-08-26T08%3A00%3A24Z",
    "prices": {
     "model_count": 0,
     "min_input_usd_per_1m": null,
@@ -3695,11 +3695,11 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9295,
-    "detection_count": 156,
-    "latest_detected_at": "2026-08-24T08:00:17Z"
+    "success_rate": 0.9329,
+    "detection_count": 164,
+    "latest_detected_at": "2026-08-26T08:00:18Z"
    },
-   "evidence": "evidence://detection/health_checks%2Fssopen%2Fhealth?ts=2026-08-24T08%3A00%3A17Z",
+   "evidence": "evidence://detection/health_checks%2Fssopen%2Fhealth?ts=2026-08-26T08%3A00%3A18Z",
    "prices": {
     "model_count": 317,
     "min_input_usd_per_1m": 0.01,
@@ -3720,11 +3720,11 @@
    "trust": {
     "verified": "low",
     "effective_verified": "unavailable",
-    "success_rate": 0.2788,
-    "detection_count": 226,
-    "latest_detected_at": "2026-08-22T00:22:00Z"
+    "success_rate": 0.2716,
+    "detection_count": 232,
+    "latest_detected_at": "2026-08-26T06:19:55Z"
    },
-   "evidence": "evidence://detection/lightspeed%2Fsssaicode%2FL1?ts=2026-08-22T00%3A22%3A00Z",
+   "evidence": "evidence://detection/lightspeed%2Fsssaicode%2FL1?ts=2026-08-26T06%3A19%3A55Z",
    "prices": {
     "model_count": 0,
     "min_input_usd_per_1m": null,
@@ -3745,11 +3745,11 @@
    "trust": {
     "verified": "medium",
     "effective_verified": "medium",
-    "success_rate": 0.8841,
-    "detection_count": 276,
-    "latest_detected_at": "2026-08-24T08:00:43Z"
+    "success_rate": 0.89,
+    "detection_count": 291,
+    "latest_detected_at": "2026-08-26T08:00:45Z"
    },
-   "evidence": "evidence://detection/health_checks%2Fstore-zzyus%2Fhealth?ts=2026-08-24T08%3A00%3A43Z",
+   "evidence": "evidence://detection/health_checks%2Fstore-zzyus%2Fhealth?ts=2026-08-26T08%3A00%3A45Z",
    "prices": {
     "model_count": 0,
     "min_input_usd_per_1m": null,
@@ -3770,9 +3770,9 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9497,
-    "detection_count": 338,
-    "latest_detected_at": "2026-08-24T08:00:11Z"
+    "success_rate": 0.9509,
+    "detection_count": 346,
+    "latest_detected_at": "2026-08-26T08:00:12Z"
    },
    "evidence": "evidence://detection/lightspeed%2Ftimicc%2FL1?ts=2026-06-27T06%3A02%3A27Z",
    "prices": {
@@ -3795,11 +3795,11 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9537,
-    "detection_count": 281,
-    "latest_detected_at": "2026-08-24T08:00:23Z"
+    "success_rate": 0.9565,
+    "detection_count": 299,
+    "latest_detected_at": "2026-08-26T08:00:25Z"
    },
-   "evidence": "evidence://detection/health_checks%2Ftiantianai%2Fhealth?ts=2026-08-24T08%3A00%3A23Z",
+   "evidence": "evidence://detection/health_checks%2Ftiantianai%2Fhealth?ts=2026-08-26T08%3A00%3A25Z",
    "prices": {
     "model_count": 75,
     "min_input_usd_per_1m": 0.2,
@@ -3820,9 +3820,9 @@
    "trust": {
     "verified": "medium",
     "effective_verified": "medium",
-    "success_rate": 0.8866,
-    "detection_count": 432,
-    "latest_detected_at": "2026-08-24T08:00:13Z"
+    "success_rate": 0.8886,
+    "detection_count": 440,
+    "latest_detected_at": "2026-08-26T08:00:12Z"
    },
    "evidence": "evidence://detection/lightspeed%2Ftogether%2FL1?ts=2026-06-26T18%3A02%3A35Z",
    "prices": {
@@ -3845,11 +3845,11 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9167,
-    "detection_count": 156,
-    "latest_detected_at": "2026-08-24T08:00:17Z"
+    "success_rate": 0.9207,
+    "detection_count": 164,
+    "latest_detected_at": "2026-08-26T08:00:18Z"
    },
-   "evidence": "evidence://detection/health_checks%2Ftu-zi%2Fhealth?ts=2026-08-24T08%3A00%3A17Z",
+   "evidence": "evidence://detection/health_checks%2Ftu-zi%2Fhealth?ts=2026-08-26T08%3A00%3A18Z",
    "prices": {
     "model_count": 0,
     "min_input_usd_per_1m": null,
@@ -3895,11 +3895,11 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9487,
-    "detection_count": 156,
-    "latest_detected_at": "2026-08-24T08:00:18Z"
+    "success_rate": 0.9512,
+    "detection_count": 164,
+    "latest_detected_at": "2026-08-26T08:00:19Z"
    },
-   "evidence": "evidence://detection/health_checks%2Fuglycat%2Fhealth?ts=2026-08-24T08%3A00%3A18Z",
+   "evidence": "evidence://detection/health_checks%2Fuglycat%2Fhealth?ts=2026-08-26T08%3A00%3A19Z",
    "prices": {
     "model_count": 1,
     "min_input_usd_per_1m": 75.0,
@@ -3920,11 +3920,11 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9549,
-    "detection_count": 288,
-    "latest_detected_at": "2026-08-24T08:00:23Z"
+    "success_rate": 0.9577,
+    "detection_count": 307,
+    "latest_detected_at": "2026-08-26T08:00:24Z"
    },
-   "evidence": "evidence://detection/health_checks%2Fuiuiapi%2Fhealth?ts=2026-08-24T08%3A00%3A23Z",
+   "evidence": "evidence://detection/health_checks%2Fuiuiapi%2Fhealth?ts=2026-08-26T08%3A00%3A24Z",
    "prices": {
     "model_count": 0,
     "min_input_usd_per_1m": null,
@@ -3945,11 +3945,11 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9439,
-    "detection_count": 303,
-    "latest_detected_at": "2026-08-24T08:00:25Z"
+    "success_rate": 0.947,
+    "detection_count": 321,
+    "latest_detected_at": "2026-08-26T08:00:25Z"
    },
-   "evidence": "evidence://detection/health_checks%2Funiapi%2Fhealth?ts=2026-08-24T08%3A00%3A25Z",
+   "evidence": "evidence://detection/health_checks%2Funiapi%2Fhealth?ts=2026-08-26T08%3A00%3A25Z",
    "prices": {
     "model_count": 0,
     "min_input_usd_per_1m": null,
@@ -4043,13 +4043,13 @@
    "network_status": "unknown",
    "active": true,
    "trust": {
-    "verified": "high",
-    "effective_verified": "high",
-    "success_rate": 0.9065,
-    "detection_count": 310,
-    "latest_detected_at": "2026-08-24T08:00:26Z"
+    "verified": "medium",
+    "effective_verified": "medium",
+    "success_rate": 0.8541,
+    "detection_count": 329,
+    "latest_detected_at": "2026-08-26T08:00:27Z"
    },
-   "evidence": "evidence://detection/health_checks%2Fvip-undyingapi%2Fhealth?ts=2026-08-24T08%3A00%3A26Z",
+   "evidence": "evidence://detection/health_checks%2Fvip-undyingapi%2Fhealth?ts=2026-08-26T08%3A00%3A27Z",
    "prices": {
     "model_count": 76,
     "min_input_usd_per_1m": 0.07,
@@ -4070,11 +4070,11 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.953,
-    "detection_count": 319,
-    "latest_detected_at": "2026-08-24T08:00:23Z"
+    "success_rate": 0.9555,
+    "detection_count": 337,
+    "latest_detected_at": "2026-08-26T08:00:24Z"
    },
-   "evidence": "evidence://detection/health_checks%2Fwolfai%2Fhealth?ts=2026-08-24T08%3A00%3A23Z",
+   "evidence": "evidence://detection/health_checks%2Fwolfai%2Fhealth?ts=2026-08-26T08%3A00%3A24Z",
    "prices": {
     "model_count": 118,
     "min_input_usd_per_1m": 0.02,
@@ -4095,11 +4095,11 @@
    "trust": {
     "verified": "low",
     "effective_verified": "unavailable",
-    "success_rate": 0.0448,
-    "detection_count": 290,
-    "latest_detected_at": "2026-08-22T00:22:04Z"
+    "success_rate": 0.0432,
+    "detection_count": 301,
+    "latest_detected_at": "2026-08-26T06:19:58Z"
    },
-   "evidence": "evidence://detection/lightspeed%2Fwzw-de5%2FL1?ts=2026-08-22T00%3A22%3A04Z",
+   "evidence": "evidence://detection/lightspeed%2Fwzw-de5%2FL1?ts=2026-08-26T06%3A19%3A58Z",
    "prices": {
     "model_count": 0,
     "min_input_usd_per_1m": null,
@@ -4120,11 +4120,11 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9524,
-    "detection_count": 336,
-    "latest_detected_at": "2026-08-24T08:00:25Z"
+    "success_rate": 0.9552,
+    "detection_count": 357,
+    "latest_detected_at": "2026-08-26T08:00:26Z"
    },
-   "evidence": "evidence://detection/health_checks%2Fwzw-pp-ua%2Fhealth?ts=2026-08-24T08%3A00%3A25Z",
+   "evidence": "evidence://detection/health_checks%2Fwzw-pp-ua%2Fhealth?ts=2026-08-26T08%3A00%3A26Z",
    "prices": {
     "model_count": 50,
     "min_input_usd_per_1m": 0.04,
@@ -4145,11 +4145,11 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9477,
-    "detection_count": 344,
-    "latest_detected_at": "2026-08-24T08:00:25Z"
+    "success_rate": 0.9481,
+    "detection_count": 366,
+    "latest_detected_at": "2026-08-26T08:00:26Z"
    },
-   "evidence": "evidence://detection/health_checks%2Fxairouter%2Fhealth?ts=2026-08-24T08%3A00%3A25Z",
+   "evidence": "evidence://detection/health_checks%2Fxairouter%2Fhealth?ts=2026-08-26T08%3A00%3A26Z",
    "prices": {
     "model_count": 0,
     "min_input_usd_per_1m": null,
@@ -4170,11 +4170,11 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9513,
-    "detection_count": 349,
-    "latest_detected_at": "2026-08-24T08:00:25Z"
+    "success_rate": 0.9517,
+    "detection_count": 373,
+    "latest_detected_at": "2026-08-26T08:00:26Z"
    },
-   "evidence": "evidence://detection/health_checks%2Fxaixapi%2Fhealth?ts=2026-08-24T08%3A00%3A25Z",
+   "evidence": "evidence://detection/health_checks%2Fxaixapi%2Fhealth?ts=2026-08-26T08%3A00%3A26Z",
    "prices": {
     "model_count": 0,
     "min_input_usd_per_1m": null,
@@ -4195,11 +4195,11 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9605,
-    "detection_count": 354,
-    "latest_detected_at": "2026-08-24T08:00:47Z"
+    "success_rate": 0.9231,
+    "detection_count": 377,
+    "latest_detected_at": "2026-08-26T08:00:47Z"
    },
-   "evidence": "evidence://detection/health_checks%2Fxiaohuapi%2Fhealth?ts=2026-08-24T08%3A00%3A47Z",
+   "evidence": "evidence://detection/health_checks%2Fxiaohuapi%2Fhealth?ts=2026-08-26T08%3A00%3A47Z",
    "prices": {
     "model_count": 273,
     "min_input_usd_per_1m": 0.02,
@@ -4220,11 +4220,11 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9586,
-    "detection_count": 362,
-    "latest_detected_at": "2026-08-24T08:00:25Z"
+    "success_rate": 0.9611,
+    "detection_count": 386,
+    "latest_detected_at": "2026-08-26T08:00:26Z"
    },
-   "evidence": "evidence://detection/health_checks%2Fxiaohumini%2Fhealth?ts=2026-08-24T08%3A00%3A25Z",
+   "evidence": "evidence://detection/health_checks%2Fxiaohumini%2Fhealth?ts=2026-08-26T08%3A00%3A26Z",
    "prices": {
     "model_count": 317,
     "min_input_usd_per_1m": 0.01,
@@ -4245,11 +4245,11 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9618,
-    "detection_count": 157,
-    "latest_detected_at": "2026-08-24T08:00:18Z"
+    "success_rate": 0.9636,
+    "detection_count": 165,
+    "latest_detected_at": "2026-08-26T08:00:19Z"
    },
-   "evidence": "evidence://detection/health_checks%2Fxty%2Fhealth?ts=2026-08-24T08%3A00%3A18Z",
+   "evidence": "evidence://detection/health_checks%2Fxty%2Fhealth?ts=2026-08-26T08%3A00%3A19Z",
    "prices": {
     "model_count": 371,
     "min_input_usd_per_1m": 0.1,
@@ -4295,11 +4295,11 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9598,
-    "detection_count": 373,
-    "latest_detected_at": "2026-08-24T08:00:27Z"
+    "success_rate": 0.9622,
+    "detection_count": 397,
+    "latest_detected_at": "2026-08-26T08:00:28Z"
    },
-   "evidence": "evidence://detection/health_checks%2Fyansd666%2Fhealth?ts=2026-08-24T08%3A00%3A27Z",
+   "evidence": "evidence://detection/health_checks%2Fyansd666%2Fhealth?ts=2026-08-26T08%3A00%3A28Z",
    "prices": {
     "model_count": 317,
     "min_input_usd_per_1m": 0.01,
@@ -4320,11 +4320,11 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9172,
-    "detection_count": 157,
-    "latest_detected_at": "2026-08-24T08:00:22Z"
+    "success_rate": 0.9212,
+    "detection_count": 165,
+    "latest_detected_at": "2026-08-26T08:00:21Z"
    },
-   "evidence": "evidence://detection/health_checks%2Fyuegle%2Fhealth?ts=2026-08-24T08%3A00%3A22Z",
+   "evidence": "evidence://detection/health_checks%2Fyuegle%2Fhealth?ts=2026-08-26T08%3A00%3A21Z",
    "prices": {
     "model_count": 0,
     "min_input_usd_per_1m": null,
@@ -4346,10 +4346,10 @@
     "verified": "low",
     "effective_verified": "low",
     "success_rate": 0.0,
-    "detection_count": 60,
-    "latest_detected_at": "2026-08-23T18:20:47Z"
+    "detection_count": 76,
+    "latest_detected_at": "2026-08-26T06:20:27Z"
    },
-   "evidence": "evidence://detection/lightspeed%2Fyunwu%2FL1?ts=2026-08-23T18%3A20%3A47Z",
+   "evidence": "evidence://detection/lightspeed%2Fyunwu%2FL1?ts=2026-08-26T06%3A20%3A27Z",
    "prices": {
     "model_count": 0,
     "min_input_usd_per_1m": null,
@@ -4370,11 +4370,11 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9615,
-    "detection_count": 416,
-    "latest_detected_at": "2026-08-24T08:00:26Z"
+    "success_rate": 0.9636,
+    "detection_count": 439,
+    "latest_detected_at": "2026-08-26T08:00:27Z"
    },
-   "evidence": "evidence://detection/health_checks%2Fyunwu-zeabur%2Fhealth?ts=2026-08-24T08%3A00%3A26Z",
+   "evidence": "evidence://detection/health_checks%2Fyunwu-zeabur%2Fhealth?ts=2026-08-26T08%3A00%3A27Z",
    "prices": {
     "model_count": 0,
     "min_input_usd_per_1m": null,
@@ -4395,11 +4395,11 @@
    "trust": {
     "verified": "low",
     "effective_verified": "low",
-    "success_rate": 0.5786,
-    "detection_count": 401,
-    "latest_detected_at": "2026-08-24T06:20:47Z"
+    "success_rate": 0.5564,
+    "detection_count": 417,
+    "latest_detected_at": "2026-08-26T06:20:33Z"
    },
-   "evidence": "evidence://detection/lightspeed%2Fzenmux%2FL1?ts=2026-08-24T06%3A20%3A47Z",
+   "evidence": "evidence://detection/lightspeed%2Fzenmux%2FL1?ts=2026-08-26T06%3A20%3A33Z",
    "prices": {
     "model_count": 0,
     "min_input_usd_per_1m": null,
@@ -4626,7 +4626,7 @@
    },
    "evidence": null,
    "prices": {
-    "model_count": 89,
+    "model_count": 91,
     "min_input_usd_per_1m": 0.08,
     "min_output_usd_per_1m": 0.252,
     "cheapest_input_model": "deepseek-v4-flash-0731"
@@ -4726,7 +4726,7 @@
    },
    "evidence": null,
    "prices": {
-    "model_count": 271,
+    "model_count": 277,
     "min_input_usd_per_1m": 0.03,
     "min_output_usd_per_1m": 0.06,
     "cheapest_input_model": "agnes-2.0-flash"
@@ -5020,11 +5020,11 @@
    "trust": {
     "verified": "low",
     "effective_verified": "low",
-    "success_rate": 0.519,
-    "detection_count": 316,
-    "latest_detected_at": "2026-08-21T18:19:37Z"
+    "success_rate": 0.5093,
+    "detection_count": 322,
+    "latest_detected_at": "2026-08-26T06:19:39Z"
    },
-   "evidence": "evidence://detection/lightspeed%2Fright-codes%2FL1?ts=2026-08-21T18%3A19%3A37Z",
+   "evidence": "evidence://detection/lightspeed%2Fright-codes%2FL1?ts=2026-08-26T06%3A19%3A39Z",
    "prices": {
     "model_count": 0,
     "min_input_usd_per_1m": null,
@@ -5076,9 +5076,9 @@
    },
    "evidence": null,
    "prices": {
-    "model_count": 906,
+    "model_count": 908,
     "min_input_usd_per_1m": 5.9e-05,
-    "min_output_usd_per_1m": 0.000236,
+    "min_output_usd_per_1m": 0.000235,
     "cheapest_input_model": "Qwen/Qwen3.5-0.8B"
    }
   },
@@ -5179,7 +5179,7 @@
     "model_count": 36,
     "min_input_usd_per_1m": 1.0,
     "min_output_usd_per_1m": 5.0,
-    "cheapest_input_model": "gpt-5.6-luna"
+    "cheapest_input_model": "claude-haiku-4-5-20251001"
    }
   },
   {
@@ -5251,7 +5251,7 @@
    },
    "evidence": null,
    "prices": {
-    "model_count": 166,
+    "model_count": 167,
     "min_input_usd_per_1m": 0.02,
     "min_output_usd_per_1m": 0.02,
     "cheapest_input_model": "text-embedding-3-small"
@@ -5276,7 +5276,7 @@
    },
    "evidence": "evidence://detection/lightspeed%2Fxai-official%2FL1?ts=2026-06-27T06%3A02%3A23Z",
    "prices": {
-    "model_count": 5,
+    "model_count": 6,
     "min_input_usd_per_1m": 1.0,
     "min_output_usd_per_1m": 2.0,
     "cheapest_input_model": "grok-build-0.1"
@@ -5420,9 +5420,9 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9664,
-    "detection_count": 417,
-    "latest_detected_at": "2026-08-24T08:00:10Z"
+    "success_rate": 0.9671,
+    "detection_count": 425,
+    "latest_detected_at": "2026-08-26T08:00:10Z"
    },
    "evidence": "evidence://detection/lightspeed%2Fzhizengzeng%2FL1?ts=2026-06-27T06%3A02%3A23Z",
    "prices": {
@@ -5445,13 +5445,13 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9844,
-    "detection_count": 449,
-    "latest_detected_at": "2026-08-24T08:00:09Z"
+    "success_rate": 0.9847,
+    "detection_count": 457,
+    "latest_detected_at": "2026-08-26T08:00:10Z"
    },
    "evidence": "evidence://detection/lightspeed%2Fzhipu%2FL1?ts=2026-06-27T06%3A02%3A23Z",
    "prices": {
-    "model_count": 12,
+    "model_count": 14,
     "min_input_usd_per_1m": 0.06,
     "min_output_usd_per_1m": 0.39999999999999997,
     "cheapest_input_model": "glm-4.7-flash"
@@ -5470,9 +5470,9 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.964,
-    "detection_count": 333,
-    "latest_detected_at": "2026-08-24T08:00:11Z"
+    "success_rate": 0.9648,
+    "detection_count": 341,
+    "latest_detected_at": "2026-08-26T08:00:11Z"
    },
    "evidence": "evidence://detection/lightspeed%2Flingmou-ai%2FL1?ts=2026-06-27T06%3A02%3A27Z",
    "prices": {
@@ -5520,9 +5520,9 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9926,
-    "detection_count": 408,
-    "latest_detected_at": "2026-08-24T08:00:09Z"
+    "success_rate": 0.9928,
+    "detection_count": 416,
+    "latest_detected_at": "2026-08-26T08:00:10Z"
    },
    "evidence": "evidence://detection/lightspeed%2Fsiliconflow%2FL1?ts=2026-06-26T18%3A02%3A32Z",
    "prices": {
@@ -5545,9 +5545,9 @@
    "trust": {
     "verified": "high",
     "effective_verified": "high",
-    "success_rate": 0.9102,
-    "detection_count": 334,
-    "latest_detected_at": "2026-08-24T08:00:13Z"
+    "success_rate": 0.9123,
+    "detection_count": 342,
+    "latest_detected_at": "2026-08-26T08:00:16Z"
    },
    "evidence": "evidence://detection/lightspeed%2Fshenma-zhongzhuan%2FL1?ts=2026-06-27T06%3A02%3A28Z",
    "prices": {
