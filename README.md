@@ -139,7 +139,22 @@ A: Open a GitHub Discussion or contact via the live site. Detection evidence is 
 
 ## For AI agents & LLM tools
 
-A machine-readable index for agents and crawlers lives at <https://tokenscanai.com/llms.txt> (and a fuller version at `/llms-full.txt`). Highlights:
+**Live JSON API (read-only, no auth, no key):**
+
+- `GET https://tokenscanai.com/api/router/candidates?model={model_id}` — per-model routing candidates: real-time price, endpoint, scores, recommended role (primary/backup/watch/avoid) per provider.
+- `GET https://tokenscanai.com/api/trust/provider/{provider_id}` — cryptographic verification trust level (high/medium/low), success rate, evidence handles.
+- `GET https://tokenscanai.com/api/evidence/{provider_id}` — replayable L1 probe evidence (content-addressed sha256).
+- `GET https://tokenscanai.com/data/relay-catalog.json` — full machine-readable catalog of 224 relays with trust levels and lowest prices.
+- `GET https://tokenscanai.com/openapi.json` — OpenAPI schema (31 endpoints). Swagger UI at `/docs`.
+
+**Self-description / discovery entry points:**
+
+- `/.well-known/agent.json` — A2A AgentCard
+- `/.well-known/ai-plugin.json` — plugin manifest
+- `/docs/for-agents` — agent quickstart (endpoint table + curl examples)
+- `/llms.txt` — machine-readable site index for crawlers
+
+A machine-readable index for agents and crawlers lives at <https://tokenscanai.com/llms.txt>. Highlights:
 
 - Independent third-party detection of AI API relays (Claude / OpenAI / Gemini).
 - Cryptographic evidence for every detection result; no opaque scoring.
