@@ -139,6 +139,18 @@ A: Open a GitHub Discussion or contact via the live site. Detection evidence is 
 
 ## For AI agents & LLM tools
 
+### tokenscan CLI (zero-dependency)
+
+```bash
+# One-file stdlib-only client: verify trust, get routing, check prices, pull evidence
+curl -O https://raw.githubusercontent.com/TokenScanAI/tokenapi-scan/main/cli/tokenscan.py
+python3 tokenscan.py verify openrouter
+python3 tokenscan.py route claude-sonnet-5
+python3 tokenscan.py price kimi-k3
+python3 tokenscan.py evidence 8stoken.com
+```
+
+
 **Live JSON API (read-only, no auth, no key):**
 
 - `GET https://tokenscanai.com/api/router/candidates?model={model_id}` — per-model routing candidates: real-time price, endpoint, scores, recommended role (primary/backup/watch/avoid) per provider.
