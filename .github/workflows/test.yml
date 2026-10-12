@@ -1,0 +1,57 @@
+name: Tests
+
+# Run on every push to main / PR. Cheap (no upstream API calls — all
+# detector tests are mocked) so we can always-on green-badge it.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  # Allow manual re-run from the Actions tab — useful when an OS-package
+  # update flakes the build but the code is fine.
+  workflow_dispatch:
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ["3.10", "3.11", "3.12"]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+          # pip cache speeds up CI from ~60s install to ~5s
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev,web]"
+
+      - name: Run pytest
+        # tests/conftest.py points TOKENAPI_JOBS_DIR / WISHLIST at /tmp
+        # so jobs.py module-level mkdir doesn't try to write /opt
+        run: pytest tests/ -v --tb=short
+
+  lint:
+    # Soft check — never blocks main, but we publish ruff results so
+    # contributors see style issues before reviewers do. Add `|| true`
+    # when ruff first runs to avoid breaking initial CI before we've
+    # cleaned up any historical style debt.
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install ruff
+      - run: ruff check src/ web/ tests/ || true

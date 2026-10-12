@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 安全漏洞 (SECURITY)
+    url: https://github.com/TokenScanAI/tokenapi-scan/security/advisories/new
+    about: 安全相关请走 Security Advisory 私密渠道, 不要开公开 issue。详见 SECURITY.md。
+  - name: 一般咨询
+    url: https://tokenscanai.com
+    about: 产品咨询请访问主站。GitHub Issue 仅处理 bug 报告和功能建议。
