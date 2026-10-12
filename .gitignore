@@ -1,28 +1,35 @@
-# OS / editor
-.DS_Store
-Thumbs.db
-*.swp
-*.swo
-*~
-.vscode/
-.idea/
-
-# Python (we may add scripts later)
-__pycache__/
-*.py[cod]
-*.egg-info/
-.venv/
 venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+build/
+dist/
 .pytest_cache/
-
-# Secrets — never commit
 .env
-.env.*
-*.pem
-*.key
-secrets.json
-credentials.json
+.env.local
+.env.bak
+.cache/
+*.log
+*.bak
+.DS_Store
+report*.json
+out/
+tmp/
+web_data/
+<hermes-config>/
+*_backup*
+*.backup
+*.bak_*
+*.bak_pre_*
+node_modules/
+web/static/screenshots/
+web/static/_archive_*/
+_archive_*/
 
-# Local notes
-TODO.local.md
-NOTES.local.md
+# Runtime databases — local data, not tracked
+*.sqlite3
+*.db
+
+# Maintainer-only tools — kept locally, not in public tree
+scripts/push-both.sh
