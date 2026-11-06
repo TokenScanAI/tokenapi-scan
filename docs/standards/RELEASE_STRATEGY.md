@@ -49,7 +49,7 @@
 | **爬虫 / 节点 / 代理** | `<INTERNAL>/` · `<hermes-config>/scripts/tokenapi_probe_candidates.py` · sing-box / clash 配置 | Layer 3 红线 §2.4-2/3 |
 | **可执行 plan / 微信群路由** | `docs/plans/` · `<hermes-config>/` · skill 全集 | 含运维秘密 + 个人偏好,不公开 |
 | **任何 `.env` / API key / db / 备份 tar** | `.env*` · `*.db` · `*.tar.gz` · `*.bak.*` · `*backups/` | 安全红线 |
-| **个人/内网信息** | `192.168.x.x` 内网 IP · `tui_handoff.md` · `$HOME/...` 绝对路径 | 隐私 + 攻击面 |
+| **个人/内网信息** | RFC1918 私网地址 · `tui_handoff.md` · `$HOME/...` 绝对路径 | 隐私 + 攻击面 |
 
 ### 1.3 灰色地带(逐文件人工 review)
 

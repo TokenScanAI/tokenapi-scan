@@ -107,7 +107,7 @@
 ### 资产 9 · 审计 / 备份 / 归档
 - 路径:
   - `web_data/access_logs/`(8 文件 / 9.3 MB) — Web 请求日志
-  - `$HOME/tokenscan_backups/`(L1 外部) — 备份 tar.gz,含 `opt_veridrop_20260626.tar.gz` 883 KB
+  - `$HOME/tokenscan_backups/`(L1 外部) — 备份 tar.gz（2026-06-26 全量备份，883 KB）
   - `web_data/governance/`(snapshot JSON,每日刷新)
   - `web_data/db/backups/`(M0 前两次 tokenapi_db 备份 + M1/M2/M3 前 `$HOME/tokenscan_backups/db_pre_lineage_20260626/`)
 - 治理: 操作型,不参与 SoR 评级

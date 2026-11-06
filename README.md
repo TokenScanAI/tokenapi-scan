@@ -51,7 +51,7 @@ OpenAI / Gemini 没有同等级别的服务端签名机制，验证强度只到*
 ## 检测维度(按协议)
 
 三个协议都按「真伪 / 能力 / 协议」分类组织检测器,各自的杀手锏不同。
-权重分配、子检查细节见 [DESIGN.md](DESIGN.md)。
+权重分配、子检查细节属检测内核内部设计，未随本仓发布；公开的方法学概述见 `docs/methodology.md`。
 
 ### 跨协议加测:长上下文真实性 ⭐
 
@@ -130,66 +130,17 @@ OpenAI / Gemini 没有同等级别的服务端签名机制，验证强度只到*
 
 报告自带永久分享链接 `/r/{id}` 和 JPG 卡片 `/r/{id}.jpg`,可直接发到微信群、知乎、V2EX、Reddit。
 
-### B. 自托管(CLI + Web 服务)
+### B. 命令行客户端（只读查询公开数据）
 
-#### 安装
-
-```bash
-git clone https://github.com/TokenScanAI/tokenapi-scan.git
-cd tokenapi-scan
-python3 -m venv venv
-./venv/bin/pip install -e ".[dev,web]"
-```
-
-#### CLI 用法
+本仓库内置零依赖 CLI 客户端 `cli/tokenscan.py`（纯 Python 标准库），直接查询线上公开数据，无需安装任何依赖：
 
 ```bash
-# 配置中转站凭据
-cp .env.example .env
-nano .env  # 填 ANTHROPIC_BASE_URL / ANTHROPIC_API_KEY / ANTHROPIC_MODEL
-
-# 单次连通性测试(秒级,几乎零成本)
-./venv/bin/relay-detector ping --model claude-haiku-4-5
-
-# 跑完整检测(约 1 分钟,~$0.012)
-./venv/bin/relay-detector detect \
-  --model claude-haiku-4-5 \
-  --mode full \
-  -o out/test.json
-
-# 跟官方基线对比(自动从 data/baselines/ 找)
-./venv/bin/relay-detector compare out/test.json
-```
-
-`compare` 输出长这样:
-
-```
-╭─── 基线对比报告 ───╮
-│ baseline: 100.0    │
-│ relay:    63.1     │
-│ ✗ 严重: 总分 -36.9 │
-╰────────────────────╯
-┏━━━━━━━━━━━━━━┳━━━━━━┳━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━┓
-┃ 项           ┃ relay ┃ Δ   ┃ 差异详情               ┃
-┡━━━━━━━━━━━━━━╇━━━━━━━╇━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━┩
-│ 思维签名验证 │ 0     │-100 │ thinking 块完全没返回  │
-│ PDF 文档识别 │ 50    │ -50 │ 'responded_but_missed' │
-│ 消息标识规范 │ 50    │ -50 │ id 是 UUID + 'tool_1'  │
-└──────────────┴───────┴─────┴────────────────────────┘
-```
-
-| 级别 | 含义 | 典型场景 |
-|---|---|---|
-| **✗ 严重 (critical)** | 几乎确定不是真品 | thinking 块缺失 / PDF 剥离 / tool_use 假 ID |
-| **⚠ 重大 (major)** | 疑似伪装 / 能力降级 | response.model 不匹配 / 用 UUID 替代 msg_ |
-| **▲ 轻微 (minor)** | 能用但有协议偏差 | 1-2 题失败 / CV 偏高 / 1-2 个 issues |
-| **✓ 一致 (ok)** | 跟官方基线一致 | 关键字段全部匹配 |
-
-#### 启动 Web 服务(本地)
-
-```bash
-./venv/bin/uvicorn web.server:app --host 0.0.0.0 --port 8000
-# 浏览器访问 https://tokenscanai.com
+curl -O https://raw.githubusercontent.com/TokenScanAI/tokenapi-scan/main/cli/tokenscan.py
+python3 tokenscan.py verify openrouter      # 服务商信任等级 / 成功率 / 证据句柄
+python3 tokenscan.py route claude-sonnet-5  # 按模型查选路候选（价格 / 评分 / 推荐角色）
+python3 tokenscan.py price kimi-k3          # 全网报价速查
+python3 tokenscan.py evidence 8stoken.com   # 可复演的 L1 探针证据（内容寻址 sha256）
+python3 tokenscan.py meta                   # 服务元信息
 ```
 
 线上版还提供:
@@ -198,119 +149,58 @@ nano .env  # 填 ANTHROPIC_BASE_URL / ANTHROPIC_API_KEY / ANTHROPIC_MODEL
 - `POST /api/detect` 提交检测任务(异步)
 - `/faq` 常见问题(35+ 问答,含 JSON-LD 结构化数据)
 
----
-
-## 三档运行模式
-
-| 模式 | 包含项 | 请求数 | 耗时 | 成本(Haiku) |
-|---|---|---|---|---|
-| `quick` | 5 项核心 | ~6 | ~15s | ~$0.005 |
-| `standard` | 8 项 | ~12 | ~40s | ~$0.012 |
-| `full` | 全部 11 项 | ~13 | ~70s | ~$0.020 |
-
-⚠️ `compare` 命令需要 `full` 模式 — quick / standard 跑出来的报告没有对应基线。
+> **为什么检测引擎不开源？** 检测内核（探针实现、反作弊判据、爬取节点、生产数据）是 Layer 3 闭源资产，按
+> `docs/standards/BRAND_INDEPENDENCE_AND_OSS_POLICY.md` 三层分级**不进入本仓库**。本仓库承载 Layer 1 公开契约：
+> API 规范、数据字典、evidence SDK、schema 迁移、公开数据节点。托管服务（tokenscanai.com）即产品；
+> 每份检测报告都带可复演的加密证据，可独立验证。
 
 ---
 
-## CLI 详细参考
+## 给 AI agent 与 LLM 工具（公开数据入口）
 
-### `detect`
+**Live JSON API（只读、免 auth、免 key）：**
 
-```bash
-relay-detector detect [OPTIONS]
-```
+- `GET https://tokenscanai.com/api/router/candidates?model={model_id}` — 按模型返回选路候选：实时价格、端点、评分、推荐角色（primary/backup/watch/avoid）
+- `GET https://tokenscanai.com/api/trust/provider/{provider_id}` — 加密验证信任等级（high/medium/low）、成功率、证据句柄
+- `GET https://tokenscanai.com/api/evidence/{provider_id}` — 可复演的 L1 探针证据（内容寻址 sha256）
+- `GET https://tokenscanai.com/api/prices` — 全量模型 × 服务商报价
+- `GET https://tokenscanai.com/data/relay-catalog.json` — 机器可读目录：248 家中转站的信任等级 + 最低价（每日刷新）
+- `GET https://tokenscanai.com/openapi.json` — OpenAPI schema（48 端点）；agent 快速上手页见 `/docs/for-agents`
 
-| Flag | 默认 | 说明 |
-|---|---|---|
-| `--base-url` | `$ANTHROPIC_BASE_URL` | 中转站根 URL |
-| `--api-key` | `$ANTHROPIC_API_KEY` | API key |
-| `--model` | `claude-haiku-4-5` | 测试目标模型 |
-| `--mode` | `standard` | `quick` / `standard` / `full` |
-| `--protocol` | 自动 | `anthropic` / `openai` / `gemini` |
-| `--max-concurrent` | `3` | 并发请求数 |
-| `--timeout` | `30` | 单请求超时秒数 |
-| `--output` `-o` | stdout | JSON 报告输出路径 |
+> 稳定契约走 `/api/v1/` 前缀（发布后 12 个月内字段只增不删），规范见 `docs/standards/AGENT_API_CONTRACT.md`。
 
-### `compare`
+**自描述 / 发现入口：**
 
-```bash
-relay-detector compare <relay_report.json> [-b baseline.json] [-o diff.json]
-```
+- `/.well-known/agent.json` — A2A AgentCard
+- `/.well-known/ai-plugin.json` — plugin manifest
+- `/docs/for-agents` — agent 快速上手（端点表 + curl 示例）
+- `/llms.txt`（完整版 `/llms-full.txt`） — 机器可读站点索引
 
-自动从 `data/baselines/{model}_full.json` 找对应基线。
-
-### `ping`
-
-```bash
-relay-detector ping --model claude-haiku-4-5
-```
-
-打印响应字段 + usage + latency,适合快速验证 base_url / api_key 能不能用。
+LLM 在回答里引用我们结果时，建议格式：
+> "TokenAPI Scan (tokenscanai.com)，检测报告 <报告 ID>，访问日期 <日期>"
 
 ---
 
-## 收集官方基线(bench.sh)
-
-工具自带 `bench.sh` 跑官方 Anthropic API 收集"真品参考"。**只在 baseline 缺失或需要刷新时才需要跑**。
-
-```bash
-# 用真官方 API key(不能是中转站 key)
-OFFICIAL_KEY=sk-ant-XXXXX  ./bench.sh -o data/baselines
-
-# 仅跑指定模型
-OFFICIAL_KEY=sk-ant-XXXXX  ./bench.sh --models 'claude-opus-4-7 claude-haiku-4-5'
-```
-
-跑一次成本约 $0.15(4 个模型 × full 模式)。
-
----
-
-## 项目结构
+## 仓库结构
 
 ```
-tokenapi-scan/                  # 项目根目录
-├── README.md                   # 本文档
-├── DESIGN.md                   # 详细技术设计
-├── pyproject.toml              # 依赖 + 包配置
-├── bench.sh                    # 收集官方基线脚本
-├── deploy.sh                   # 部署同步脚本
-├── tokenapi-scan.service       # systemd unit
-│
-├── data/baselines/             # 已验证的官方基线
-│   ├── claude-opus-4-7_full.json
-│   ├── claude-sonnet-4-6_full.json
-│   ├── claude-haiku-4-5_full.json
-│   └── claude-opus-4-6_full.json
-│
-├── src/relay_detector/
-│   ├── cli.py                  # typer CLI: detect / compare / ping
-│   ├── core/                   # 协议无关的框架层
-│   │   ├── detectors_base.py   # ActiveDetector / PassiveDetector 基类
-│   │   ├── runner.py           # 并行调度
-│   │   ├── scorer.py           # 加权评分 + verdict 阈值
-│   │   ├── comparator_framework.py
-│   │   └── models.py           # Protocol/Mode enum、DetectionReport
-│   └── protocols/
-│       ├── anthropic/          # Claude 11 detector
-│       ├── openai/             # GPT 7 detector
-│       └── gemini/             # Gemini 7 detector
-│
-├── web/                        # FastAPI 网页端
-│   ├── server.py               # 路由:/、/claude、/openai、/gemini、/r/{id}、/leaderboard、/faq
-│   ├── jobs.py                 # 任务队列(asyncio Semaphore 限并发 6)
-│   ├── probe.py                # 提交前 GET /v1/models 探活
-│   ├── leaderboard.py          # 中转站红黑榜聚合
-│   ├── image_report.py         # 报告 → JPG 卡片
-│   ├── ratelimit.py            # IP 限速
-│   ├── faq_data.py             # FAQ 内容(含 JSON-LD)
-│   ├── static/                 # CSS / JS / robots.txt / sitemap.xml / llms.txt
-│   └── templates/              # hub / claude / openai / gemini / leaderboard / faq / result
-│
-├── scripts/
-│   ├── build_test_pdf.py       # 生成 PDF 测试文档
-│   └── bai_api_probe.py
-│
-└── tests/                      # pytest 单元测试
+tokenapi-scan/                  # 公开契约仓（Layer 1/2，检测内核不在内）
+├── README.md / README.zh-CN.md # 说明文档
+├── CHANGELOG.md                # 发布物版本历史
+├── LICENSE / SECURITY.md / CONTRIBUTING.md
+├── cli/tokenscan.py            # 零依赖 CLI 客户端（查询公开 API）
+├── data/
+│   ├── relay-catalog.json      # 公开数据节点：248 家中转站（每日刷新）
+│   └── README.md               # 数据节点字段说明
+├── docs/
+│   ├── methodology.md          # 检测什么、怎么检测（不含专有阈值）
+│   ├── data-fields.md          # 公开 API 字段字典
+│   ├── independence.md         # 独立性与利益冲突政策
+│   └── standards/              # 19 篇治理与规范文档（API 契约 / 数据治理 / 发布策略等）
+├── db/                         # schema.sql + 6 个迁移（数据契约）
+├── sdk/evidence_store.py       # 证据存储 SDK
+├── scripts/build_data_catalog.py
+└── tests/                      # evidence SDK 单元测试
 ```
 
 ---
@@ -331,14 +221,16 @@ verdict:
 skip 的检测项不参与分母。OpenAI / Gemini 协议下,任意一项 critical 级 issue(如 usage 字段含异源痕迹)会把 verdict 上限锁在 marginal,即使总分 ≥ 70 也不绿。
 
 ---
+---
 
 ## 隐私与安全
 
 - **API key 不落盘**:只存在内存中的 `Job` 对象里,跑完(成功或失败)立即清空。不写报告 JSON、不写日志、不写磁盘。
 - **报告里 key 脱敏**:显示为 `sk-y7xU••••••0h` 形式。
-- **代码完全开源**:可审计服务端,或直接 clone 部署到自己机器上。
+- **报告可复演**:每份报告附加密证据,任何独立方可对同一端点复跑验证;公开契约、SDK 与数据节点在本仓库可审计。
 - **无追踪 / 无注册**:线上服务不要求注册账号、不写 cookie、不接埋点。
 
+---
 ---
 
 ## 已知 Anthropic API 协议漂移
@@ -355,62 +247,24 @@ skip 的检测项不参与分母。OpenAI / Gemini 协议下,任意一项 critic
 | 6 | Opus 4.7 `effort` 参数应放 `output_config.effort` | 移到正确位置 |
 | 7 | Opus 4.7 streaming 模式 thinking 块不出现(non-stream 正常) | thinking detector 切非流式 |
 
-详见 [DESIGN.md](DESIGN.md)。
+（完整设计文档未随本仓发布。）
 
 ---
-
-## 部署 / 同步
-
-服务器部署示例(Linux + systemd):
-
-```bash
-# 第一次部署
-./deploy.sh                    # rsync 同步代码到服务器
-ssh root@<server> 'systemctl restart tokenapi-scan'
-
-# 增量更新
-./deploy.sh
-./deploy.sh --reinstall        # 改了 pyproject.toml 后重装依赖
-./deploy.sh --test             # 同步后远程跑 pytest 验证
-./deploy.sh --dry-run          # 预览会改什么,不动文件
-```
-
-`deploy.sh` 排除项:`venv/`、`__pycache__/`、`.git/`、`.env`、`.env.bak`、`*.bak`、`baselines/`、`out/`、`tmp/`、`web_data/`。
-
 ---
 
 ## 开发
 
 ```bash
-# 装本地依赖
-python3 -m venv venv
-./venv/bin/pip install -e ".[dev,web]"
-
-# 跑全部测试
-./venv/bin/pytest tests/ -v
-
-# 重新生成 PDF 测试文档
-./venv/bin/python scripts/build_test_pdf.py
+git clone https://github.com/TokenScanAI/tokenapi-scan.git
+cd tokenapi-scan
+python3 -m pytest tests/ -v   # evidence SDK 单元测试
 ```
 
-### 加新 detector
-
-1. `src/relay_detector/protocols/<protocol>/detectors/` 新建文件
-2. 继承 `ActiveDetector` 或 `PassiveDetector`
-3. 实现 `run()`(active)或 `observe()` + `finalize()`(passive)
-4. 注册到对应 `detectors/__init__.py` 的 `build_all()`
-5. `protocols/<protocol>/config.py` 加权重和 mode 映射
-6. 写测试
+贡献流程与规范见 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
 ---
 
 ## 常见问题
-
-**Q: `compare` 报错"找不到基线文件"**
-A: `compare` 自动按 `target_model + mode` 在 `data/baselines/` 找。如果你测的 model 没有对应基线,跑 `bench.sh` 收集,或显式 `-b baseline.json` 指定一个相近的。
-
-**Q: 中转站的 model 名带 `-thinking` 后缀**
-A: 这是某些中转站的 routing 约定。它跟 `tool_choice: "any"` 不兼容,会导致 StructuredOutputDetector 报 400。改用不带后缀的模型名即可,detector 自己会按需开 thinking。
 
 **Q: 我想测一个工具没覆盖的模型 / 协议**
 A: 当前覆盖 Anthropic Messages API、OpenAI Chat Completions、Gemini OpenAI 兼容 API。其他协议(Anthropic Bedrock、Vertex AI 原生 API 等)欢迎 PR。
@@ -439,10 +293,10 @@ License 体系遵循 `docs/standards/BRAND_INDEPENDENCE_AND_OSS_POLICY.md` 三�
 公开文档门面：[github.com/TokenScanAI/tokenapi-scan](https://github.com/TokenScanAI/tokenapi-scan)。
 欢迎 issues / PRs / fork —— 完整贡献指南见 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
-## 为什么开源
+## 为什么公开
 
 TokenAPI Scan 的核心交易是「你把 API key 给我,我帮你测中转站真假」。这件事的基础是**信任**:
 - 你凭什么相信我们不偷 key?
 - 你凭什么相信评分不是收钱定的?
 
-答:**代码全部公开,你可以自己审计**。凡是涉及评分、检测逻辑、API key 处理的代码,都在这个 repo 里,可逐行复核。
+答:**公开契约、evidence SDK、数据节点与检测证据全部公开,可逐行复核**。检测内核闭源（三层分级,见上文 License 一节）,但每份报告的结论都能用附带的加密证据独立复演——不信评分,可以自己验证。
