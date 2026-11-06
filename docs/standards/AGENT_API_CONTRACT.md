@@ -5,7 +5,8 @@
 **生效**：2026-06-27 21:39:47 CST（生产 6723 重启时刻）
 **冻结期**：v1.0 字段只增不删 **≥ 12 个月**（至 2027-06-27），破坏性变更走 §10 Sunset 流程
 **适用范围**：所有 `/api/*`、`/.well-known/*`、未来 MCP/A2A/AP2/ARD 工件、SDK、对外 agent 文档
-**关联**：AGENT_PROTOCOL_ROADMAP.md（迭代节奏）· AGENT_API_DECISION_REVIEW.md（D1-D5 决策评审）· MODEL_DATA_STANDARD.md（字段权威）· ERROR_CODES.md（错误码字典）
+**关联**：AGENT_PROTOCOL_ROADMAP.md（迭代节奏）· AGENT_API_DECISION_REVIEW.md（D1-D5 决策评审，未随本仓发布）· MODEL_DATA_STANDARD.md（字段权威）· ERROR_CODES.md（错误码字典，未随本仓发布）
+**部署状态（2026-11-06 外网实测）**：v1 已公开上线 —— `/api/v1/sites`、`/api/v1/models`、`/api/v1/prices`、`/api/v1/_meta`、`/api/v1/trust/providers` 实测 200；`/.well-known/agent.json`、`/.well-known/ai-plugin.json` 已上线；`/openapi.json` 公开（48 端点）。下文 TODO 标记为定稿时状态。
 
 本文档回答一件事：**今天每一个 API 设计决定，怎样才能不挖未来 agent 协议（MCP / A2A / AP2 / ARD）的坑。**
 
@@ -202,13 +203,13 @@ L4 价值结算 (Settlement)            条件触发，不抢跑
 | URL | 用途 | 状态 |
 |---|---|---|
 | `/llms.txt` | 自然语言能力描述（人 + LLM） | 现有 148 行，需补 agent endpoint 章节 |
-| `/.well-known/ai-plugin.json` | OpenAI plugin 兼容 | TODO Phase 1 |
-| `/.well-known/agent.json` | A2A AgentCard | TODO Phase 1（capabilities-only，先不接 A2A 协议本身） |
-| `/.well-known/ard.json` | Agent Resource Description（草案占位） | TODO Phase 1 |
+| `/.well-known/ai-plugin.json` | OpenAI plugin 兼容 | ✅ 已上线（2026-11-06 实测 200） |
+| `/.well-known/agent.json` | A2A AgentCard | ✅ 已上线（2026-11-06 实测 200；capabilities-only，先不接 A2A 协议本身） |
+| `/.well-known/ard.json` | Agent Resource Description（草案占位） | 未上线 |
 | `/openapi.json` | OpenAPI 3.1 schema | ✅ 已自动生成，需暴露 + 加 servers/contact/security |
 | `/docs` | Swagger UI | 当前关闭 (`docs_url=None`)，需重开 |
 | `/redoc` | ReDoc UI | 可选，看需求 |
-| `/api/v1/_meta` | 运行时元信息（version / build / git_sha / supported_protocols） | TODO，用于 agent 健康嗅探 |
+| `/api/v1/_meta` | 运行时元信息（version / build / git_sha / supported_protocols） | ✅ 已上线（2026-11-06 实测 200） |
 
 ---
 

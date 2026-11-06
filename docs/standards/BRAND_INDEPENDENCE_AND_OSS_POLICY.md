@@ -170,7 +170,7 @@ TokenAPI Scan(Token 照妖镜)未来要走企业服务路线。任何"依附 / �
 
 ### 5.1 已完成(2026-06-26)
 
-- ✅ 备份 `<legacy-path>` → `tokenscan_backups/opt_veridrop_20260626.tar.gz`(884K, sha256=`1b8315ca...0133130`)
+- ✅ 备份 `<legacy-path>` → `tokenscan_backups/opt_legacy_20260626.tar.gz`(884K, sha256=`1b8315ca...0133130`)
 - ✅ 删除 `<legacy-path> -> <legacy-path>` 软链(5/18 旧别名,无引用)
 - ✅ 移走 `$REPO_ROOT/tokenapi-legacy.service` → `tokenscan_backups/tokenapi-legacy.service.deprecated_20260626`
 - ✅ 生产健康验证:health 200, journal 0 error
