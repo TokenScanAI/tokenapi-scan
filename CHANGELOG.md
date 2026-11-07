@@ -31,4 +31,4 @@ versions follow [SemVer](https://semver.org/spec/v2.0.0.html).
 
 ### Added
 - Initial public placeholder README, MIT license, and basic issue templates.
-- Migrated from `haruki3rd/tokenscanai` to the `TokenScanAI` organization.
+- Migrated to the `TokenScanAI` organization.
