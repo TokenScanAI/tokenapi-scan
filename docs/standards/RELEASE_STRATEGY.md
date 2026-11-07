@@ -10,8 +10,8 @@
 
 当前实测状态 (2026-06-26):
 
-1. **本地生产仓** `/home/debian/tokenscan_v2` —— **无 git remote**,本地单一真相源,203 个未提交改动。
-2. **公开门面仓** `github.com/TokenScanAI/tokenapi-scan` —— 已在 README/llms.txt/base.html footer 指向,但**当前内容陈旧**(canarybyte/tokenapi-scan 时代遗留)。
+1. **本地生产仓** `$REPO_ROOT` —— **无 git remote**,本地单一真相源,203 个未提交改动。
+2. **公开门面仓** `github.com/TokenScanAI/tokenapi-scan` —— 已在 README/llms.txt/base.html footer 指向,但**当前内容陈旧**(tokenapi-legacy/tokenapi-scan 时代遗留)。
 3. **三层资产** 已由 `BRAND_INDEPENDENCE_AND_OSS_POLICY.md` 划清:
    - Layer 1(公开 MIT):API 契约 / SDK / 数据字典 / 检测方法论概述
    - Layer 2(受控开源):公开规范文档 + 闭源实现
@@ -43,13 +43,13 @@
 
 | 类别 | 物理位置 | 原因 |
 |---|---|---|
-| **检测内核源码** | `src/relay_detector/protocols/`(L1/L2/L3 探测器全部) | Layer 3 红线 §2.4-1/2/5 |
+| **检测内核源码** | `<INTERNAL>/protocols/`(L1/L2/L3 探测器全部) | Layer 3 红线 §2.4-1/2/5 |
 | **反作弊 / 反爬规则** | `src/governance/` 中阈值与 heuristic | Layer 3 红线 §2.4-5 |
 | **生产数据** | `web_data/db/*.db` · `web_data/jobs/` · `web_data/health/` · `web_data/seo_reports/` 等 | Layer 3,含真实 endpoint / 命中/打码 key 残片 |
-| **爬虫 / 节点 / 代理** | `tools_dev/price_scraping/` · `~/.hermes/scripts/tokenapi_probe_candidates.py` · sing-box / clash 配置 | Layer 3 红线 §2.4-2/3 |
-| **可执行 plan / 微信群路由** | `docs/plans/` · `.hermes/` · skill 全集 | 含运维秘密 + 个人偏好,不公开 |
+| **爬虫 / 节点 / 代理** | `<INTERNAL>/` · `<hermes-config>/scripts/tokenapi_probe_candidates.py` · sing-box / clash 配置 | Layer 3 红线 §2.4-2/3 |
+| **可执行 plan / 微信群路由** | `docs/plans/` · `<hermes-config>/` · skill 全集 | 含运维秘密 + 个人偏好,不公开 |
 | **任何 `.env` / API key / db / 备份 tar** | `.env*` · `*.db` · `*.tar.gz` · `*.bak.*` · `*backups/` | 安全红线 |
-| **个人/内网信息** | `192.168.x.x` 内网 IP · `tui_handoff.md` · `/home/debian/...` 绝对路径 | 隐私 + 攻击面 |
+| **个人/内网信息** | `192.168.x.x` 内网 IP · `tui_handoff.md` · `$HOME/...` 绝对路径 | 隐私 + 攻击面 |
 
 ### 1.3 灰色地带(逐文件人工 review)
 
@@ -80,14 +80,14 @@
 ### 2.2 物理布局(写死)
 
 ```
-/home/debian/tokenscan_v2/                 # 生产仓 · 无 remote · Layer 1+2+3 全部
+$REPO_ROOT/                 # 生产仓 · 无 remote · Layer 1+2+3 全部
 └── tools_dev/release/
     ├── sync_to_facade.py                   # 同步脚本(待建,§4)
     ├── facade_whitelist.yaml               # 白名单清单(逐文件)
     ├── facade_blacklist_patterns.yaml      # 全局黑名单 regex(secret/IP/路径)
     └── facade_workdir/                     # 临时工作目录(.gitignore)
 
-/home/debian/tokenscan_facade/             # 门面仓 · 独立 git · remote = TokenScanAI/tokenapi-scan
+$FACADE_ROOT/             # 门面仓 · 独立 git · remote = TokenScanAI/tokenapi-scan
     └── (sync_to_facade.py 写入,人工 review,git push)
 ```
 
@@ -155,17 +155,17 @@ blacklist_patterns:
   - "192\\.168\\.\\d+\\.\\d+"            # 内网 IP
   - "10\\.\\d+\\.\\d+\\.\\d+"
   - "172\\.(1[6-9]|2\\d|3[0-1])\\.\\d+\\.\\d+"
-  - "/home/debian/"                      # 本地绝对路径
+  - "$HOME/"                      # 本地绝对路径
   - "(?i)(sk-|api[_-]?key)[a-z0-9]{16,}" # 类 key 串
   - "(?i)tokenscanai\\.org"              # 旧域名(已迁 .com)
-  - "canarybyte"                         # 旧 org
+  - "tokenapi-legacy"                         # 旧 org
   - "(?i)(password|passwd|secret)\\s*[:=]\\s*['\"][^'\"]{4,}"
 
 # 强制改写
 rewrites:
   "192\\.168\\.1\\.102:6723": "https://tokenscanai.com"
   "tokenscanai\\.org": "tokenscanai.com"
-  "/home/debian/tokenscan_v2/": "$REPO_ROOT/"
+  "$REPO_ROOT/": "$REPO_ROOT/"
 ```
 
 > §3 是**契约文档**,字段语义稳定;具体值会在 `facade_whitelist.yaml` 实施时小幅调整,但**新增/删除任何条目必须更新本文档**。
@@ -205,16 +205,16 @@ python tools_dev/release/sync_to_facade.py commit   # 本机 commit 到 ~/tokens
 
 | # | 项 | 验证命令 | 状态 |
 |---|---|---|---|
-| 1 | 生产仓 `git remote -v` 输出为空 | `cd /home/debian/tokenscan_v2 && git remote -v \| wc -l` 应为 0 | ✅ 已验 (2026-06-26) |
+| 1 | 生产仓 `git remote -v` 输出为空 | `cd $REPO_ROOT && git remote -v \| wc -l` 应为 0 | ✅ 已验 (2026-06-26) |
 | 2 | LICENSE 是 MIT,无 AGPL 实质条款 | `head -1 LICENSE` = `MIT License` | ✅ 已验 (D6) |
-| 3 | README 域名指向 `tokenscanai.com` / 仓库指向 `TokenScanAI/tokenapi-scan` | `grep -E "(tokenscanai\.org\|canarybyte)" README.md \| wc -l` 应为 0 | ✅ 已验 (D6) |
+| 3 | README 域名指向 `tokenscanai.com` / 仓库指向 `TokenScanAI/tokenapi-scan` | `grep -E "(tokenscanai\.org\|tokenapi-legacy)" README.md \| wc -l` 应为 0 | ✅ 已验 (D6) |
 | 4 | 全仓黑名单扫描 0 命中 | `sync_to_facade.py scan` | ⏳ 脚本待建 |
 | 5 | 门面仓 `TokenScanAI/tokenapi-scan` 当前内容已存档,准备清空重推 | gh CLI 备份当前 main → branch `legacy-pre-v0.1` | ⏳ 待执行 |
 | 6 | CONTRIBUTING.md 提到的"开源仓库即将开放"改成实际链接 | 手改 | ⏳ |
 | 7 | API 契约 v1 冻结(operation_id 已固化) | `curl /openapi.json` 22 端点全有 operation_id | ✅ 已验 (C2-day2) |
 | 8 | SECURITY.md 含 vulnerabilities 上报路径 | `read SECURITY.md` | ⏳ 待确认 |
 | 9 | CONTRIBUTING.md 清楚说明 issue/PR 渠道 | 手改 | ⏳ |
-| 10 | `.gitignore.facade` 兜底:即使误推也屏蔽 `web_data/`,`.env*`,`*.db`,`*.bak.*`,`tools_dev/price_scraping/`,`src/relay_detector/protocols/` | 写入白名单时一并落 | ⏳ |
+| 10 | `.gitignore.facade` 兜底:即使误推也屏蔽 `web_data/`,`.env*`,`*.db`,`*.bak.*`,`<INTERNAL>/`,`<INTERNAL>/protocols/` | 写入白名单时一并落 | ⏳ |
 
 ---
 
@@ -242,8 +242,8 @@ python tools_dev/release/sync_to_facade.py commit   # 本机 commit 到 ~/tokens
 ### 6.4 Watchdog(L1 红线监控)
 落 cron(本机,30 分钟一次):
 ```bash
-# ~/.hermes/scripts/tokenapi_remote_guard.sh
-cd /home/debian/tokenscan_v2
+# <hermes-config>/scripts/tokenapi_remote_guard.sh
+cd $REPO_ROOT
 if [ -n "$(git remote -v)" ]; then
   echo "[CRITICAL] 生产仓 git remote 出现:$(git remote -v)" | wechat-notify
 fi

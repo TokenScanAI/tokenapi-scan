@@ -26,14 +26,14 @@
 | # | 资产类 | 物理位置 | 体量 | 等级分布 | 责任方 |
 |---|---|---|---|---|---|
 | 1 | **结构化 SoR(系统记录)** | `web_data/db/tokenapi.db` 等 3 DB | 28 表 + 2 视图 / 19K 行 | **A=4** / B=0 / C=7 / D=17 | TUI agent |
-| 2 | **协议探测 raw** | `web_data/jobs/<protocol>/` | 925 文件 / 10.7 MB | C(无五件套但有 timestamp) | relay_detector |
+| 2 | **协议探测 raw** | `web_data/jobs/<protocol>/` | 925 文件 / 10.7 MB | C(无五件套但有 timestamp) | <internal-pipeline> |
 | 3 | **健康快照** | `web_data/health_checks/*.json` | 40 文件 / 753 KB | C | cron health_check |
 | 4 | **排名/路由快照** | `web_data/ranking/`, `router_sample_matrix*/` | 121 文件 / 6.4 MB | C | cron ranking_build |
-| 5 | **爬虫产物** | `web_data/crawler/`, `crawl/`, `enrichment/` | 38 文件 / 7.6 MB | D | tools_dev/price_scraping |
-| 6 | **配置 / 字典 (source of governance)** | `scripts/config/*.yaml`, `docs/standards/` | 13 文件 | n/a (元数据) | TUI agent (手维护) |
+| 5 | **爬虫产物** | `web_data/crawler/`, `crawl/`, `enrichment/` | 38 文件 / 7.6 MB | D | tools_dev/<internal-pipeline> |
+| 6 | **配置 / 字典 (source of governance)** | `<INTERNAL>/*.yaml`, `docs/standards/` | 13 文件 | n/a (元数据) | TUI agent (手维护) |
 | 7 | **通知 / 推送队列** | `web_data/notifications/`, `push_queue*/` | 55 文件 / 105 KB | D | notification_store |
 | 8 | **SEO / GSC 报告** | `web_data/seo_reports/` | 75 文件 / 119 KB | D | GSC pipeline |
-| 9 | **审计 / 备份 / 归档** | `web_data/access_logs/`, `/home/debian/tokenscan_backups/` | 8 + N 文件 / 9.3+ MB | n/a | runtime + 手维护 |
+| 9 | **审计 / 备份 / 归档** | `web_data/access_logs/`, `$HOME/tokenscan_backups/` | 8 + N 文件 / 9.3+ MB | n/a | runtime + 手维护 |
 
 **总磁盘:** `web_data/` = 86 MB。
 **五件套覆盖率:** **从 10.7% → 待 auto 脚本重跑刷新**(M1/M2/M3 加 method/verified_at/evidence_ref/status_*/updated_at 共 7 列 × 3 表 = 21 列)。
@@ -52,7 +52,7 @@
 |---|---|---|---|
 | `tokenapi.db` | 20 表 + 2 视图 | ~18,500 行 | detection(7503) · price(3807) · model_alias(1370) · model_canonical(1260) · model_sku(1181) · model_spu(1151) · authority_map(476) · framework_registry(243) · normalize_run(132) · provider(117) |
 | `lab_features.db` | 8 表 | ~700 行 | competitor_watch(402) · iq_radar(280) · notices(10) |
-| `leak_radar.db` | (独立) | — | leak_radar 自有 db,见 skill `leak-radar-realtime-collection-pipeline-2026-06-23.md` |
+| `<internal-pipeline>.db` | (独立) | — | <internal-pipeline> 自有 db,见 skill `leak-radar-realtime-collection-pipeline-2026-06-23.md` |
 
 **A/B 级标杆(M1/M2/M3 后):**
 - `model_canonical`(A): 18 列五件套全套(M0 模板)
@@ -88,7 +88,7 @@
 
 ### 资产 6 · 配置 / 字典(治理来源)
 - 路径:
-  - `scripts/config/source_filters.yaml`(1.4 KB) — 数据源开关 + source_trust(trusted/verified/community/experimental/**blacklisted**)
+  - `<INTERNAL>/source_filters.yaml`(1.4 KB) — 数据源开关 + source_trust(trusted/verified/community/experimental/**blacklisted**)
   - `docs/standards/*.md`(13 文件 / 156 KB) — 治理规范文档
 - 治理: **元数据**,本身不归 governance level
 - 责任方: 手维护,Git 跟踪
@@ -107,9 +107,9 @@
 ### 资产 9 · 审计 / 备份 / 归档
 - 路径:
   - `web_data/access_logs/`(8 文件 / 9.3 MB) — Web 请求日志
-  - `/home/debian/tokenscan_backups/`(L1 外部) — 备份 tar.gz,含旧品牌归档包 883 KB
+  - `$HOME/tokenscan_backups/`(L1 外部) — 备份 tar.gz,含旧品牌归档包 883 KB
   - `web_data/governance/`(snapshot JSON,每日刷新)
-  - `web_data/db/backups/`(M0 前两次 tokenapi_db 备份 + M1/M2/M3 前 `/home/debian/tokenscan_backups/db_pre_lineage_20260626/`)
+  - `web_data/db/backups/`(M0 前两次 tokenapi_db 备份 + M1/M2/M3 前 `$HOME/tokenscan_backups/db_pre_lineage_20260626/`)
 - 治理: 操作型,不参与 SoR 评级
 - 红线: 备份必落本地,**禁用 git history 回滚**(历史含已弃用旧品牌版本)
 
@@ -124,7 +124,7 @@
 | 1 | `model_alias.evidence`(JSON-string)→ `evidence_ref`(raw_snapshot 路径) 数据回填策略 | (a) 一次性脚本回填+DROP evidence (b) 双列并行 6 月观察 | M2 migration 是否能立即完成 | **已选 (b)** — M2 已落 evidence_ref 列,双列并行,Sprint 2 再 DROP |
 | 2 | `web_data/jobs/` 925 文件是否迁入 `raw_snapshots/<date>/<sha>/` | (a) 全迁(去重收益) (b) 保留+加 symlink | 磁盘 ~10MB / 写入端改造工作量 | **待定** |
 | 3 | `ranking_snapshot` 表 0 行 — 是否启用 SoR | (a) 启用,文件转表 (b) 继续文件式,但加 manifest 表 | router 页查询性能 | **待定** |
-| 4 | `leak_radar.db` 是否进 DATA_CATALOG | (a) 进(治理可见性) (b) 留独立(skill 已管) | 治理一致性 vs 隔离边界 | **倾向 (a) — 进 inventory 但不掺数据** |
+| 4 | `<internal-pipeline>.db` 是否进 DATA_CATALOG | (a) 进(治理可见性) (b) 留独立(skill 已管) | 治理一致性 vs 隔离边界 | **倾向 (a) — 进 inventory 但不掺数据** |
 | 5 | `web_data/seo_reports/` 是否进 SoR | (a) 入 `seo_report` 表 (b) 维持文件 | GSC pipeline 重做时机 | **挂起到 GSC pipeline P1** |
 | 6 | `competitor_watch`(lab_features.db, 402 行) 是否走五件套 | (a) 加 (b) 保留 last_seen_at 即可 | 竞品监控数据可信度 | **倾向 (a)** |
 | 7 | `framework_registry`(243 行) 内容审计 — 这表存什么、还在用吗 | 先 read 抽样 → 决定保留/废弃 | D 级表是否需要 ALTER | **待 R&D** |
