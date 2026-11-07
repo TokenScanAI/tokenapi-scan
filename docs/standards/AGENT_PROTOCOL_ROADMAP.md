@@ -296,3 +296,15 @@ W9+                观察 Phase 4 进入条件是否满足
 ---
 
 **核心一句：** 基础先行（Phase 0 五条不可逆决定 + ARD 占位），然后 L1 发现 → L2 MCP → L3 A2A → L4 付费 单向推进，**Phase 5 GitHub 维护并行不阻塞**，永远不一口吃胖。
+
+---
+
+## 2026-11-08 增补：外部生态落地锚点（四线做深）
+
+> 外部实测调研（MCP Registry / x402 / A2A v1.0 / 检测学术圈），给 L1-L4 各自锚上现实坐标。
+
+- **L2 MCP → 官方 Registry**：`registry.modelcontextprotocol.io`（preview）。发布用 `mcp-publisher` CLI + `server.json`（GitHub 授权 → namespace `io.github.TokenScanAI/*`）；registry 只存元数据，安装方式必须公开（PyPI 包或 remote URL）。支持 **remote server（streamable-http）**条目 = 零安装分发。行动：① tokenscan-mcp 打 tag 发 PyPI（publish.yml 已就绪，缺 repo secret PYPI_TOKEN）② 补 `/mcp` streamable-http 只读端点（LAN 先行）③ server.json 提交。
+- **L3 A2A → v1.0 已换代**：2026-03 v1.0（AAIF 治理，150+ 组织，Bedrock/Azure AI Foundry 原生支持）。**AgentCard 路径已从 `/.well-known/agent.json` 改为 `/.well-known/agent-card.json`**，v1.0 SDK 不再读老路径；新增签名卡（signed agent cards）。行动：我们 `/agent.json` 需补 `agent-card.json`（v1.0 形态）；是否实现完整 A2A task 服务（SendMessage/GetTask）由演进周报按外部消费信号裁决。
+- **L4 结算 → x402 已成事实标准**：Linux Foundation x402 Foundation（2026-07 运营，Visa/Mastercard/Stripe/Google 会员）；AWS WAF AI traffic monetization、Cloudflare Agents `paidTool`（MCP 工具按次收费）已原生支持。$50M/年量级（2026-04）尚早，但与"数据节点=可售卖资源"完全同构。行动：演进周报跟踪 x402 spec；当 trust/catalog 数据出现稳定程序化消费（当前 prices 万级 IP/月、trust 个位/日）且出现付费意愿信号时，优先在 CF Worker 层做 x402 门（Premium 数据端点），不动免费层。
+- **检测能力 → 2026 学术三件套**：DFA 分布式指纹审计（arXiv 2610.37086：纯文本响应 + Cauchy combination test，5 probes/250 请求出端点级 p 值，支持模型归因与掺杂比例估计）；Logprob Tracking（ICLR 2026：首 token logprobs 双样本置换检验，OpenRouter 23% 端点支持）；rank-based uniformity test（ICLR 2026）。与现有 mfp_* 指纹参考库互补：DFA = 在参考指纹之上加统计检验层。行动：演进周报跟踪 arxiv；实现排队（先 logprob 探针（成本最低），后 DFA 统计层）。
+- **自进化底座（11/08 已上线）**：`protocol_evolution_watch.py`（每周一，9 源：两家 changelog/llms + MCP/A2A/x402/CF Agents 规范页 + arxiv）→ `web_data/detection/protocol_watch_queue.jsonl`；`intake_issues.py`（每 6h，GitHub issue→候选池自动接线）；`/api/intake`（邮件→CF worker→分类→入池→自动回信）；`evolution_strategy_weekly.py` v2（周日聚合四线→周报 memo）。
