@@ -1,109 +1,109 @@
-# TokenAPI Scan CN Relay Trust & Price Catalog,snapshot_utc=2026-11-10T00:46:13.813461+00:00,license=MIT,attribution=https://tokenscanai.com,json=https://tokenscanai.com/data/relay-catalog.json
+# TokenAPI Scan CN Relay Trust & Price Catalog,snapshot_utc=2026-11-11T00:45:57.991055+00:00,license=MIT,attribution=https://tokenscanai.com,json=https://tokenscanai.com/data/relay-catalog.json
 provider_id,name,endpoint,active,trust_verified,trust_effective,trust_success_rate,detection_count,price_model_count,min_input_usd_per_1m,min_output_usd_per_1m,cheapest_input_model
-1xm-ai,1XM AI,https://1xm.ai/v1,True,low,low,0.1676,1498,39,0.75,2.0,gpt-5.4-mini
+1xm-ai,1XM AI,https://1xm.ai/v1,True,low,low,0.1656,1516,39,0.75,2.0,gpt-5.4-mini
 timesniper-club,302 Found,https://timesniper.club/v1,False,low,unavailable,0.0,2,0,,,
 aaatoken-cn,3AToken,,True,,,,0,20,0.5,0.5,bge-m3
-4sapi,4sapi,https://4sapi.com,True,low,low,0.0569,1317,196,0.02,0.02,text-embedding-3-small
-5202030,5202030,https://api.5202030.xyz,False,medium,unavailable,0.8871,1337,0,,,
-529961,529961,https://529961.com,False,low,unavailable,0.0106,1318,0,,,
-7470-cn,7470,https://7470.cn/v1,True,high,high,0.9985,1332,0,,,
-88996,88996,https://88996.cloud,True,low,low,0.0,1211,0,,,
-88code,88Code,https://88code.ai,False,high,unavailable,0.9866,1638,0,,,
-91code,91Code,https://91code.pro,True,low,low,0.0,1212,0,,,
+4sapi,4sapi,https://4sapi.com,True,low,low,0.0562,1335,196,0.02,0.02,text-embedding-3-small
+5202030,5202030,https://api.5202030.xyz,False,medium,unavailable,0.8878,1355,0,,,
+529961,529961,https://529961.com,False,low,unavailable,0.0105,1336,0,,,
+7470-cn,7470,https://7470.cn/v1,True,high,high,0.9985,1354,0,,,
+88996,88996,https://88996.cloud,True,low,low,0.0,1229,0,,,
+88code,88Code,https://88code.ai,False,high,unavailable,0.9861,1660,0,,,
+91code,91Code,https://91code.pro,True,low,low,0.0,1230,0,,,
 9527code-com,9527code.com,,True,,,,0,95,0.04,0.15,gpt-oss-120b
-992236,992236,https://992236.xyz,True,low,low,0.0561,1320,18,0.05,0.4,gpt-5-nano
+992236,992236,https://992236.xyz,True,low,low,0.0553,1338,18,0.05,0.4,gpt-5-nano
 aiproxy,AI Proxy,https://api.aiproxy.io/v1,False,low,unavailable,0.0,152,0,,,
-apixyz,API.xyz,https://api.api.xyz/v1,False,low,unavailable,0.4418,584,0,,,
-api2d,API2D,https://openai.api2d.net/v1,True,high,high,0.9536,1832,13,0.035,0.175,claude-3-haiku
-ablai,Ablai,https://api.ablai.top,True,low,low,0.2523,1209,673,0.0022,0.0022,qwen3-reranker-8b
+apixyz,API.xyz,https://api.api.xyz/v1,False,low,unavailable,0.4422,588,0,,,
+api2d,API2D,https://openai.api2d.net/v1,True,high,high,0.9444,1854,13,0.035,0.175,claude-3-haiku
+ablai,Ablai,https://api.ablai.top,True,low,low,0.2486,1227,673,0.0022,0.0022,qwen3-reranker-8b
 aiapi-world,"Access 100+ AI Models in One API, Sa",https://aiapi.world/v1,True,high,high,1.0,2,141,0.06,0.06,bge-m3
-ai-codeqaq,Ai Codeqaq,https://ai.codeqaq.com,False,medium,unavailable,0.8955,1340,0,,,
-ai-hybgzs,Ai Hybgzs,https://ai.hybgzs.com,True,high,high,0.9597,1637,0,,,
+ai-codeqaq,Ai Codeqaq,https://ai.codeqaq.com,False,medium,unavailable,0.8969,1358,0,,,
+ai-hybgzs,Ai Hybgzs,https://ai.hybgzs.com,True,high,high,0.9602,1659,0,,,
 aitutu,AiTuTu,https://api.aitutuapi.com/v1,False,low,unavailable,0.0,92,0,,,
-aicanapi,Aicanapi,https://aicanapi.com,True,low,low,0.0591,1319,0,,,
-aicodemirror,Aicodemirror,https://aicodemirror.com,True,low,low,0.0,1211,0,,,
-aicoding-sh,Aicoding Sh,https://aicoding.sh,True,low,low,0.0554,1318,0,,,
-aifast,Aifast,https://aifast.site,True,low,low,0.0,1210,178,0.015,0.06,qwen3-coder-480b-a35b-instruct
-aigocode,Aigocode,https://aigocode.com,False,low,unavailable,0.0561,1318,0,,,
-aihubmix,Aihubmix,https://aihubmix.com/v1,True,low,low,0.1373,1508,8,0.034,0.069,claude-3-haiku-20240307
-anmory,Anmory,https://anmory.com,False,low,unavailable,0.0,1216,0,,,
-anthropic-cn,Anthropic（亚太区）,https://api.anthropic.com/v1,True,high,high,0.9618,1832,34,0.25,1.25,claude-3-haiku
-anyrouter,Anyrouter,https://anyrouter.top,False,low,unavailable,0.0645,1318,0,,,
-anyscale,Anyscale,https://api.endpoints.anyscale.com/v1,True,high,high,0.9645,1861,12,0.15,0.15,HuggingFaceH4/zephyr-7b-beta
-apimart,Apimart,https://apimart.ai,False,low,unavailable,0.0562,1317,0,,,
-apipro-maynor1024,Apipro Maynor1024,https://apipro.maynor1024.live,True,high,high,0.948,1635,318,0.01,0.01,BAAI/bge-reranker-v2-m3
-apiyi,Apiyi,https://api.apiyi.com/v1,True,high,high,0.9901,1818,0,,,
-augmunt,Augmunt,https://augmunt.com,True,high,high,0.9636,1209,0,,,
-b4u-qzz,B4u Qzz,https://b4u.qzz.io,True,high,high,0.9737,1635,0,,,
+aicanapi,Aicanapi,https://aicanapi.com,True,low,low,0.0583,1337,0,,,
+aicodemirror,Aicodemirror,https://aicodemirror.com,True,low,low,0.0,1229,0,,,
+aicoding-sh,Aicoding Sh,https://aicoding.sh,True,low,low,0.0546,1336,0,,,
+aifast,Aifast,https://aifast.site,True,low,low,0.0,1228,178,0.015,0.06,qwen3-coder-480b-a35b-instruct
+aigocode,Aigocode,https://aigocode.com,False,low,unavailable,0.0554,1336,0,,,
+aihubmix,Aihubmix,https://aihubmix.com/v1,True,low,low,0.1356,1526,8,0.034,0.069,claude-3-haiku-20240307
+anmory,Anmory,https://anmory.com,False,low,unavailable,0.0,1234,0,,,
+anthropic-cn,Anthropic（亚太区）,https://api.anthropic.com/v1,True,high,high,0.9525,1854,34,0.25,1.25,claude-3-haiku
+anyrouter,Anyrouter,https://anyrouter.top,False,low,unavailable,0.0636,1336,0,,,
+anyscale,Anyscale,https://api.endpoints.anyscale.com/v1,True,high,high,0.9554,1883,12,0.15,0.15,HuggingFaceH4/zephyr-7b-beta
+apimart,Apimart,https://apimart.ai,False,low,unavailable,0.0554,1335,0,,,
+apipro-maynor1024,Apipro Maynor1024,https://apipro.maynor1024.live,True,high,high,0.9481,1657,318,0.01,0.01,BAAI/bge-reranker-v2-m3
+apiyi,Apiyi,https://api.apiyi.com/v1,True,high,high,0.9902,1840,0,,,
+augmunt,Augmunt,https://augmunt.com,True,high,high,0.9641,1227,0,,,
+b4u-qzz,B4u Qzz,https://b4u.qzz.io,True,high,high,0.974,1657,0,,,
 beefapi-com,BeefAPI — based on New API,https://beefapi.com/v1,True,high,high,1.0,2,60,0.1,0.6,gpt-6-luna
-bianxie,Bianxie,https://api.bianxie.ai,True,high,high,0.9878,1635,355,0.02,0.02,text-embedding-3-small
-bltcy,Bltcy,https://api.bltcy.ai,True,high,high,0.9107,1635,763,0.0022,0.0022,qwen3-reranker-8b
-chatanywhere,ChatAnyWhere,https://api.chatanywhere.com.cn/v1,True,medium,medium,0.8374,1839,0,,,
-clauddy,Clauddy,https://clauddy.com,True,high,high,0.9859,1636,66,0.1,0.4,gemini-flash-lite-latest
-claude-code-hub,Claude Code Hub,https://claude-code-hub.app,True,high,high,0.9611,1208,0,,,
-claude-opus,Claude Opus,https://claude-opus.top,True,high,high,0.9768,1208,0,,,
+bianxie,Bianxie,https://api.bianxie.ai,True,high,high,0.9879,1657,355,0.02,0.02,text-embedding-3-small
+bltcy,Bltcy,https://api.bltcy.ai,True,high,high,0.9095,1657,763,0.0022,0.0022,qwen3-reranker-8b
+chatanywhere,ChatAnyWhere,https://api.chatanywhere.com.cn/v1,True,medium,medium,0.8383,1861,0,,,
+clauddy,Clauddy,https://clauddy.com,True,high,high,0.9861,1658,66,0.1,0.4,gemini-flash-lite-latest
+claude-code-hub,Claude Code Hub,https://claude-code-hub.app,True,high,high,0.9617,1226,0,,,
+claude-opus,Claude Opus,https://claude-opus.top,True,high,high,0.9772,1226,0,,,
 console-claudeapi-com,ClaudeAPI,https://console.claudeapi.com/v1,False,high,unavailable,1.0,2,24,0.065,0.26,gemini-2.5-flash-lite
-claudeide,Claudeide,https://claudeide.net,True,high,high,0.962,1211,0,,,
-claude-china,Claude中国,https://api.claude.cn/v1,True,low,low,0.1787,1528,0,,,
-co-yes,Co Yes,https://co.yes.vg,True,high,high,0.9902,1639,0,,,
-code-wenwen-ai,Code Wenwen Ai,https://code.wenwen-ai.com,True,low,low,0.1659,1477,0,,,
-code-x-aio,Code X Aio,https://code.x-aio.com,True,high,high,0.9945,1639,0,,,
-codeilab,Codeilab,https://codeilab.com,True,high,high,0.94,1216,0,,,
-cohere,Cohere,https://api.cohere.ai/v1,True,high,high,0.9635,1836,8,0.0375,0.0,command-r7b-12-2024
+claudeide,Claudeide,https://claudeide.net,True,high,high,0.9626,1229,0,,,
+claude-china,Claude中国,https://api.claude.cn/v1,True,low,low,0.1766,1546,0,,,
+co-yes,Co Yes,https://co.yes.vg,True,high,high,0.9904,1661,0,,,
+code-wenwen-ai,Code Wenwen Ai,https://code.wenwen-ai.com,True,low,low,0.1639,1495,0,,,
+code-x-aio,Code X Aio,https://code.x-aio.com,True,high,high,0.9946,1661,0,,,
+codeilab,Codeilab,https://codeilab.com,True,high,high,0.9408,1234,0,,,
+cohere,Cohere,https://api.cohere.ai/v1,True,high,high,0.9543,1858,8,0.0375,0.0,command-r7b-12-2024
 cooper-api-com,Cooper-API | New API,https://cooper-api.com/v1,True,high,high,1.0,2,55,0.02,0.02,text-embedding-3-small
-cpass,Cpass,https://api.cpass.cc,True,high,high,0.9541,1635,0,,,
-cubence,Cubence,https://cubence.com,True,low,low,0.1837,1497,0,,,
-ddshub,DDSHub,https://www.ddshub.cc/v1,True,low,low,0.2611,1670,0,,,
-deepkey,DeepKey,https://deepkey.top/v1,True,high,high,0.9863,1830,309,0.02,0.02,text-embedding-3-small
-deepseek,DeepSeek,https://api.deepseek.com/v1,True,high,high,0.9915,1873,22,0.0434,0.144,deepseek-v4-flash-0731
-deeprouter,Deeprouter,https://deeprouter.top,True,high,high,0.9812,1221,102,0.02,0.02,text-embedding-3-small
-dev88-tech,Dev88 Tech,https://api.dev88.tech,True,low,low,0.0607,1318,5,0.28,0.42,deepseek-3.2
-dhcoder,Dhcoder,https://dhcoder.net,True,high,high,0.9828,1222,0,,,
-dify,Dify API,https://api.dify.ai/v1,True,high,high,0.9651,1835,0,,,
-dimaray,Dimaray,https://dimaray.com,False,high,unavailable,0.9658,1229,57,1.0,3.0,deepseek-v4-flash
-dmxapi,Dmxapi,https://dmxapi.com,True,high,high,0.9828,1223,0,,,
-dreamger,Dreamger,https://api.dreamger.com,False,high,unavailable,0.989,1635,0,,,
-duckcoding,Duckcoding,https://duckcoding.com,True,low,low,0.0,1222,0,,,
-expansion-chat,Expansion Chat,https://api.expansion.chat,True,low,low,0.346,1555,0,,,
-fastgpt,FastGPT API,https://api.fastgpt.in/v1,True,high,high,0.9886,1835,0,,,
-fireworks,Fireworks AI,https://api.fireworks.ai/inference/v1,True,high,high,0.9595,1877,291,0.00013,0.0,accounts/fireworks/models/SSD-1B
-fk-hshwk,Fk Hshwk,https://fk.hshwk.org,True,low,low,0.1374,1427,0,,,
-flapcode,Flapcode,https://flapcode.com,True,high,high,0.9782,1651,0,,,
-flowise,Flowise,https://api.flowiseai.com/v1,False,low,unavailable,0.4617,587,0,,,
-foxcode-hshwk,Foxcode Hshwk,https://foxcode.hshwk.org,True,high,high,0.9758,1651,0,,,
-foxcode-rjj,Foxcode Rjj,https://foxcode.rjj.cc,True,low,low,0.0163,1224,0,,,
-fuli-hxi,Fuli Hxi,https://fuli.hxi.me,True,high,high,0.9716,1654,0,,,
-gptgod,GPTGod,https://api.gptgod.online/v1,True,high,high,0.9872,1869,0,,,
-gpt-link,GPTLink,https://api.gptlink.ai/v1,False,low,unavailable,0.388,634,0,,,
-getgoapi,Getgoapi,https://getgoapi.com,True,high,high,0.9691,1230,389,0.02,0.02,text-embedding-3-small
-google-ai-official,Google AI Studio 官方,https://generativelanguage.googleapis.com/v1beta,True,medium,medium,0.8685,1840,41,0.049999999999999996,0.09999999999999999,gemini-2.5-flash-lite:batch
-gpt-zhizengzeng,Gpt Zhizengzeng,https://gpt.zhizengzeng.com,True,high,high,0.9505,1658,0,,,
-gptkey,Gptkey,https://gptkey.eu.org,False,medium,unavailable,0.8069,1662,0,,,
-groq,Groq,https://api.groq.com/openai/v1,True,high,high,0.9521,1879,4,0.05,0.07,llama3-8b-8192
-gueai,Gueai,https://api.gueai.com,False,low,unavailable,0.0129,1317,0,,,
-henapi,Henapi,https://henapi.top,False,low,unavailable,0.0104,1340,0,,,
-holdai,Holdai,https://api.holdai.top,True,high,high,0.9859,1635,0,,,
-hongshan,Hongshan,https://hongshan.com,True,high,high,0.9838,1237,0,,,
-huggingface,HuggingFace,https://huggingface.co/api/inference,True,low,low,0.1287,1500,0,,,
-ikuncode,Ikuncode,https://api.ikuncode.cc,True,high,high,0.9737,1635,47,0.2,1.2,gpt-5.6-luna
-instcopilot-api,Instcopilot Api,https://instcopilot-api.com,True,low,low,0.0,1241,0,,,
-iwhalecloud,Iwhalecloud,https://iwhalecloud.com,False,low,unavailable,0.0,1246,0,,,
+cpass,Cpass,https://api.cpass.cc,True,high,high,0.9541,1657,0,,,
+cubence,Cubence,https://cubence.com,True,low,low,0.1815,1515,0,,,
+ddshub,DDSHub,https://www.ddshub.cc/v1,True,low,low,0.2583,1688,0,,,
+deepkey,DeepKey,https://deepkey.top/v1,True,high,high,0.9865,1852,309,0.02,0.02,text-embedding-3-small
+deepseek,DeepSeek,https://api.deepseek.com/v1,True,high,high,0.9916,1895,22,0.0434,0.144,deepseek-v4-flash-0731
+deeprouter,Deeprouter,https://deeprouter.top,True,high,high,0.9814,1239,102,0.02,0.02,text-embedding-3-small
+dev88-tech,Dev88 Tech,https://api.dev88.tech,True,low,low,0.0599,1336,5,0.28,0.42,deepseek-3.2
+dhcoder,Dhcoder,https://dhcoder.net,True,high,high,0.9831,1240,0,,,
+dify,Dify API,https://api.dify.ai/v1,True,high,high,0.9655,1857,0,,,
+dimaray,Dimaray,https://dimaray.com,False,high,unavailable,0.9663,1247,57,1.0,3.0,deepseek-v4-flash
+dmxapi,Dmxapi,https://dmxapi.com,True,high,high,0.9831,1241,0,,,
+dreamger,Dreamger,https://api.dreamger.com,False,high,unavailable,0.9891,1657,0,,,
+duckcoding,Duckcoding,https://duckcoding.com,True,low,low,0.0,1240,0,,,
+expansion-chat,Expansion Chat,https://api.expansion.chat,True,low,low,0.342,1573,0,,,
+fastgpt,FastGPT API,https://api.fastgpt.in/v1,True,high,high,0.9887,1857,0,,,
+fireworks,Fireworks AI,https://api.fireworks.ai/inference/v1,True,high,high,0.9505,1899,296,0.00013,0.0,accounts/fireworks/models/SSD-1B
+fk-hshwk,Fk Hshwk,https://fk.hshwk.org,True,low,low,0.1356,1445,0,,,
+flapcode,Flapcode,https://flapcode.com,True,high,high,0.9785,1673,0,,,
+flowise,Flowise,https://api.flowiseai.com/v1,False,low,unavailable,0.4619,591,0,,,
+foxcode-hshwk,Foxcode Hshwk,https://foxcode.hshwk.org,True,high,high,0.9761,1673,0,,,
+foxcode-rjj,Foxcode Rjj,https://foxcode.rjj.cc,True,low,low,0.0161,1242,0,,,
+fuli-hxi,Fuli Hxi,https://fuli.hxi.me,True,high,high,0.972,1676,0,,,
+gptgod,GPTGod,https://api.gptgod.online/v1,True,high,high,0.9873,1891,0,,,
+gpt-link,GPTLink,https://api.gptlink.ai/v1,False,low,unavailable,0.3887,638,0,,,
+getgoapi,Getgoapi,https://getgoapi.com,True,high,high,0.9696,1248,389,0.02,0.02,text-embedding-3-small
+google-ai-official,Google AI Studio 官方,https://generativelanguage.googleapis.com/v1beta,True,medium,medium,0.8582,1862,41,0.049999999999999996,0.09999999999999999,gemini-2.5-flash-lite:batch
+gpt-zhizengzeng,Gpt Zhizengzeng,https://gpt.zhizengzeng.com,True,high,high,0.9512,1680,0,,,
+gptkey,Gptkey,https://gptkey.eu.org,False,medium,unavailable,0.8076,1684,0,,,
+groq,Groq,https://api.groq.com/openai/v1,True,high,high,0.9432,1901,4,0.05,0.07,llama3-8b-8192
+gueai,Gueai,https://api.gueai.com,False,low,unavailable,0.0127,1335,0,,,
+henapi,Henapi,https://henapi.top,False,low,unavailable,0.0103,1358,0,,,
+holdai,Holdai,https://api.holdai.top,True,high,high,0.9861,1657,0,,,
+hongshan,Hongshan,https://hongshan.com,True,high,high,0.9841,1255,0,,,
+huggingface,HuggingFace,https://huggingface.co/api/inference,True,low,low,0.1271,1518,0,,,
+ikuncode,Ikuncode,https://api.ikuncode.cc,True,high,high,0.974,1657,47,0.2,1.2,gpt-5.6-luna
+instcopilot-api,Instcopilot Api,https://instcopilot-api.com,True,low,low,0.0,1259,0,,,
+iwhalecloud,Iwhalecloud,https://iwhalecloud.com,False,low,unavailable,0.0,1264,0,,,
 jbbtoken-cn,JBBToken - OpenAI / Claude API 中转站，支,https://jbbtoken.cn/v1,False,high,unavailable,1.0,2,26,2.0,12.0,gpt-5.4-mini
-jeniya,Jeniya,https://jeniya.top,True,low,low,0.0056,1247,317,0.01,0.01,netease-youdao/bce-reranker-base_v1
-jiekou,Jiekou,https://jiekou.ai,False,low,unavailable,0.0545,1358,0,,,
-kg-api,Kg Api,https://kg-api.cloud,True,low,low,0.5652,1617,763,0.0022,0.0022,qwen3-reranker-8b
-koozhan-api,Koozhan API,https://api.koozhan.com/v1,True,low,low,0.2546,1669,0,,,
-laozhang-ai,Laozhang.ai,https://laozhang.ai/v1,True,high,high,0.989,1814,0,,,
-lconai,Lconai,https://api.lconai.com,True,high,high,0.9853,1635,0,,,
-lemongpt,Lemongpt,https://lemongpt.top,True,high,high,0.9826,1268,0,,,
-lepton,Lepton AI,https://api.lepton.run/v1,False,medium,unavailable,0.7459,606,0,,,
-linkapi,Linkapi,https://api.linkapi.org,True,medium,medium,0.7314,1210,673,0.0022,0.0022,qwen3-reranker-8b
-mistral,Mistral AI,https://api.mistral.ai/v1,True,low,low,0.1725,1536,26,0.029,0.03,mistral-nemo
-mkeai,Mkeai,https://api.mkeai.com,True,high,high,0.9793,1209,0,,,
-modelscope,ModelScope,https://api-inference.modelscope.cn/v1,True,high,high,0.9086,1926,27,0.049999999999999996,0.19999999999999998,qwen-turbo
-muskapi,MuskAPI,https://api.muskapi.cc/v1,True,high,high,0.9711,1522,287,0.02,0.02,text-embedding-3-small
-n1n,N1n,https://n1n.ai,False,low,unavailable,0.0506,1383,0,,,
-nekoapi,Neko API,https://api.nekoapi.com/v1,True,high,high,0.9539,1864,125,0.02,0.02,text-embedding-3-small
+jeniya,Jeniya,https://jeniya.top,True,low,low,0.0055,1265,317,0.01,0.01,netease-youdao/bce-reranker-base_v1
+jiekou,Jiekou,https://jiekou.ai,False,low,unavailable,0.0538,1376,0,,,
+kg-api,Kg Api,https://kg-api.cloud,True,low,low,0.5688,1635,763,0.0022,0.0022,qwen3-reranker-8b
+koozhan-api,Koozhan API,https://api.koozhan.com/v1,True,low,low,0.2519,1687,0,,,
+laozhang-ai,Laozhang.ai,https://laozhang.ai/v1,True,high,high,0.9891,1836,0,,,
+lconai,Lconai,https://api.lconai.com,True,high,high,0.9855,1657,0,,,
+lemongpt,Lemongpt,https://lemongpt.top,True,high,high,0.9829,1286,0,,,
+lepton,Lepton AI,https://api.lepton.run/v1,False,medium,unavailable,0.7443,610,0,,,
+linkapi,Linkapi,https://api.linkapi.org,True,medium,medium,0.7337,1228,673,0.0022,0.0022,qwen3-reranker-8b
+mistral,Mistral AI,https://api.mistral.ai/v1,True,low,low,0.1705,1554,26,0.029,0.03,mistral-nemo
+mkeai,Mkeai,https://api.mkeai.com,True,high,high,0.9796,1227,0,,,
+modelscope,ModelScope,https://api-inference.modelscope.cn/v1,True,high,high,0.9097,1948,27,0.049999999999999996,0.19999999999999998,qwen-turbo
+muskapi,MuskAPI,https://api.muskapi.cc/v1,True,high,high,0.9637,1544,287,0.02,0.02,text-embedding-3-small
+n1n,N1n,https://n1n.ai,False,low,unavailable,0.05,1401,0,,,
+nekoapi,Neko API,https://api.nekoapi.com/v1,True,high,high,0.9449,1886,125,0.02,0.02,text-embedding-3-small
 az-zlapi-vip,New API,https://az.zlapi.vip/v1,True,high,high,1.0,2,42,0.268,0.54,[君离-按量]k/claude-haiku-4-5-20251001
 chat-ekti-cc,New API,https://chat.ekti.cc/v1,True,high,high,1.0,2,62,0.1,0.3,grok-4.20-0309-non-reasoning
 chunxueapi-com,New API,https://chunxueapi.com/v1,True,high,high,1.0,2,44,0.5,2.0,glm-5.2
@@ -120,94 +120,94 @@ superapi-buzz,New API,https://superapi.buzz/v1,True,high,high,1.0,2,199,0.01,0.0
 us-ai-easyart-cc,New API,https://us.ai.easyart.cc/v1,True,high,high,1.0,2,172,0.03,0.24,gpt-5-nano-2025-08-07
 yjapi-manqiaotechnology-com,New API,https://yjapi.manqiaotechnology.com/v1,False,high,unavailable,1.0,2,89,0.01,0.06,gpt-5.4-openai-compact
 zhangyuapi-com,New API,https://zhangyuapi.com/v1,True,,,,0,114,0.07,0.34,gemma-4-26b-a4b-it
-new-api-u4vr,New Api U4vr,https://new-api.u4vr.com,True,high,high,0.9452,1716,25,0.3,1.5,claude-sonnet-4-6
-new-xychatai,New Xychatai,https://new.xychatai.com,True,high,high,0.9762,1720,0,,,
-novita,Novita AI,https://api.novita.ai/v1,True,high,high,0.9537,1902,134,0.01,0.0,baai/bge-m3
-okapi,OK API,https://api.okapi.live/v1,False,low,unavailable,0.4102,590,0,,,
-oaipro,Oaipro,https://api.oaipro.com,True,high,high,0.959,1635,0,,,
-oneapi,One API,https://api.one-api.top/v1,True,low,low,0.4955,1572,0,,,
-one-api-bltcy,One Api Bltcy,https://one-api.bltcy.top,True,medium,medium,0.8932,1733,763,0.0022,0.0022,qwen3-reranker-8b
-one-ocoolai,One Ocoolai,https://one.ocoolai.com,True,high,high,0.9856,1740,629,0.00071,0.001,step-1-8k
-oneapi-paintbot,Oneapi Paintbot,https://oneapi.paintbot.top,True,low,low,0.0177,1357,0,,,
-open-xiaojingai,Open Xiaojingai,https://open.xiaojingai.com,True,medium,medium,0.7317,1752,585,0.02,0.0012,glm-4.5-flash
-openai-official,OpenAI 官方,https://api.openai.com/v1,True,low,low,0.2459,1875,116,0.024,0.112,gpt-oss-20b:batch
-openai-hk,OpenAI 香港,https://api.openai-hk.com/v1,True,medium,medium,0.875,1936,0,,,
-openrouter,OpenRouter,https://openrouter.ai/api/v1,True,high,high,0.9543,1903,488,0.006,0.03,deepseek-flash-latest
-openclaude,Openclaude,https://openclaude.me,False,low,unavailable,0.0297,1348,0,,,
-packyapi,PackyAPI,https://www.packyapi.com/v1,True,low,low,0.1669,1492,0,,,
-perplexity,Perplexity AI,https://api.perplexity.ai,True,low,low,0.1827,1571,82,0.004,0.0,pplx-embed-v1-0.6b
-poloapi,PoloAPI,https://poloapi.com/v1,True,medium,medium,0.8886,1813,0,,,
-poloai,Poloai,https://poloai.top,True,high,high,0.9849,1783,416,0.02,0.02,text-embedding-3-small
-privnode,Privnode,https://privnode.com,True,high,high,0.9726,1786,0,,,
-proxyai,Proxyai,https://proxyai.com,True,high,high,0.9699,1797,0,,,
-qinzhiai,Qinzhiai,https://qinzhiai.com,True,high,high,0.9717,1805,629,0.005,0.005,intfloat/e5-base-v2
-rootflowai-hk,RootFlow AI HK,https://hk.rootflowai.com/v1,True,high,high,0.9463,1826,59,0.1,0.43,claude-haiku-5-5
+new-api-u4vr,New Api U4vr,https://new-api.u4vr.com,True,high,high,0.9459,1738,25,0.3,1.5,claude-sonnet-4-6
+new-xychatai,New Xychatai,https://new.xychatai.com,True,high,high,0.9765,1742,0,,,
+novita,Novita AI,https://api.novita.ai/v1,True,high,high,0.9449,1924,134,0.01,0.0,baai/bge-m3
+okapi,OK API,https://api.okapi.live/v1,False,low,unavailable,0.4108,594,0,,,
+oaipro,Oaipro,https://api.oaipro.com,True,high,high,0.9596,1657,0,,,
+oneapi,One API,https://api.one-api.top/v1,True,low,low,0.5013,1590,0,,,
+one-api-bltcy,One Api Bltcy,https://one-api.bltcy.top,True,medium,medium,0.8923,1755,763,0.0022,0.0022,qwen3-reranker-8b
+one-ocoolai,One Ocoolai,https://one.ocoolai.com,True,high,high,0.9858,1762,629,0.00071,0.001,step-1-8k
+oneapi-paintbot,Oneapi Paintbot,https://oneapi.paintbot.top,True,low,low,0.0175,1375,0,,,
+open-xiaojingai,Open Xiaojingai,https://open.xiaojingai.com,True,medium,medium,0.7339,1774,585,0.02,0.0012,glm-4.5-flash
+openai-official,OpenAI 官方,https://api.openai.com/v1,True,low,low,0.2441,1897,116,0.024,0.112,gpt-oss-20b:batch
+openai-hk,OpenAI 香港,https://api.openai-hk.com/v1,True,medium,medium,0.8672,1958,0,,,
+openrouter,OpenRouter,https://openrouter.ai/api/v1,True,high,high,0.9449,1925,488,0.006,0.03,deepseek-flash-latest
+openclaude,Openclaude,https://openclaude.me,False,low,unavailable,0.0293,1366,0,,,
+packyapi,PackyAPI,https://www.packyapi.com/v1,True,low,low,0.1649,1510,0,,,
+perplexity,Perplexity AI,https://api.perplexity.ai,True,low,low,0.1806,1589,82,0.004,0.0,pplx-embed-v1-0.6b
+poloapi,PoloAPI,https://poloapi.com/v1,True,medium,medium,0.8899,1835,0,,,
+poloai,Poloai,https://poloai.top,True,high,high,0.985,1805,416,0.02,0.02,text-embedding-3-small
+privnode,Privnode,https://privnode.com,True,high,high,0.9729,1808,0,,,
+proxyai,Proxyai,https://proxyai.com,True,high,high,0.9698,1819,0,,,
+qinzhiai,Qinzhiai,https://qinzhiai.com,True,high,high,0.9721,1827,629,0.005,0.005,intfloat/e5-base-v2
+rootflowai-hk,RootFlow AI HK,https://hk.rootflowai.com/v1,True,high,high,0.9459,1848,59,0.1,0.43,claude-haiku-5-5
 runapi-co,RunAPI:高质量API中转平台,https://runapi.co/v1,True,high,high,1.0,2,165,0.008,0.008,text-embedding-3-small
-runanytime-hxi,Runanytime Hxi,https://runanytime.hxi.me,True,high,high,0.9706,1834,0,,,
-ssopen,Ssopen,https://api.ssopen.top,True,high,high,0.9792,1636,318,0.01,0.01,BAAI/bge-reranker-v2-m3
-sssaicode,Sssaicode,https://sssaicode.com,False,low,unavailable,0.0412,1529,0,,,
-store-zzyus,Store Zzyus,https://store.zzyus.top,True,high,high,0.9772,1886,0,,,
-timicc,TIMICC,https://timicc.com/v1,True,high,high,0.9554,1818,0,,,
-tiantianai,Tiantianai,https://tiantianai.pro,True,high,high,0.9842,1899,97,0.075,0.25,glm-5.3-flash
-together,Together AI,https://api.together.xyz/v1,True,high,high,0.9508,1912,97,0.008,0.0,BAAI/bge-base-en-v1.5
-tu-zi,Tu Zi,https://api.tu-zi.com,True,high,high,0.9823,1637,0,,,
+runanytime-hxi,Runanytime Hxi,https://runanytime.hxi.me,True,high,high,0.9704,1856,0,,,
+ssopen,Ssopen,https://api.ssopen.top,True,high,high,0.9795,1658,318,0.01,0.01,BAAI/bge-reranker-v2-m3
+sssaicode,Sssaicode,https://sssaicode.com,False,low,unavailable,0.0407,1547,0,,,
+store-zzyus,Store Zzyus,https://store.zzyus.top,True,high,high,0.9775,1908,0,,,
+timicc,TIMICC,https://timicc.com/v1,True,high,high,0.956,1840,0,,,
+tiantianai,Tiantianai,https://tiantianai.pro,True,high,high,0.9844,1921,97,0.075,0.25,glm-5.3-flash
+together,Together AI,https://api.together.xyz/v1,True,high,high,0.9421,1934,97,0.008,0.0,BAAI/bge-base-en-v1.5
+tu-zi,Tu Zi,https://api.tu-zi.com,True,high,high,0.9825,1659,0,,,
 uuapi-net,UU API - AI API Gateway,https://uuapi.net/v1,True,high,high,1.0,2,0,,,
-uglycat,Uglycat,https://api.uglycat.cc,True,high,high,0.956,1636,1,75.0,75.0,zai-glm-4.7
-uiuiapi,Uiuiapi,https://uiuiapi.com,True,high,high,0.9885,1913,0,,,
-uniapi,Uniapi,https://uniapi.ai,True,high,high,0.9803,1931,0,,,
-v3-cm,V3 Cm,https://api.v3.cm,True,low,low,0.0577,1317,330,0.02,0.02,glm-4.5-flash
-vectorengine,VectorEngine AI,https://api.vectorengine.ai/v1,True,low,low,0.0,1202,0,,,
-vip-undyingapi,Vip Undyingapi,https://vip.undyingapi.com,True,low,low,0.1674,1679,76,0.07,0.4,gemini-3-flash-preview
-wolfai,Wolfai,https://wolfai.top,True,high,high,0.9862,1954,149,0.02,0.02,text-embedding-3-small
-wzw-de5,Wzw De5,https://wzw.de5.net,False,low,unavailable,0.0079,1643,0,,,
-wzw-pp-ua,Wzw Pp Ua,https://wzw.pp.ua,True,high,high,0.9455,1983,113,0.02962,0.04,qwen3.7-flash
-xairouter,Xairouter,https://xairouter.com,True,high,high,0.976,1998,0,,,
-xaixapi,Xaixapi,https://xaixapi.com,True,high,high,0.9841,2016,0,,,
-xiaohuapi,Xiaohuapi,https://xiaohuapi.site,True,low,low,0.2007,1774,273,0.02,0.02,text-embedding-3-small
-xiaohumini,Xiaohumini,https://xiaohumini.site,True,high,high,0.9883,2054,318,0.01,0.01,BAAI/bge-reranker-v2-m3
-xty,Xty,https://api.xty.app,True,high,high,0.9872,1636,390,0.1,0.2,gpt-6-luna
-yansd666,Yansd666,https://yansd666.com,True,medium,medium,0.8191,2051,318,0.01,0.01,BAAI/bge-reranker-v2-m3
-yuegle,Yuegle,https://api.yuegle.com,True,medium,medium,0.7283,1634,0,,,
-yunwu,Yunwu,https://yunwu.ai,True,low,low,0.0,1471,0,,,
-yunwu-zeabur,Yunwu Zeabur,https://yunwu.zeabur.app,True,high,high,0.9809,2146,0,,,
-zenmux,Zenmux,https://zenmux.ai,True,low,low,0.1247,1860,0,,,
-ai47com,ai47api,https://ai47api.com/v1,True,high,high,0.997,1332,0,,,
+uglycat,Uglycat,https://api.uglycat.cc,True,high,high,0.9566,1658,1,75.0,75.0,zai-glm-4.7
+uiuiapi,Uiuiapi,https://uiuiapi.com,True,high,high,0.9886,1935,0,,,
+uniapi,Uniapi,https://uniapi.ai,True,high,high,0.9805,1953,0,,,
+v3-cm,V3 Cm,https://api.v3.cm,True,low,low,0.0569,1335,330,0.02,0.02,glm-4.5-flash
+vectorengine,VectorEngine AI,https://api.vectorengine.ai/v1,True,low,low,0.0,1220,0,,,
+vip-undyingapi,Vip Undyingapi,https://vip.undyingapi.com,True,low,low,0.1656,1697,76,0.07,0.4,gemini-3-flash-preview
+wolfai,Wolfai,https://wolfai.top,True,high,high,0.9863,1976,149,0.02,0.02,text-embedding-3-small
+wzw-de5,Wzw De5,https://wzw.de5.net,False,low,unavailable,0.0078,1661,0,,,
+wzw-pp-ua,Wzw Pp Ua,https://wzw.pp.ua,True,high,high,0.9461,2005,113,0.02962,0.04,qwen3.7-flash
+xairouter,Xairouter,https://xairouter.com,True,high,high,0.9762,2020,0,,,
+xaixapi,Xaixapi,https://xaixapi.com,True,high,high,0.9843,2038,0,,,
+xiaohuapi,Xiaohuapi,https://xiaohuapi.site,True,low,low,0.1987,1792,273,0.02,0.02,text-embedding-3-small
+xiaohumini,Xiaohumini,https://xiaohumini.site,True,high,high,0.9884,2076,318,0.01,0.01,BAAI/bge-reranker-v2-m3
+xty,Xty,https://api.xty.app,True,high,high,0.9867,1658,390,0.1,0.2,gpt-6-luna
+yansd666,Yansd666,https://yansd666.com,True,medium,medium,0.812,2069,318,0.01,0.01,BAAI/bge-reranker-v2-m3
+yuegle,Yuegle,https://api.yuegle.com,True,medium,medium,0.7289,1656,0,,,
+yunwu,Yunwu,https://yunwu.ai,True,low,low,0.0,1489,0,,,
+yunwu-zeabur,Yunwu Zeabur,https://yunwu.zeabur.app,True,high,high,0.9811,2168,0,,,
+zenmux,Zenmux,https://zenmux.ai,True,low,low,0.1235,1878,0,,,
+ai47com,ai47api,https://ai47api.com/v1,True,high,high,0.997,1354,0,,,
 aiapify-com,aiapify.com,,True,,,,0,9,0.75,4.5,gpt-5.4-mini
 aiberm-com,aiberm.com,,True,,,,0,115,0.02,0.02,openai/text-embedding-3-small
-aimuxr-com,aimuxr,https://aimuxr.com/v1,True,high,high,0.9902,1330,0,,,
-aibinghe-xyz,api.aibinghe.xyz,https://api.aibinghe.xyz/v1,True,high,high,0.9977,1324,0,,,
-aijws-com,api.aijws.com,https://api.aijws.com/v1,True,high,high,0.9676,1326,0,,,
-luccc-uk,api.luccc.uk,https://api.luccc.uk/v1,True,high,high,0.997,1326,0,,,
-tmlab-store,api.tmlab.store,https://api.tmlab.store/v1,True,medium,medium,0.74,1300,0,,,
-xaix-me,api.xaix.me,https://api.xaix.me/v1,True,high,high,1.0,1326,0,,,
-apib-ai,apib,https://apib.ai/v1,True,high,high,0.9992,1332,0,,,
-apilink-cc,apilink,https://apilink.cc/v1,True,high,high,0.9992,1332,0,,,
-apiporter-com,apiporter,https://apiporter.com/v1,True,high,high,0.9917,1326,0,,,
+aimuxr-com,aimuxr,https://aimuxr.com/v1,True,high,high,0.9904,1352,0,,,
+aibinghe-xyz,api.aibinghe.xyz,https://api.aibinghe.xyz/v1,True,high,high,0.9978,1346,0,,,
+aijws-com,api.aijws.com,https://api.aijws.com/v1,True,high,high,0.9681,1348,0,,,
+luccc-uk,api.luccc.uk,https://api.luccc.uk/v1,True,high,high,0.997,1348,0,,,
+tmlab-store,api.tmlab.store,https://api.tmlab.store/v1,True,medium,medium,0.7299,1318,0,,,
+xaix-me,api.xaix.me,https://api.xaix.me/v1,True,high,high,1.0,1348,0,,,
+apib-ai,apib,https://apib.ai/v1,True,high,high,0.9993,1354,0,,,
+apilink-cc,apilink,https://apilink.cc/v1,True,high,high,0.9993,1354,0,,,
+apiporter-com,apiporter,https://apiporter.com/v1,True,high,high,0.9918,1348,0,,,
 bobdong-cn,bobdong.cn,,True,,,,0,53,0.02,0.02,text-embedding-3-small
 buzzai-cc,buzzai.cc,,True,,,,0,73,0.05,0.4,gpt-5-nano
 callxyq-xyz,callxyq.xyz,,True,,,,0,215,0.05,0.25,gpt-5-nano
 ccmax20-cc,ccmax20.cc,,True,,,,0,10,1.0,5.0,claude-haiku-4-5-20251001
 chintao-cn,chintao,,True,,,,0,47,0.3,2.5,gemini-2.5-flash
-ciallocn,cialloapi,https://cialloapi.cn/v1,True,high,high,0.9759,1326,0,,,
-claudeagent-com-cn,claudeagent,https://claudeagent.com.cn/v1,True,high,high,0.9917,1328,64,0.1,0.5,claude-haiku-5-5
+ciallocn,cialloapi,https://cialloapi.cn/v1,True,high,high,0.9748,1348,0,,,
+claudeagent-com-cn,claudeagent,https://claudeagent.com.cn/v1,True,high,high,0.9919,1350,64,0.1,0.5,claude-haiku-5-5
 claudecn-top,claudecn.top,,True,,,,0,468,0.02,0.04,glm-4.5-flash
-clauqe-ai,clauqe,https://clauqe.ai/v1,True,high,high,0.9812,1327,0,,,
-cnllm-ai,cnllm,https://cnllm.ai/v1,True,high,high,0.9992,1332,0,,,
+clauqe-ai,clauqe,https://clauqe.ai/v1,True,high,high,0.9815,1349,0,,,
+cnllm-ai,cnllm,https://cnllm.ai/v1,True,high,high,0.9993,1354,0,,,
 coderelay-cn,coderelay.cn,,True,,,,0,127,0.1,0.28,claude-haiku-5-5
 codexopenai-cloud,codexopenai.cloud,,True,,,,0,52,0.05,0.2,gemini-3.1-pro-low
-dasucom,dasuapi,https://dasuapi.com/v1,True,high,high,0.9977,1328,0,,,
+dasucom,dasuapi,https://dasuapi.com/v1,True,high,high,0.9978,1350,0,,,
 dawclaudecode-com,dawclaudecode.com,,True,,,,0,76,0.071429,0.238097,glm-5.3-flash
 easyrouter-io,easyrouter-io,https://easyrouter.io/v1,False,high,unavailable,1.0,2,99,0.002,0.002,text-embedding-004
 fishxcode-com,fishxcode.com,,True,,,,0,435,0.01,0.01,Qwen/Qwen3-Reranker-4B
 funnyskill-com,funnyskill.com,,True,,,,0,362,0.00147,0.00147,BAAI/bge-reranker-v2-m3
-gptcc-cn,gptcc,https://gptcc.cn/v1,True,high,high,0.9962,1332,0,,,
-gzxsy-vip,gzxsy,https://gzxsy.vip/v1,True,high,high,0.9857,1332,0,,,
-hohocode-ai,hohocode,https://hohocode.ai/v1,True,high,high,0.9865,1332,0,,,
+gptcc-cn,gptcc,https://gptcc.cn/v1,True,high,high,0.9963,1354,0,,,
+gzxsy-vip,gzxsy,https://gzxsy.vip/v1,True,high,high,0.986,1354,0,,,
+hohocode-ai,hohocode,https://hohocode.ai/v1,True,high,high,0.9867,1354,0,,,
 infai-cc,infai.cc,,True,,,,0,361,0.00147,0.00147,BAAI/bge-reranker-v2-m3
 juxingai-top,juxingai.top,,True,,,,0,51,0.3,2.5,gemini-2.5-flash
-langzionline,langziapi,https://langziapi.online/v1,True,high,high,0.9932,1330,0,,,
+langzionline,langziapi,https://langziapi.online/v1,True,high,high,0.9933,1352,0,,,
 linkapi-ai,linkapi-ai,https://linkapi.ai/v1,True,high,high,1.0,2,130,0.02,0.02,text-embedding-3-small
-linkfree-cc,linkfree,https://linkfree.cc/v1,True,high,high,0.988,1332,0,,,
+linkfree-cc,linkfree,https://linkfree.cc/v1,True,high,high,0.9882,1354,0,,,
 llm-all-pro,llm-all.pro,,True,,,,0,94,0.09,0.36,gemini-2.5-flash
 minitoken-top,minitoken.top,,True,,,,0,330,0.01,0.01,BAAI/bge-reranker-v2-m3
 mytokenpi-com,mytokenpi.com,,True,,,,0,24,3.0,14.0,claude-sonnet-4-5-20250929
@@ -215,36 +215,36 @@ new-050602-xyz,new.050602.xyz,,True,,,,0,82,0.75,3.75,gemini-3.8-flash-low
 nexaxis-ai,nexaxis.ai,,True,,,,0,307,0.02,0.02,text-embedding-3-small
 ogog-ai,ogog.ai,,True,,,,0,64,0.1,0.4,gemini-2.5-flash-lite
 qiuqiutoken-com,qiuqiutoken.com,,True,,,,0,91,0.07,0.15,gemini-3-flash-preview
-quqiai-top,quqiai,https://quqiai.top/v1,True,medium,medium,0.8251,1332,0,,,
-right-codes,right.codes,,True,low,low,0.1022,1604,0,,,
-routerlink-ai,routerlink,https://routerlink.ai/v1,True,high,high,1.0,1332,0,,,
-sadai-top,sadai,https://sadai.top/v1,True,medium,medium,0.8053,1330,0,,,
+quqiai-top,quqiai,https://quqiai.top/v1,True,medium,medium,0.8279,1354,0,,,
+right-codes,right.codes,,True,low,low,0.1011,1622,0,,,
+routerlink-ai,routerlink,https://routerlink.ai/v1,True,high,high,1.0,1354,0,,,
+sadai-top,sadai,https://sadai.top/v1,True,medium,medium,0.8084,1352,0,,,
 sparkcode-top,sparkcode.top,,True,,,,0,56,0.2,0.5,gpt-5.6-luna
 subrouter-ai,subrouter.ai,,True,,,,0,1239,1e-05,1e-05,google/codegemma-7b
 sudobug-top,sudobug.top,,True,,,,0,88,0.1,0.4,gemini-2.5-flash-lite
 sudocode-chat,sudocode.chat,,True,,,,0,18,0.04,0.24,gpt-5.6-luna
-tokaify-com,tokaify,https://tokaify.com/v1,True,low,low,0.6095,1288,0,,,
+tokaify-com,tokaify,https://tokaify.com/v1,True,low,low,0.6011,1306,0,,,
 tokeness-cn,tokeness.cn,,True,,,,0,22,0.8,2.0,glm-5.3-flash
-tokenporter-ai,tokenporter,https://tokenporter.ai/v1,True,high,high,0.9992,1332,0,,,
+tokenporter-ai,tokenporter,https://tokenporter.ai/v1,True,high,high,0.9993,1354,0,,,
 us1-tonbirds-com,tonbirds,https://us1.tonbirds.com/v1,True,high,high,1.0,2,57,0.1,0.5,gpt-6-luna
 traxnode-com,traxnode.com,,True,,,,0,59,0.1,0.4,gemini-2.5-flash-lite
 uocode-com,uocode.com,,True,,,,0,31,0.15,0.6,gemini-2.5-flash
 user-tocodex-com,user.tocodex.com,,True,,,,0,176,0.02,0.02,text-embedding-3-small
-wanlai-ai,wanlai,https://wanlai.ai/v1,True,low,low,0.1038,1252,0,,,
-wasdxx-xyz,wasdxx,https://wasdxx.xyz/v1,True,high,high,0.9797,1332,0,,,
-xai-official,xAI 官方 (Grok),https://api.x.ai/v1,True,low,low,0.1019,1560,8,1.0,2.0,grok-build-0.1
-xbhuiz-com,xbhuiz,https://xbhuiz.com/v1,True,high,high,0.9782,1332,0,,,
+wanlai-ai,wanlai,https://wanlai.ai/v1,True,low,low,0.1024,1270,0,,,
+wasdxx-xyz,wasdxx,https://wasdxx.xyz/v1,True,high,high,0.9786,1354,0,,,
+xai-official,xAI 官方 (Grok),https://api.x.ai/v1,True,low,low,0.1008,1578,8,1.0,2.0,grok-build-0.1
+xbhuiz-com,xbhuiz,https://xbhuiz.com/v1,True,high,high,0.9786,1354,0,,,
 xyc-ai,xyc.ai,,True,,,,0,228,0.000146,0.000146,glm-3-turbo
-zerocode-sbs,zerocode,https://zerocode.sbs/v1,True,high,high,0.9865,1334,22,1.0,5.0,gpt-5.6-luna
+zerocode-sbs,zerocode,https://zerocode.sbs/v1,True,high,high,0.9867,1356,22,1.0,5.0,gpt-5.6-luna
 zxai-work,zxai.work,,True,,,,0,144,0.1,0.1125,gpt-4.1-nano
 zz-aigm99-cn,zz.aigm99.cn,,True,,,,0,10,1.0,5.0,claude-haiku-4-5-20251001
 huiyun-asia,中转站,https://huiyun.asia/v1,True,high,high,1.0,2,25,0.225,0.563,grok-4-fast-non-reasoning
 ergouapi-com,二狗API - AI API 中转与模型管理平台,https://ergouapi.com/v1,True,high,high,1.0,2,34,0.23,0.98,claude-haiku-5-5
-zhizengzeng,智增增,https://api.zhizengzeng.com/v1,True,high,high,0.9425,1897,8,0.034,0.138,claude-3-haiku-20240307
-zhipu,智谱 AI,https://open.bigmodel.cn/api/paas/v4,True,high,high,0.9927,1929,19,0.006,0.061000000000000006,glm-5.2
-lingmou-ai,灵眸AI,https://clawapi.fulitimes.com/v1,True,high,high,0.9895,1813,0,,,
+zhizengzeng,智增增,https://api.zhizengzeng.com/v1,True,high,high,0.9422,1919,8,0.034,0.138,claude-3-haiku-20240307
+zhipu,智谱 AI,https://open.bigmodel.cn/api/paas/v4,True,high,high,0.9928,1951,19,0.007,0.061000000000000006,glm-5.2
+lingmou-ai,灵眸AI,https://clawapi.fulitimes.com/v1,True,high,high,0.9896,1835,0,,,
 taocode-one,知豆AI,https://taocode.one/v1,True,high,high,1.0,2,0,,,
-siliconflow,硅基流动 SiliconFlow,https://api.siliconflow.cn/v1,True,high,high,0.9952,1888,7,0.07,0.07,qwen-7b-chat
-shenma-zhongzhuan,神马中转API,https://api.whatai.cc/v1,True,high,high,0.9531,1814,0,,,
+siliconflow,硅基流动 SiliconFlow,https://api.siliconflow.cn/v1,True,high,high,0.9953,1910,7,0.07,0.07,qwen-7b-chat
+shenma-zhongzhuan,神马中转API,https://api.whatai.cc/v1,True,high,high,0.9537,1836,0,,,
 junlanai-com,钧澜｜聚合大模型服务平台,https://junlanai.com/v1,True,high,high,1.0,2,17,0.3,2.21,codex-auto-review
 linoapi-com,首页 - Lino API - 企业级统一大模型接口网关 | 支持 De,https://linoapi.com/v1,True,,,,0,361,0.00147,0.00147,BAAI/bge-reranker-v2-m3
