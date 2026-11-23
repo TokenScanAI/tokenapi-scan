@@ -1,15 +1,24 @@
 name: Tests
 
-# Run on every push to main / PR. Cheap (no upstream API calls — all
-# detector tests are mocked) so we can always-on green-badge it.
+# 2026-11-24 修复：
+#   原 workflow 从主项目复制而来，但本仓是「数据/门面仓」——
+#   没有 requirements.txt / pyproject.toml，也没有 src/ web/ 目录。
+#   actions/setup-python@v5 的 `cache: pip` 需要找到依赖文件才能算缓存 key，
+#   找不到就直接 [error] 失败，导致 3 个 pytest matrix + lint 全部红。
+#   （2026-11-15 起连续失败，实际代码从未跑过测试。）
+#
+#   修法：
+#     1. 去掉 `cache: pip`（没有依赖文件无法缓存，且本仓依赖极少）
+#     2. 依赖改为显式 pip install（pytest + 本仓实际用到的）
+#     3. pytest 只跑 tests/，且把 sdk/ 加进 PYTHONPATH（test 里 import
+#        governance.evidence_store，仓库内实际路径是 sdk/evidence_store.py）
+#     4. lint 用 ruff 的默认规则集，只检查实际存在的目录
 
 on:
   push:
     branches: [main]
   pull_request:
     branches: [main]
-  # Allow manual re-run from the Actions tab — useful when an OS-package
-  # update flakes the build but the code is fine.
   workflow_dispatch:
 
 jobs:
@@ -27,24 +36,28 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python }}
-          # pip cache speeds up CI from ~60s install to ~5s
-          cache: pip
+          # 注意：不加 cache: pip —— 本仓无 requirements.txt/pyproject.toml，
+          # 加了会让 setup-python 直接 [error] 退出（2026-11-15~11-18 全红根因）。
 
-      - name: Install dependencies
+      - name: Install test dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -e ".[dev,web]"
+          pip install pytest
 
       - name: Run pytest
-        # tests/conftest.py points TOKENAPI_JOBS_DIR / WISHLIST at /tmp
-        # so jobs.py module-level mkdir doesn't try to write /opt
-        run: pytest tests/ -v --tb=short
+        # test_evidence_store.py import governance.evidence_store，
+        # 仓库内实际文件是 sdk/evidence_store.py → 把 sdk 加入 PYTHONPATH
+        # 并在 sdk/ 下建 governance 别名（见下一步）
+        env:
+          PYTHONPATH: ${{ github.workspace }}/sdk:${{ github.workspace }}
+        run: |
+          # 兼容 test 里的 `from governance.evidence_store import EvidenceStore`
+          mkdir -p governance
+          cp sdk/evidence_store.py governance/evidence_store.py
+          touch governance/__init__.py
+          pytest tests/ -v --tb=short
 
   lint:
-    # Soft check — never blocks main, but we publish ruff results so
-    # contributors see style issues before reviewers do. Add `|| true`
-    # when ruff first runs to avoid breaking initial CI before we've
-    # cleaned up any historical style debt.
     runs-on: ubuntu-latest
     continue-on-error: true
     steps:
@@ -52,6 +65,6 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-          cache: pip
       - run: pip install ruff
-      - run: ruff check src/ web/ tests/ || true
+      - name: Ruff (soft check)
+        run: ruff check cli/ sdk/ tests/ scripts/ || true
